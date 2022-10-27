@@ -1,0 +1,21 @@
+<DOMSymbolItem name="blank" xmlns="http://ns.adobe.com/xfl/2008/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<timeline>
+		<DOMTimeline name="blank">
+			<layers>
+				<DOMLayer>
+					<frames>
+						<DOMFrame index="0">
+							<elements>
+								<DOMBitmapInstance libraryItemName="blank">
+									<matrix>
+										<Matrix a="1.000000" d="1.000000" />
+									</matrix>
+								</DOMBitmapInstance>
+							</elements>
+						</DOMFrame>
+					</frames>
+				</DOMLayer>
+			</layers>
+		</DOMTimeline>
+	</timeline>
+</DOMSymbolItem>
