@@ -40,6 +40,7 @@ namespace Res2Ext
                         JObject rss = JObject.Parse(json);
                         //将旧a元件引用信息 Object化
                         JObject OldAnimMapper = (JObject)rss["animMapper"];
+                        /*删除旧版引用覆盖算法
                         //获取旧a元件引用信息数量
                         int oc = OldAnimMapper.Count;
                         //获取新a元件引用信息数量
@@ -66,11 +67,33 @@ namespace Res2Ext
                         {
                             MergeArrayHandling = MergeArrayHandling.Union
                         });
-                        //为上传类赋值
-                        AnimMapper = animMapper;
+                        */
+
+                        //新版引用覆盖算法--20240201修复多出来原有元件的情况--20240213修改
+                        /*20240213弃用，因为使用数量和标签序号并无关系
+                        for(int i = 0; i < animMapper.Count; i++)
+                        {
+                            string index = "a" + i.ToString();
+                            if ((animMapper[index] != null)&&(OldAnimMapper[index] != null))
+                            {
+                                animMapper[index] = OldAnimMapper[index];
+                            }
+                            else { }
+                        }*/
+                        //20240213添加
+                        foreach (var oamc in OldAnimMapper)
+                        {
+                            if ((animMapper[oamc.Key] != null) && (oamc.Value != null))
+                            {
+                                animMapper[oamc.Key] = oamc.Value;
+                            }
+                            else { }
+                        }
                     }
                     else { }
                 }
+                //为上传类赋值
+                AnimMapper = animMapper;
             }
             catch
             {

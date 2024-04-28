@@ -61,10 +61,10 @@
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>packages\Newtonsoft.Json.13.0.2-beta2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="ReaLTaiizor, Version=3.7.8.8, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\ReaLTaiizor.3.7.8.8\lib\net481\ReaLTaiizor.dll</HintPath>
+    <Reference Include="ReaLTaiizor, Version=3.7.9.3, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\ReaLTaiizor.3.7.9.3\lib\net481\ReaLTaiizor.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -106,36 +106,70 @@
     <Compile Include="ClipTransformer\FileNameSort.cs" />
     <Compile Include="ClipTransformer\LibraryReader.cs" />
     <Compile Include="ClipTransformer\TransformAction.cs" />
+    <Compile Include="DirectoryCreator\DirectoryCreator.cs" />
+    <Compile Include="DirectoryCreator\FileOperator.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ftp2Res\EncryptSpriteAdder.cs" />
     <Compile Include="Ftp2Res\Ftp2Res.cs" />
+    <Compile Include="Ftp2Res\OffsetAdjuster.cs" />
+    <Compile Include="Ftp2Res\OffsetCalculater.cs" />
+    <Compile Include="LevelSC\FileNameSort.cs" />
+    <Compile Include="LevelSC\LevelCrafter.cs" />
+    <Compile Include="LevelSC\LevelSpliter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Res2Ext\AnimateClipCreator.cs" />
     <Compile Include="Res2Ext\AnimateClipFormater.cs" />
     <Compile Include="Res2Ext\AnimateClipOverwriter.cs" />
+    <Compile Include="Res2Ext\AnimateClipReader.cs" />
     <Compile Include="Res2Ext\ClipDecryptor.cs" />
     <Compile Include="Res2Ext\ClipEncryptor.cs" />
+    <Compile Include="Res2Ext\DOMDocumentLabelAdder.cs" />
     <Compile Include="Res2Ext\DOMDocumentOverwriter.cs" />
+    <Compile Include="Res2Ext\EncryptClipCreator.cs" />
     <Compile Include="Res2Ext\FileNameSort.cs" />
+    <Compile Include="Res2Ext\ImageClipCreator.cs" />
     <Compile Include="Res2Ext\ImageClipFormater.cs" />
+    <Compile Include="Res2Ext\ImageClipReader.cs" />
     <Compile Include="Res2Ext\MainClipOverwriter.cs" />
     <Compile Include="Res2Ext\MediaDataFormater.cs" />
+    <Compile Include="Res2Ext\OriginOverwriter.cs" />
     <Compile Include="Res2Ext\OtherClipOverwriter.cs" />
     <Compile Include="Res2Ext\Preset.cs" />
     <Compile Include="ResSC\Preset.cs" />
     <Compile Include="ResSC\ResCrafter.cs" />
     <Compile Include="ResSC\ResSpliter.cs" />
     <Compile Include="SpriteToLibrary\BigSpriteCopyer.cs" />
+    <Compile Include="SpriteToLibrary\DOMDocumentOverwriter.cs" />
     <Compile Include="SpriteToLibrary\DOMDocumentReader.cs" />
     <Compile Include="SpriteToLibrary\MainNameRewriter.cs" />
     <Compile Include="SpriteToLibrary\SpriteCopyer.cs" />
     <Compile Include="SpriteToLibrary\XflReader.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -168,6 +202,9 @@
     <None Include="Resources\色盘.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Res2Ext\encrypt_clip.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="ClipCreator\samplea.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -192,6 +229,215 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="DirectoryCreator\images\1200\dev\UI\almanac\" />
+    <Folder Include="DirectoryCreator\images\1200\dev\UI\calendar\" />
+    <Folder Include="DirectoryCreator\images\1200\dev\UI\chooser\" />
+    <Folder Include="DirectoryCreator\images\1200\dev\UI\hud_lod\" />
+    <Folder Include="DirectoryCreator\images\1200\dev\UI\hud_worldmap\" />
+    <Folder Include="DirectoryCreator\images\1200\dev\UI\perks\" />
+    <Folder Include="DirectoryCreator\images\1200\dev\UI\quests\" />
+    <Folder Include="DirectoryCreator\images\1200\dev\UI\store\" />
+    <Folder Include="DirectoryCreator\images\1200\full\backgrounds\" />
+    <Folder Include="DirectoryCreator\images\1200\full\effects\" />
+    <Folder Include="DirectoryCreator\images\1200\full\eggbreaker\" />
+    <Folder Include="DirectoryCreator\images\1200\full\endlevel\" />
+    <Folder Include="DirectoryCreator\images\1200\full\firebreaker\" />
+    <Folder Include="DirectoryCreator\images\1200\full\gravestones\" />
+    <Folder Include="DirectoryCreator\images\1200\full\minigame\" />
+    <Folder Include="DirectoryCreator\images\1200\full\mowers\" />
+    <Folder Include="DirectoryCreator\images\1200\full\notes\" />
+    <Folder Include="DirectoryCreator\images\1200\full\plant\" />
+    <Folder Include="DirectoryCreator\images\1200\full\Railcart\" />
+    <Folder Include="DirectoryCreator\images\1200\full\security_gourds\" />
+    <Folder Include="DirectoryCreator\images\1200\full\UI\" />
+    <Folder Include="DirectoryCreator\images\1200\full\vasebreaker\" />
+    <Folder Include="DirectoryCreator\images\1200\full\worldkey\" />
+    <Folder Include="DirectoryCreator\images\1200\full\worldmap\" />
+    <Folder Include="DirectoryCreator\images\1200\full\zombies\" />
+    <Folder Include="DirectoryCreator\images\1200\full\zombie\" />
+    <Folder Include="DirectoryCreator\images\1200\initial\animations\" />
+    <Folder Include="DirectoryCreator\images\1200\initial\backgrounds\" />
+    <Folder Include="DirectoryCreator\images\1200\initial\CrazyDave\" />
+    <Folder Include="DirectoryCreator\images\1200\initial\credits\" />
+    <Folder Include="DirectoryCreator\images\1200\initial\dangerroom\" />
+    <Folder Include="DirectoryCreator\images\1200\initial\effects\" />
+    <Folder Include="DirectoryCreator\images\1200\initial\empowermints\" />
+    <Folder Include="DirectoryCreator\images\1200\initial\endlevel\" />
+    <Folder Include="DirectoryCreator\images\1200\initial\giftbox\" />
+    <Folder Include="DirectoryCreator\images\1200\initial\gravestones\" />
+    <Folder Include="DirectoryCreator\images\1200\initial\logos\" />
+    <Folder Include="DirectoryCreator\images\1200\initial\missing_pam\" />
+    <Folder Include="DirectoryCreator\images\1200\initial\mowers\" />
+    <Folder Include="DirectoryCreator\images\1200\initial\newload\" />
+    <Folder Include="DirectoryCreator\images\1200\initial\notes\" />
+    <Folder Include="DirectoryCreator\images\1200\initial\NPC\" />
+    <Folder Include="DirectoryCreator\images\1200\initial\plant\" />
+    <Folder Include="DirectoryCreator\images\1200\initial\Railcart\" />
+    <Folder Include="DirectoryCreator\images\1200\initial\space_spiral\" />
+    <Folder Include="DirectoryCreator\images\1200\initial\titlebackgrounds\" />
+    <Folder Include="DirectoryCreator\images\1200\initial\UI\" />
+    <Folder Include="DirectoryCreator\images\1200\initial\winnie\" />
+    <Folder Include="DirectoryCreator\images\1200\initial\worldkey\" />
+    <Folder Include="DirectoryCreator\images\1200\initial\worldmap\" />
+    <Folder Include="DirectoryCreator\images\1200\initial\zen_garden\" />
+    <Folder Include="DirectoryCreator\images\1200\initial\zombie\" />
+    <Folder Include="DirectoryCreator\images\1536\dev\UI\almanac\" />
+    <Folder Include="DirectoryCreator\images\1536\dev\UI\calendar\" />
+    <Folder Include="DirectoryCreator\images\1536\dev\UI\chooser\" />
+    <Folder Include="DirectoryCreator\images\1536\dev\UI\hud_lod\" />
+    <Folder Include="DirectoryCreator\images\1536\dev\UI\hud_worldmap\" />
+    <Folder Include="DirectoryCreator\images\1536\dev\UI\perks\" />
+    <Folder Include="DirectoryCreator\images\1536\dev\UI\quests\" />
+    <Folder Include="DirectoryCreator\images\1536\dev\UI\store\" />
+    <Folder Include="DirectoryCreator\images\1536\full\backgrounds\" />
+    <Folder Include="DirectoryCreator\images\1536\full\effects\" />
+    <Folder Include="DirectoryCreator\images\1536\full\eggbreaker\" />
+    <Folder Include="DirectoryCreator\images\1536\full\endlevel\" />
+    <Folder Include="DirectoryCreator\images\1536\full\firebreaker\" />
+    <Folder Include="DirectoryCreator\images\1536\full\gravestones\" />
+    <Folder Include="DirectoryCreator\images\1536\full\minigame\" />
+    <Folder Include="DirectoryCreator\images\1536\full\mowers\" />
+    <Folder Include="DirectoryCreator\images\1536\full\notes\" />
+    <Folder Include="DirectoryCreator\images\1536\full\plant\" />
+    <Folder Include="DirectoryCreator\images\1536\full\Railcart\" />
+    <Folder Include="DirectoryCreator\images\1536\full\security_gourds\" />
+    <Folder Include="DirectoryCreator\images\1536\full\UI\" />
+    <Folder Include="DirectoryCreator\images\1536\full\vasebreaker\" />
+    <Folder Include="DirectoryCreator\images\1536\full\worldkey\" />
+    <Folder Include="DirectoryCreator\images\1536\full\worldmap\" />
+    <Folder Include="DirectoryCreator\images\1536\full\zombies\" />
+    <Folder Include="DirectoryCreator\images\1536\full\zombie\" />
+    <Folder Include="DirectoryCreator\images\1536\initial\animations\" />
+    <Folder Include="DirectoryCreator\images\1536\initial\backgrounds\" />
+    <Folder Include="DirectoryCreator\images\1536\initial\CrazyDave\" />
+    <Folder Include="DirectoryCreator\images\1536\initial\credits\" />
+    <Folder Include="DirectoryCreator\images\1536\initial\dangerroom\" />
+    <Folder Include="DirectoryCreator\images\1536\initial\effects\" />
+    <Folder Include="DirectoryCreator\images\1536\initial\empowermints\" />
+    <Folder Include="DirectoryCreator\images\1536\initial\endlevel\" />
+    <Folder Include="DirectoryCreator\images\1536\initial\giftbox\" />
+    <Folder Include="DirectoryCreator\images\1536\initial\gravestones\" />
+    <Folder Include="DirectoryCreator\images\1536\initial\logos\" />
+    <Folder Include="DirectoryCreator\images\1536\initial\missing_pam\" />
+    <Folder Include="DirectoryCreator\images\1536\initial\mowers\" />
+    <Folder Include="DirectoryCreator\images\1536\initial\newload\" />
+    <Folder Include="DirectoryCreator\images\1536\initial\notes\" />
+    <Folder Include="DirectoryCreator\images\1536\initial\NPC\" />
+    <Folder Include="DirectoryCreator\images\1536\initial\plant\" />
+    <Folder Include="DirectoryCreator\images\1536\initial\Railcart\" />
+    <Folder Include="DirectoryCreator\images\1536\initial\space_spiral\" />
+    <Folder Include="DirectoryCreator\images\1536\initial\titlebackgrounds\" />
+    <Folder Include="DirectoryCreator\images\1536\initial\UI\" />
+    <Folder Include="DirectoryCreator\images\1536\initial\winnie\" />
+    <Folder Include="DirectoryCreator\images\1536\initial\worldkey\" />
+    <Folder Include="DirectoryCreator\images\1536\initial\worldmap\" />
+    <Folder Include="DirectoryCreator\images\1536\initial\zen_garden\" />
+    <Folder Include="DirectoryCreator\images\1536\initial\zombie\" />
+    <Folder Include="DirectoryCreator\images\384\dev\UI\almanac\" />
+    <Folder Include="DirectoryCreator\images\384\dev\UI\calendar\" />
+    <Folder Include="DirectoryCreator\images\384\dev\UI\chooser\" />
+    <Folder Include="DirectoryCreator\images\384\dev\UI\hud_lod\" />
+    <Folder Include="DirectoryCreator\images\384\dev\UI\hud_worldmap\" />
+    <Folder Include="DirectoryCreator\images\384\dev\UI\perks\" />
+    <Folder Include="DirectoryCreator\images\384\dev\UI\quests\" />
+    <Folder Include="DirectoryCreator\images\384\dev\UI\store\" />
+    <Folder Include="DirectoryCreator\images\384\full\backgrounds\" />
+    <Folder Include="DirectoryCreator\images\384\full\effects\" />
+    <Folder Include="DirectoryCreator\images\384\full\eggbreaker\" />
+    <Folder Include="DirectoryCreator\images\384\full\endlevel\" />
+    <Folder Include="DirectoryCreator\images\384\full\firebreaker\" />
+    <Folder Include="DirectoryCreator\images\384\full\gravestones\" />
+    <Folder Include="DirectoryCreator\images\384\full\minigame\" />
+    <Folder Include="DirectoryCreator\images\384\full\mowers\" />
+    <Folder Include="DirectoryCreator\images\384\full\notes\" />
+    <Folder Include="DirectoryCreator\images\384\full\plant\" />
+    <Folder Include="DirectoryCreator\images\384\full\Railcart\" />
+    <Folder Include="DirectoryCreator\images\384\full\security_gourds\" />
+    <Folder Include="DirectoryCreator\images\384\full\UI\" />
+    <Folder Include="DirectoryCreator\images\384\full\vasebreaker\" />
+    <Folder Include="DirectoryCreator\images\384\full\worldkey\" />
+    <Folder Include="DirectoryCreator\images\384\full\worldmap\" />
+    <Folder Include="DirectoryCreator\images\384\full\zombies\" />
+    <Folder Include="DirectoryCreator\images\384\full\zombie\" />
+    <Folder Include="DirectoryCreator\images\384\initial\animations\" />
+    <Folder Include="DirectoryCreator\images\384\initial\backgrounds\" />
+    <Folder Include="DirectoryCreator\images\384\initial\CrazyDave\" />
+    <Folder Include="DirectoryCreator\images\384\initial\credits\" />
+    <Folder Include="DirectoryCreator\images\384\initial\dangerroom\" />
+    <Folder Include="DirectoryCreator\images\384\initial\effects\" />
+    <Folder Include="DirectoryCreator\images\384\initial\empowermints\" />
+    <Folder Include="DirectoryCreator\images\384\initial\endlevel\" />
+    <Folder Include="DirectoryCreator\images\384\initial\giftbox\" />
+    <Folder Include="DirectoryCreator\images\384\initial\gravestones\" />
+    <Folder Include="DirectoryCreator\images\384\initial\logos\" />
+    <Folder Include="DirectoryCreator\images\384\initial\missing_pam\" />
+    <Folder Include="DirectoryCreator\images\384\initial\mowers\" />
+    <Folder Include="DirectoryCreator\images\384\initial\newload\" />
+    <Folder Include="DirectoryCreator\images\384\initial\notes\" />
+    <Folder Include="DirectoryCreator\images\384\initial\NPC\" />
+    <Folder Include="DirectoryCreator\images\384\initial\plant\" />
+    <Folder Include="DirectoryCreator\images\384\initial\Railcart\" />
+    <Folder Include="DirectoryCreator\images\384\initial\space_spiral\" />
+    <Folder Include="DirectoryCreator\images\384\initial\titlebackgrounds\" />
+    <Folder Include="DirectoryCreator\images\384\initial\UI\" />
+    <Folder Include="DirectoryCreator\images\384\initial\winnie\" />
+    <Folder Include="DirectoryCreator\images\384\initial\worldkey\" />
+    <Folder Include="DirectoryCreator\images\384\initial\worldmap\" />
+    <Folder Include="DirectoryCreator\images\384\initial\zen_garden\" />
+    <Folder Include="DirectoryCreator\images\384\initial\zombie\" />
+    <Folder Include="DirectoryCreator\images\768\dev\UI\almanac\" />
+    <Folder Include="DirectoryCreator\images\768\dev\UI\calendar\" />
+    <Folder Include="DirectoryCreator\images\768\dev\UI\chooser\" />
+    <Folder Include="DirectoryCreator\images\768\dev\UI\hud_lod\" />
+    <Folder Include="DirectoryCreator\images\768\dev\UI\hud_worldmap\" />
+    <Folder Include="DirectoryCreator\images\768\dev\UI\perks\" />
+    <Folder Include="DirectoryCreator\images\768\dev\UI\quests\" />
+    <Folder Include="DirectoryCreator\images\768\dev\UI\store\" />
+    <Folder Include="DirectoryCreator\images\768\full\backgrounds\" />
+    <Folder Include="DirectoryCreator\images\768\full\effects\" />
+    <Folder Include="DirectoryCreator\images\768\full\eggbreaker\" />
+    <Folder Include="DirectoryCreator\images\768\full\endlevel\" />
+    <Folder Include="DirectoryCreator\images\768\full\firebreaker\" />
+    <Folder Include="DirectoryCreator\images\768\full\gravestones\" />
+    <Folder Include="DirectoryCreator\images\768\full\minigame\" />
+    <Folder Include="DirectoryCreator\images\768\full\mowers\" />
+    <Folder Include="DirectoryCreator\images\768\full\notes\" />
+    <Folder Include="DirectoryCreator\images\768\full\plant\" />
+    <Folder Include="DirectoryCreator\images\768\full\Railcart\" />
+    <Folder Include="DirectoryCreator\images\768\full\security_gourds\" />
+    <Folder Include="DirectoryCreator\images\768\full\UI\" />
+    <Folder Include="DirectoryCreator\images\768\full\vasebreaker\" />
+    <Folder Include="DirectoryCreator\images\768\full\worldkey\" />
+    <Folder Include="DirectoryCreator\images\768\full\worldmap\" />
+    <Folder Include="DirectoryCreator\images\768\full\zombies\" />
+    <Folder Include="DirectoryCreator\images\768\full\zombie\" />
+    <Folder Include="DirectoryCreator\images\768\initial\animations\" />
+    <Folder Include="DirectoryCreator\images\768\initial\backgrounds\" />
+    <Folder Include="DirectoryCreator\images\768\initial\CrazyDave\" />
+    <Folder Include="DirectoryCreator\images\768\initial\credits\" />
+    <Folder Include="DirectoryCreator\images\768\initial\dangerroom\" />
+    <Folder Include="DirectoryCreator\images\768\initial\effects\" />
+    <Folder Include="DirectoryCreator\images\768\initial\empowermints\" />
+    <Folder Include="DirectoryCreator\images\768\initial\endlevel\" />
+    <Folder Include="DirectoryCreator\images\768\initial\giftbox\" />
+    <Folder Include="DirectoryCreator\images\768\initial\gravestones\" />
+    <Folder Include="DirectoryCreator\images\768\initial\logos\" />
+    <Folder Include="DirectoryCreator\images\768\initial\missing_pam\" />
+    <Folder Include="DirectoryCreator\images\768\initial\mowers\" />
+    <Folder Include="DirectoryCreator\images\768\initial\newload\" />
+    <Folder Include="DirectoryCreator\images\768\initial\notes\" />
+    <Folder Include="DirectoryCreator\images\768\initial\NPC\" />
+    <Folder Include="DirectoryCreator\images\768\initial\plant\" />
+    <Folder Include="DirectoryCreator\images\768\initial\Railcart\" />
+    <Folder Include="DirectoryCreator\images\768\initial\space_spiral\" />
+    <Folder Include="DirectoryCreator\images\768\initial\titlebackgrounds\" />
+    <Folder Include="DirectoryCreator\images\768\initial\UI\" />
+    <Folder Include="DirectoryCreator\images\768\initial\winnie\" />
+    <Folder Include="DirectoryCreator\images\768\initial\worldkey\" />
+    <Folder Include="DirectoryCreator\images\768\initial\worldmap\" />
+    <Folder Include="DirectoryCreator\images\768\initial\zen_garden\" />
+    <Folder Include="DirectoryCreator\images\768\initial\zombie\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

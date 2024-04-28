@@ -1,6 +1,4 @@
-﻿using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -10,7 +8,7 @@ using System.Xml;
 using System.Xml.Linq;
 using static EBToolBox.Form1;
 
-namespace Res2Ext
+namespace SpriteToLibrary
 {
     //建立DOMDocument重写类
     class DOMDocumentOverwriter
@@ -29,18 +27,18 @@ namespace Res2Ext
                 xmlDoc.Load(TheFolder.FullName);
                 //读取DOMDocument节点
                 XmlElement element = (XmlElement)xmlDoc.GetElementsByTagName("DOMDocument")[0];
-                //设定nag
-                string nag = null;
-                //读取DOMDocument节点__ABOUT__属性字符串
-                nag = element.GetAttribute("__ABOUT__");
-                if (nag == null || nag == "0" || nag == "")
-                {
-                    //恢复xml中太极标签
-                    element.SetAttribute("__ABOUT__", "this XFL is convert from Popcap-AniMation file , by TaiJi .");
-                    //保存xml
-                    xmlDoc.Save(TheFolder.FullName);
-                }
-                else { }
+                //暂时弃用//设定nag
+                //暂时弃用///string nag = null;
+                //暂时弃用//读取DOMDocument节点__ABOUT__属性字符串
+                //暂时弃用///nag = element.GetAttribute("__ABOUT__");
+                //暂时弃用///if (nag == null || nag == "0" || nag == "")
+                //暂时弃用///{
+                //暂时弃用///    //恢复xml中太极标签
+                //暂时弃用///    element.SetAttribute("__ABOUT__", "this XFL is convert from Popcap-AniMation file , by TaiJi .");
+                //暂时弃用///    //保存xml
+                //暂时弃用///    xmlDoc.Save(TheFolder.FullName);
+                //暂时弃用///}
+                //暂时弃用///else { }
 
                 //宝开化判定
                 string filetypeGUID = null;

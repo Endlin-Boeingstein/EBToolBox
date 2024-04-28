@@ -18,6 +18,9 @@ using ClipCreator;
 using Res2Ext;
 using SpriteToLibrary;
 using ClipTransformer;
+using ReaLTaiizor.Controls;
+using static EBToolBox.Form1;
+using CCWin.Win32.Const;
 
 namespace EBToolBox
 {
@@ -632,14 +635,14 @@ namespace EBToolBox
         private void textBox13_DragDrop(object sender, DragEventArgs e)
         {
             string path = ((System.Array)e.Data.GetData(DataFormats.FileDrop)).GetValue(0).ToString();       //获得路径
-            if (File.Exists(path))
+            if (File.Exists(path)|| Directory.Exists(path))
             {
                 textBox13.Text = path;
             }
-            else if (Directory.Exists(path))
-            {
-                MessageBox.Show("检测路径输入为文件夹,请正确输入文件路径");
-            }
+            //更新而弃用///else if (Directory.Exists(path))
+            //更新而弃用///{
+            //更新而弃用///    MessageBox.Show("检测路径输入为文件夹,请正确输入文件路径");
+            //更新而弃用///}
             else
             {
                 MessageBox.Show("路径输入有误！请检查！");
@@ -650,318 +653,389 @@ namespace EBToolBox
         private void materialButton19_Click(object sender, EventArgs e)
         {
             //判断是否点击的“打开”按钮
-            if (openFileDialog4.ShowDialog() == DialogResult.OK)
+            //更新而弃用///if (openFileDialog4.ShowDialog() == DialogResult.OK)
+            if (folderBrowserDialog10.ShowDialog() == DialogResult.OK)
             {
-                textBox13.Text = openFileDialog4.FileName;
+                textBox13.Text = folderBrowserDialog10.SelectedPath;
             }
         }
 
         //Ftp2Res的运行按钮
         private void spaceButton1_Click(object sender, EventArgs e)
         {
-            Ftp2Res.Ftp2Res ftp2Res = new Ftp2Res.Ftp2Res();
-            string filepath=null, SLOT=null;
-            if (File.Exists(textBox1.Text))
+            Task.Run(() =>
             {
-                filepath = textBox1.Text;
-            }
-            else if (Directory.Exists(textBox1.Text))
-            {
-                MessageBox.Show("检测路径输入为文件夹,请正确输入文件路径");
-            }
-            else
-            {
-                MessageBox.Show("路径输入有误！请检查！");
-            }
-            if(Regex.IsMatch(textBox14.Text, @"^\d+$")) // 判断字符串是否为数字 的正则表达式)
-            {
-                SLOT = textBox14.Text;
-            }
-            else
-            {
-                MessageBox.Show("Slot输入不为阿拉伯数字！请检查！");
-            }
-            if(File.Exists(textBox1.Text) && Regex.IsMatch(textBox14.Text, @"^\d+$"))
-            {
-                ftp2Res.FtpToRes(filepath, SLOT);
-            }
-            else { }
+                materialButton20.Enabled = false;
+                Ftp2Res.Ftp2Res ftp2Res = new Ftp2Res.Ftp2Res();
+                string filepath = null, SLOT = null;
+                if (File.Exists(textBox1.Text))
+                {
+                    filepath = textBox1.Text;
+                }
+                else if (Directory.Exists(textBox1.Text))
+                {
+                    MessageBox.Show("检测路径输入为文件夹,请正确输入文件路径");
+                }
+                else
+                {
+                    MessageBox.Show("路径输入有误！请检查！");
+                }
+                if (Regex.IsMatch(textBox14.Text, @"^\d+$")) // 判断字符串是否为数字 的正则表达式)
+                {
+                    SLOT = textBox14.Text;
+                }
+                else
+                {
+                    MessageBox.Show("Slot输入不为阿拉伯数字！请检查！");
+                }
+                if (File.Exists(textBox1.Text) && Regex.IsMatch(textBox14.Text, @"^\d+$"))
+                {
+                    ftp2Res.FtpToRes(filepath, SLOT);
+                }
+                else { }
+                materialButton20.Enabled = true;
+            });
         }
 
         //ResSC的第一个运行按钮
         private void spaceButton2_Click(object sender, EventArgs e)
         {
-            ResSC.ResSpliter resSpliter = new ResSC.ResSpliter();
-            if (File.Exists(textBox3.Text))
+            Task.Run(() =>
             {
-                resSpliter.ResSplit(textBox3.Text);
-            }
-            else if (Directory.Exists(textBox3.Text))
-            {
-                MessageBox.Show("检测路径输入为文件夹,请正确输入文件路径");
-            }
-            else
-            {
-                MessageBox.Show("路径输入有误！请检查！");
-            }
+                materialButton21.Enabled = false;
+                ResSC.ResSpliter resSpliter = new ResSC.ResSpliter();
+                if (File.Exists(textBox3.Text))
+                {
+                    resSpliter.ResSplit(textBox3.Text);
+                }
+                else if (Directory.Exists(textBox3.Text))
+                {
+                    MessageBox.Show("检测路径输入为文件夹,请正确输入文件路径");
+                }
+                else
+                {
+                    MessageBox.Show("路径输入有误！请检查！");
+                }
+                materialButton21.Enabled = true;
+            });
         }
 
         //ResSC的第二个运行按钮
         private void spaceButton3_Click(object sender, EventArgs e)
         {
-            ResSC.ResCrafter resCrafter = new ResSC.ResCrafter();
-            if (File.Exists(textBox4.Text))
+            Task.Run(() =>
             {
-                MessageBox.Show("检测路径输入为文件,请正确输入文件夹路径");
-            }
-            else if (Directory.Exists(textBox4.Text))
-            {
-                resCrafter.ResCraft(textBox4.Text);
-            }
-            else
-            {
-                MessageBox.Show("路径输入有误！请检查！");
-            }
+                materialButton22.Enabled = false;
+                ResSC.ResCrafter resCrafter = new ResSC.ResCrafter();
+                if (File.Exists(textBox4.Text))
+                {
+                    MessageBox.Show("检测路径输入为文件,请正确输入文件夹路径");
+                }
+                else if (Directory.Exists(textBox4.Text))
+                {
+                    resCrafter.ResCraft(textBox4.Text);
+                }
+                else
+                {
+                    MessageBox.Show("路径输入有误！请检查！");
+                }
+                materialButton22.Enabled = true;
+            });
         }
 
         //BnkCvt的运行按钮
         private void materialButton23_Click(object sender, EventArgs e)
         {
-            BnkCvt.BnkConvertor bnkConvertor = new BnkCvt.BnkConvertor();
-            if (File.Exists(textBox2.Text))
+            Task.Run(() =>
             {
-                MessageBox.Show("检测路径输入为文件,请正确输入文件夹路径");
-            }
-            else if (Directory.Exists(textBox2.Text))
-            {
-                bnkConvertor.BnkCvt(textBox2.Text);
-            }
-            else
-            {
-                MessageBox.Show("路径输入有误！请检查！");
-            }
+                materialButton23.Enabled = false;
+                BnkCvt.BnkConvertor bnkConvertor = new BnkCvt.BnkConvertor();
+                if (File.Exists(textBox2.Text))
+                {
+                    MessageBox.Show("检测路径输入为文件,请正确输入文件夹路径");
+                }
+                else if (Directory.Exists(textBox2.Text))
+                {
+                    bnkConvertor.BnkCvt(textBox2.Text);
+                }
+                else
+                {
+                    MessageBox.Show("路径输入有误！请检查！");
+                }
+                materialButton23.Enabled = true;
+            });
         }
 
         //SpriteToLibrary的运行按钮
         private void materialButton24_Click(object sender, EventArgs e)
         {
-            //创建xr实例
-            SpriteToLibrary.XflReader xr = new SpriteToLibrary.XflReader();
-            string dictionarypath1 = null, dictionarypath2 = null;
-            if (File.Exists(textBox11.Text))
+            Task.Run(() =>
             {
-                MessageBox.Show("检测XFL总文件夹路径输入为文件,请正确输入文件夹路径");
-            }
-            else if (Directory.Exists(textBox11.Text))
-            {
-                dictionarypath1 = textBox11.Text;
-            }
-            else
-            {
-                MessageBox.Show("XFL总文件夹路径输入有误！请检查！");
-            }
-            if (File.Exists(textBox12.Text))
-            {
-                MessageBox.Show("检测位图总文件夹路径输入为文件,请正确输入文件夹路径");
-            }
-            else if (Directory.Exists(textBox12.Text) || textBox12.Text==null || textBox12.Text=="")
-            {
-                dictionarypath2 = textBox12.Text;
-            }
-            else
-            {
-                MessageBox.Show("位图总文件夹路径输入有误！请检查！");
-            }
-            if(Directory.Exists(textBox11.Text) && (Directory.Exists(textBox12.Text) || textBox12.Text == null || textBox12.Text == ""))
-            {
-                if(textBox12.Text == null || textBox12.Text == "")
+                materialButton24.Enabled = false;
+                //创建xr实例
+                SpriteToLibrary.XflReader xr = new SpriteToLibrary.XflReader();
+                string dictionarypath1 = null, dictionarypath2 = null;
+                if (File.Exists(textBox11.Text))
                 {
-                    dictionarypath2 = dictionarypath1;
+                    MessageBox.Show("检测XFL总文件夹路径输入为文件,请正确输入文件夹路径");
+                }
+                else if (Directory.Exists(textBox11.Text))
+                {
+                    dictionarypath1 = textBox11.Text;
+                }
+                else
+                {
+                    MessageBox.Show("XFL总文件夹路径输入有误！请检查！");
+                }
+                if (File.Exists(textBox12.Text))
+                {
+                    MessageBox.Show("检测位图总文件夹路径输入为文件,请正确输入文件夹路径");
+                }
+                else if (Directory.Exists(textBox12.Text) || textBox12.Text == null || textBox12.Text == "")
+                {
+                    dictionarypath2 = textBox12.Text;
+                }
+                else
+                {
+                    MessageBox.Show("位图总文件夹路径输入有误！请检查！");
+                }
+                if (Directory.Exists(textBox11.Text) && (Directory.Exists(textBox12.Text) || textBox12.Text == null || textBox12.Text == ""))
+                {
+                    if (textBox12.Text == null || textBox12.Text == "")
+                    {
+                        dictionarypath2 = dictionarypath1;
+                    }
+                    else { }
+                    //寻找总文件夹中所有Anim.xfl文件
+                    xr.XflRead(dictionarypath1, dictionarypath2);
+                    MessageBox.Show("SpriteToLibrary Done");
                 }
                 else { }
-                //寻找总文件夹中所有Anim.xfl文件
-                xr.XflRead(dictionarypath1, dictionarypath2);
-                MessageBox.Show("Done");
-            }
-            else { }
+                materialButton24.Enabled = true;
+            });
         }
 
         //ClipCreator的运行按钮
         private void materialButton25_Click(object sender, EventArgs e)
         {
-            //创建cc实例
-            ClipCreator.ClipCreator cc = new ClipCreator.ClipCreator();
-            //创建sr实例
-            ClipCreator.SpriteReplacer sr = new ClipCreator.SpriteReplacer();
-            //创建ddo实例
-            ClipCreator.DOMDocumentOverwriter ddo = new ClipCreator.DOMDocumentOverwriter();
-            if (File.Exists(textBox7.Text))
+            Task.Run(() =>
             {
-                MessageBox.Show("检测路径输入为文件,请正确输入文件夹路径");
-            }
-            else if (Directory.Exists(textBox7.Text))
-            {
-                textBox15.AppendText("必要预检测执行中......\r\n");
-                cc.rs.ReplaceScan(textBox7.Text + "\\LIBRARY");
-                textBox15.AppendText("必要预检测执行完成\r\n");
-                if (checkedListBox1.GetItemChecked(5))
+                materialButton25.Enabled = false;
+                //创建cc实例
+                ClipCreator.ClipCreator cc = new ClipCreator.ClipCreator();
+                //创建sr实例
+                ClipCreator.SpriteReplacer sr = new ClipCreator.SpriteReplacer();
+                //创建ddo实例
+                ClipCreator.DOMDocumentOverwriter ddo = new ClipCreator.DOMDocumentOverwriter();
+                if (File.Exists(textBox7.Text))
                 {
-                    cc.ClipCreate(textBox7.Text);
-                    ddo.DOMDocumentOverwrite(textBox7.Text + "\\DOMDocument.xml", textBox7.Text + "\\LIBRARY");
+                    MessageBox.Show("检测路径输入为文件,请正确输入文件夹路径");
+                }
+                else if (Directory.Exists(textBox7.Text))
+                {
+                    textBox15.AppendText("必要预检测执行中......\r\n");
+                    cc.rs.ReplaceScan(textBox7.Text + "\\LIBRARY");
+                    textBox15.AppendText("必要预检测执行完成\r\n");
+                    if (checkedListBox1.GetItemChecked(5))
+                    {
+                        cc.ClipCreate(textBox7.Text);
+                        ddo.DOMDocumentOverwrite(textBox7.Text + "\\DOMDocument.xml", textBox7.Text + "\\LIBRARY");
+                    }
+                    else
+                    {
+                        if (checkedListBox1.GetItemChecked(0))
+                        {
+                            cc.icr.ImageClipRead(textBox7.Text + "\\LIBRARY");
+                            //对引用被删除i元件的a元件进行删除20240307添加
+                            cc.acr.AnimateClipRead(textBox7.Text + "\\LIBRARY", cc.icr.delirecord);
+                            cc.icc.ImageClipCreate(textBox7.Text + "\\LIBRARY", cc.icr.irecord, cc.rs.rsrecord);
+                        }
+                        if (checkedListBox1.GetItemChecked(2))
+                        {
+                            sr.SpriteReplace(textBox7.Text + "\\LIBRARY");
+                        }
+                        if (checkedListBox1.GetItemChecked(3))
+                        {
+                            cc.mlls.MultiLoadedLayerSplite(textBox7.Text + "\\LIBRARY", cc.rs.mllsrecord);
+                        }
+                        if (checkedListBox1.GetItemChecked(1))
+                        {
+                            cc.acr.AnimateClipRead(textBox7.Text + "\\LIBRARY");
+                            cc.acc.AnimateClipCreate(textBox7.Text + "\\LIBRARY", cc.acr.arecord, cc.acr.inum, cc.acr.airecord);
+                        }
+                        if (checkedListBox1.GetItemChecked(4))
+                        {
+                            ddo.DOMDocumentOverwrite(textBox7.Text + "\\DOMDocument.xml", textBox7.Text + "\\LIBRARY");
+                        }
+                        else { }
+                    }
+                    MessageBox.Show("ClipCreator Done");
                 }
                 else
                 {
-                    if (checkedListBox1.GetItemChecked(0))
-                    {
-                        cc.icr.ImageClipRead(textBox7.Text + "\\LIBRARY");
-                        cc.icc.ImageClipCreate(textBox7.Text + "\\LIBRARY", cc.icr.irecord, cc.rs.rsrecord);
-                    }
-                    if (checkedListBox1.GetItemChecked(2))
-                    {
-                        sr.SpriteReplace(textBox7.Text + "\\LIBRARY");
-                    }
-                    if (checkedListBox1.GetItemChecked(3))
-                    {
-                        cc.mlls.MultiLoadedLayerSplite(textBox7.Text + "\\LIBRARY", cc.rs.mllsrecord);
-                    }
-                    if (checkedListBox1.GetItemChecked(1))
-                    {
-                        cc.acr.AnimateClipRead(textBox7.Text + "\\LIBRARY");
-                        cc.acc.AnimateClipCreate(textBox7.Text + "\\LIBRARY", cc.acr.arecord, cc.acr.inum, cc.acr.airecord);
-                    }
-                    if (checkedListBox1.GetItemChecked(4))
-                    {
-                        ddo.DOMDocumentOverwrite(textBox7.Text + "\\DOMDocument.xml", textBox7.Text + "\\LIBRARY");
-                    }
-                    else { }
+                    MessageBox.Show("路径输入有误！请检查！");
                 }
-                MessageBox.Show("Done");
-            }
-            else
-            {
-                MessageBox.Show("路径输入有误！请检查！");
-            }
+                materialButton25.Enabled = true;
+            });
         }
 
         //ClipTransformer的运行按钮
         private void materialButton26_Click(object sender, EventArgs e)
         {
-            //创建ct实例
-            ClipTransformer.ClipTransformer ct = new ClipTransformer.ClipTransformer();
-            if (File.Exists(textBox8.Text))
+            Task.Run(() =>
             {
-                MessageBox.Show("检测路径输入为文件,请正确输入文件夹路径");
-            }
-            else if (Directory.Exists(textBox8.Text))
-            {
-                ct.ClipTransform(textBox8.Text);
-                MessageBox.Show("Done");
-            }
-            else
-            {
-                MessageBox.Show("路径输入有误！请检查！");
-            }
+                materialButton26.Enabled = false;
+                //创建ct实例
+                ClipTransformer.ClipTransformer ct = new ClipTransformer.ClipTransformer();
+                if (File.Exists(textBox8.Text))
+                {
+                    MessageBox.Show("检测路径输入为文件,请正确输入文件夹路径");
+                }
+                else if (Directory.Exists(textBox8.Text))
+                {
+                    ct.ClipTransform(textBox8.Text);
+                    MessageBox.Show("ClipTransformer Done");
+                }
+                else
+                {
+                    MessageBox.Show("路径输入有误！请检查！");
+                }
+                materialButton26.Enabled = true;
+            });
         }
 
         //Res2Ext的运行按钮
         private void materialButton27_Click(object sender, EventArgs e)
         {
-            //创建mdf实例
-            Res2Ext.MediaDataFormater mdf = new Res2Ext.MediaDataFormater();
-            //创建ddo实例
-            Res2Ext.DOMDocumentOverwriter ddo = new Res2Ext.DOMDocumentOverwriter();
-            //创建mco实例
-            Res2Ext.MainClipOverwriter mco = new Res2Ext.MainClipOverwriter();
-            //创建oco实例
-            Res2Ext.OtherClipOverwriter oco = new Res2Ext.OtherClipOverwriter();
-            //创建ce实例
-            Res2Ext.ClipEncryptor ce = new Res2Ext.ClipEncryptor();
-            string filepath = null, dictionarypath = null;
-            if (File.Exists(textBox10.Text))
+            Task.Run(() =>
             {
-                MessageBox.Show("检测XFL文件夹路径输入为文件,请正确输入文件夹路径");
-            }
-            else if (Directory.Exists(textBox10.Text))
-            {
-                dictionarypath = textBox10.Text;
-            }
-            else
-            {
-                MessageBox.Show("XFL文件夹路径输入有误！请检查！");
-            }
-            if (File.Exists(textBox13.Text))
-            {
-                filepath = textBox13.Text;
-            }
-            else if (Directory.Exists(textBox13.Text))
-            {
-                MessageBox.Show("检测资源片段文件路径输入为文件夹,请正确输入文件路径");
-            }
-            else
-            {
-                MessageBox.Show("资源片段文件路径输入有误！请检查！");
-            }
-            if(Directory.Exists(textBox10.Text)&& File.Exists(textBox13.Text))
-            {
-                mdf.MediaDataFormat(filepath, dictionarypath + "\\LIBRARY");
-                ddo.DOMDocumentOverwrite(dictionarypath + "\\DOMDocument.xml");
-                mco.MainClipOverwrite(dictionarypath + "\\LIBRARY\\main.xml");
-                oco.OtherClipOverwrite(dictionarypath + "\\LIBRARY");
-                ce.ClipEncrypt(filepath, dictionarypath + "\\LIBRARY");
-                MessageBox.Show("Done");
-            }
-            else { }
+                materialButton27.Enabled = false;
+                //创建mdf实例
+                Res2Ext.MediaDataFormater mdf = new Res2Ext.MediaDataFormater();
+                //创建ddo实例
+                Res2Ext.DOMDocumentOverwriter ddo = new Res2Ext.DOMDocumentOverwriter();
+                //创建mco实例
+                Res2Ext.MainClipOverwriter mco = new Res2Ext.MainClipOverwriter();
+                //创建oco实例
+                Res2Ext.OtherClipOverwriter oco = new Res2Ext.OtherClipOverwriter();
+                //创建ce实例
+                Res2Ext.ClipEncryptor ce = new Res2Ext.ClipEncryptor();
+                //创建ecc实例20240317添加
+                Res2Ext.EncryptClipCreator ecc = new EncryptClipCreator();
+                string filepath = null, dictionarypath = null;
+                if (File.Exists(textBox10.Text))
+                {
+                    MessageBox.Show("检测XFL文件夹路径输入为文件,请正确输入文件夹路径");
+                }
+                else if (Directory.Exists(textBox10.Text))
+                {
+                    dictionarypath = textBox10.Text;
+                }
+                else
+                {
+                    MessageBox.Show("XFL文件夹路径输入有误！请检查！");
+                }
+                if (File.Exists(textBox13.Text)|| Directory.Exists(textBox13.Text))
+                {
+                    filepath = textBox13.Text;
+                }
+                //新功能更新而废弃///else if (Directory.Exists(textBox13.Text))
+                //新功能更新而废弃///{
+                //新功能更新而废弃///    MessageBox.Show("检测资源片段文件路径输入为文件夹,请正确输入文件路径");
+                //新功能更新而废弃///}
+                else
+                {
+                    MessageBox.Show("资源片段文件（夹）路径输入有误！请检查！");
+                }
+                if (Directory.Exists(textBox10.Text) && (File.Exists(textBox13.Text)|| Directory.Exists(textBox13.Text)))
+                {
+                    //加密元件创制20240317添加
+                    ecc.EncryptClipCreate(dictionarypath + "\\LIBRARY", dictionarypath + "\\DOMDocument.xml");
+                    mdf.MediaDataFormat(filepath, dictionarypath + "\\LIBRARY");
+                    ddo.DOMDocumentOverwrite(dictionarypath + "\\DOMDocument.xml");
+                    mco.MainClipOverwrite(dictionarypath + "\\LIBRARY\\main.xml");
+                    oco.OtherClipOverwrite(dictionarypath + "\\LIBRARY");
+                    //加密元件插入20240319添加
+                    ce.SpecialClipEncrypt(filepath, dictionarypath + "\\LIBRARY", ecc.ic.icname);
+                    ce.SpecialClipEncrypt(filepath, dictionarypath + "\\LIBRARY", ecc.ac.acname);
+                    ce.ClipEncrypt(filepath, dictionarypath + "\\LIBRARY", dictionarypath + "\\DOMDocument.xml");
+                    MessageBox.Show("Res2Ext Done");
+                }
+                else { }
+                materialButton27.Enabled = true;
+            });
         }
 
         //LevelSC的第一个运行按钮
         private void materialButton28_Click(object sender, EventArgs e)
         {
-            if (File.Exists(textBox5.Text))
+            Task.Run(() =>
             {
-                
-            }
-            else if (Directory.Exists(textBox5.Text))
-            {
-                MessageBox.Show("检测路径输入为文件夹,请正确输入文件路径");
-            }
-            else
-            {
-                MessageBox.Show("路径输入有误！请检查！");
-            }
+                materialButton28.Enabled = false;
+                LevelSC.LevelSpliter levelSpliter = new LevelSC.LevelSpliter();
+                if (File.Exists(textBox5.Text))
+                {
+                    levelSpliter.LevelSplit(textBox5.Text);
+                }
+                else if (Directory.Exists(textBox5.Text))
+                {
+                    MessageBox.Show("检测路径输入为文件夹,请正确输入文件路径");
+                }
+                else
+                {
+                    MessageBox.Show("路径输入有误！请检查！");
+                }
+                materialButton28.Enabled = true;
+            });
         }
 
         //LevelSC的第二个运行按钮
         private void materialButton29_Click(object sender, EventArgs e)
         {
-            if (File.Exists(textBox6.Text))
+            Task.Run(() =>
             {
-                MessageBox.Show("检测路径输入为文件,请正确输入文件夹路径");
-            }
-            else if (Directory.Exists(textBox6.Text))
-            {
-                
-            }
-            else
-            {
-                MessageBox.Show("路径输入有误！请检查！");
-            }
+                materialButton29.Enabled = false;
+                LevelSC.LevelCrafter levelCrafter = new LevelSC.LevelCrafter();
+                if (File.Exists(textBox6.Text))
+                {
+                    MessageBox.Show("检测路径输入为文件,请正确输入文件夹路径");
+                }
+                else if (Directory.Exists(textBox6.Text))
+                {
+                    levelCrafter.LevelCraft(textBox6.Text);
+                }
+                else
+                {
+                    MessageBox.Show("路径输入有误！请检查！");
+                }
+                materialButton29.Enabled = true;
+            });
         }
 
-        //DictionaryCreator的运行按钮
+        //DirectoryCreator的运行按钮
         private void materialButton30_Click(object sender, EventArgs e)
         {
-            if (File.Exists(textBox9.Text))
+            Task.Run(() =>
             {
-                MessageBox.Show("检测路径输入为文件,请正确输入文件夹路径");
-            }
-            else if (Directory.Exists(textBox9.Text))
-            {
-                MessageBox.Show("功能损坏，待后续版本修复");
-            }
-            else
-            {
-                MessageBox.Show("路径输入有误！请检查！");
-            }
+                materialButton30.Enabled = false;
+                //创建dc实例
+                DirectoryCreator.DirectoryCreator dc = new DirectoryCreator.DirectoryCreator();
+                if (File.Exists(textBox9.Text))
+                {
+                    MessageBox.Show("检测路径输入为文件,请正确输入文件夹路径");
+                }
+                else if (Directory.Exists(textBox9.Text))
+                {
+                    //功能已修复///MessageBox.Show("功能损坏，待后续版本修复");
+                    dc.DirectoryCreate(textBox9.Text);
+                    MessageBox.Show("DirectoryCreator Done");
+                }
+                else
+                {
+                    MessageBox.Show("路径输入有误！请检查！");
+                }
+                materialButton30.Enabled = true;
+            });
         }
 
         //ClipCreator多选框
@@ -992,6 +1066,39 @@ namespace EBToolBox
         private void checkedListBox1_Layout(object sender, LayoutEventArgs e)
         {
             ((CheckedListBox)sender).SetItemChecked(4, true);
+        }
+
+        //Res2Ext加密元件载入选项选中检测
+        private void radioButton31_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton31.Checked && !radioButton32.Checked)
+            {
+                textBox20.Enabled = true;
+            }
+            else if (!radioButton31.Checked && radioButton32.Checked)
+            {
+                textBox20.Enabled = false;
+            }
+            else
+            {
+                textBox20.Enabled = false;
+            }
+        }
+
+        private void radioButton32_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton31.Checked && !radioButton32.Checked)
+            {
+                textBox20.Enabled = true;
+            }
+            else if (!radioButton31.Checked && radioButton32.Checked)
+            {
+                textBox20.Enabled = false;
+            }
+            else
+            {
+                textBox20.Enabled = false;
+            }
         }
     }
 }

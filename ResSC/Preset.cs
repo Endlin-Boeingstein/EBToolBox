@@ -12,6 +12,7 @@ namespace ResSC
     public class Preset
     {
         public int version = 1;
+        public int content_version = 1;
         public long slot_count = 0;
     }
 }

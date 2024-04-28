@@ -34,6 +34,8 @@ namespace SpriteToLibrary
                         DOMDocumentReader ddr = new DOMDocumentReader();
                         //创建bsc实例
                         BigSpriteCopyer bsc = new BigSpriteCopyer();
+                        //创建ddo实例
+                        DOMDocumentOverwriter ddo = new DOMDocumentOverwriter();
                         //记录装载xfl的路径
                         string dir = xfl[i].DirectoryName;
                         //获取dir文件夹名
@@ -44,6 +46,8 @@ namespace SpriteToLibrary
                         ddr.DOMDocumentRead(dir + "\\" + "DOMDocument.xml");
                         //大文件夹图片复制
                         bsc.BigSpriteCopy(dir, Spath, ddr.sarray);
+                        //网格和元件大小标准化
+                        ddo.DOMDocumentOverwrite(dir + "\\" + "DOMDocument.xml");
                         form1.textBox17.AppendText(dirname.Name + "的LIBRARY位图已填充" + "\r\n");
                         //执行Anim名称重写操作
                         mnr.MainNameRewrite(dir);

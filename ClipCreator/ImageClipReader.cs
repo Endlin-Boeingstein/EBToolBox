@@ -17,6 +17,8 @@ namespace ClipCreator
         public SpriteReader isr = new SpriteReader();
         //定义i元件记录数组
         public ArrayList irecord = new ArrayList();
+        //创建引用被删除i元件的记录数组20240304添加
+        public ArrayList delirecord = new ArrayList();
         //生成i元件读取部分
         public void ImageClipRead(string Fpath)
         {
@@ -78,6 +80,8 @@ namespace ClipCreator
                                 form1.textBox15.AppendText(NextFile.Name.Substring(0, NextFile.Name.Length - 4) + "元件引用多个位图，将会引发错误，已移除" + "\r\n");
                                 //插入空白记录
                                 irecord[int.Parse(NextFile.Name.Substring(1, NextFile.Name.Length - 5))] = null;
+                                //记录删除元件20240304添加
+                                delirecord.Add(NextFile.Name.Substring(0, NextFile.Name.Length - 4));
                                 //删除错误的元件
                                 File.Delete(Fpath + "\\" + NextFile.Name);
                             }
@@ -86,6 +90,8 @@ namespace ClipCreator
                                 form1.textBox15.AppendText(NextFile.Name.Substring(0, NextFile.Name.Length - 4) + "元件引用元件，将会引发错误，已移除" + "\r\n");
                                 //插入空白记录
                                 irecord[int.Parse(NextFile.Name.Substring(1, NextFile.Name.Length - 5))] = null;
+                                //记录删除元件20240304添加
+                                delirecord.Add(NextFile.Name.Substring(0, NextFile.Name.Length - 4));
                                 //删除错误的元件
                                 File.Delete(Fpath + "\\" + NextFile.Name);
                             }
@@ -98,6 +104,8 @@ namespace ClipCreator
                                 form1.textBox15.AppendText(NextFile.Name.Substring(0, NextFile.Name.Length - 4) + "元件未引用位图，将会引发错误，已移除" + "\r\n");
                                 //插入空白记录
                                 irecord[int.Parse(NextFile.Name.Substring(1, NextFile.Name.Length - 5))] = null;
+                                //记录删除元件20240304添加
+                                delirecord.Add(NextFile.Name.Substring(0, NextFile.Name.Length - 4));
                                 //删除错误的元件
                                 File.Delete(Fpath + "\\" + NextFile.Name);
                             }
@@ -112,22 +120,40 @@ namespace ClipCreator
                                         form1.textBox15.AppendText(NextFile.Name.Substring(0, NextFile.Name.Length - 4) + "元件未写引用位图名，将会引发错误，已移除" + "\r\n");
                                         //插入空白记录
                                         irecord[int.Parse(NextFile.Name.Substring(1, NextFile.Name.Length - 5))] = null;
+                                        //记录删除元件20240304添加
+                                        delirecord.Add(NextFile.Name.Substring(0, NextFile.Name.Length - 4));
                                         //删除错误的元件
                                         File.Delete(Fpath + "\\" + NextFile.Name);
                                     }
                                     else
                                     {
+                                        //防止二级路径
+                                        string lin = el.GetAttribute("libraryItemName");
+                                        //防止二级路径//添加删除.png后缀功能20240303修改
+                                        lin = lin.Substring(lin.LastIndexOf('/') + 1, lin.Length - lin.LastIndexOf('/') - 1).Replace(".png","");
                                         //删除引用不存在位图的元件
                                         if (isr.srecord.Contains(el.GetAttribute("libraryItemName")))
                                         {
                                             //记录元件序号对应的位图名称
                                             irecord[int.Parse(NextFile.Name.Substring(1, NextFile.Name.Length - 5))] = el.GetAttribute("libraryItemName");
                                         }
+                                        else if (isr.srecord.Contains(lin))
+                                        {
+                                            form1.textBox15.AppendText(NextFile.Name.Substring(0, NextFile.Name.Length - 4) + "元件引用多级位图路径" + el.GetAttribute("libraryItemName") + "，已进行降级处理" + "\r\n");
+                                            //修改二级路径为正常一级路径
+                                            el.SetAttribute("libraryItemName", lin);
+                                            //保存xml
+                                            xmlDoc.Save(NextFile.FullName);
+                                            //记录元件序号对应的位图名称
+                                            irecord[int.Parse(NextFile.Name.Substring(1, NextFile.Name.Length - 5))] = lin;
+                                        }
                                         else
                                         {
                                             form1.textBox15.AppendText(NextFile.Name.Substring(0, NextFile.Name.Length - 4) + "元件引用不存在位图" + el.GetAttribute("libraryItemName") + "，已移除" + "\r\n");
                                             //插入空白记录
                                             irecord[int.Parse(NextFile.Name.Substring(1, NextFile.Name.Length - 5))] = null;
+                                            //记录删除元件20240304添加
+                                            delirecord.Add(NextFile.Name.Substring(0, NextFile.Name.Length - 4));
                                             //删除错误的元件
                                             File.Delete(Fpath + "\\" + NextFile.Name);
                                         }

@@ -30,7 +30,9 @@ namespace SpriteToLibrary
                 //遍历以获取数组
                 foreach (XmlElement DOMBitmapItem in media)
                 {
-                    string href = DOMBitmapItem.GetAttribute("name") + ".png";
+                    string href = DOMBitmapItem.GetAttribute("name");
+                    //防止二级路径//防止元件引用的位图有.png后缀20240304修改
+                    href = href.Substring(href.LastIndexOf('/') + 1, href.Length - href.LastIndexOf('/') - 1).Replace(".png","") + ".png";
                     if (!sarray.Contains(href))
                     {
                         //记录引用信息

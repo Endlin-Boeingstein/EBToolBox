@@ -39,6 +39,8 @@ namespace ClipCreator
                 rs.ReplaceScan(this.Fpath + "\\LIBRARY");
                 //读取i元件信息并删除问题元件，给数组留下空白记录
                 icr.ImageClipRead(this.Fpath + "\\LIBRARY");
+                //对引用被删除i元件的a元件进行删除20240307添加
+                acr.AnimateClipRead(this.Fpath + "\\LIBRARY", icr.delirecord);
                 //根据数组创立i元件
                 icc.ImageClipCreate(this.Fpath + "\\LIBRARY", icr.irecord, rs.rsrecord);
                 //根据数组替换对应位图为i元件

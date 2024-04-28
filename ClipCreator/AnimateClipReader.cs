@@ -289,5 +289,200 @@ namespace ClipCreator
                 MessageBox.Show("AnimateClipRead ERROR");
             }
         }
+
+
+        //对引用被删除i元件的a元件进行删除20240307添加
+        public void AnimateClipRead(string Fpath, ArrayList delirecord)
+        {
+            try
+            {
+                //运行预读程序以记录a元件序号
+                AnimateClipReread(Fpath);
+                //读取i元件信息并记录为数组
+                aicr.ImageClipRead(Fpath);
+                //记录下标
+                int iidx = 0;
+                //遍历i元件数组录入序号信息
+                foreach (string item in aicr.irecord)
+                {
+                    if (item != null)
+                    {
+                        inum.Add(iidx.ToString());
+                    }
+                    else { }
+                    iidx++;
+                }
+                //创建路径文件夹实例
+                DirectoryInfo TheFolder = new DirectoryInfo(Fpath);
+                //创建文件数组
+                FileInfo[] files = TheFolder.GetFiles();
+                //为文件数组排序
+                Array.Sort(files, new FileNameSort());
+                //遍历文件夹内文件
+                foreach (FileInfo NextFile in files)
+                {
+                    //流式读取文件类型
+                    FileStream stream = new FileStream(NextFile.FullName, FileMode.Open, FileAccess.Read);
+                    BinaryReader reader = new BinaryReader(stream);
+                    string fileclass = "";
+                    try
+                    {
+                        for (int i = 0; i < 2; i++)
+                        {
+                            fileclass += reader.ReadByte().ToString();
+                        }
+                    }
+                    catch (Exception)
+                    {
+                        throw;
+                    }
+                    stream.Close();
+                    //判定是否为xml
+                    if (fileclass == "6068")
+                    {
+                        //获取DOMSymbolInstance节点libraryItemName属性
+                        //创建xml读取对象
+                        XmlDocument xmlDoc = new XmlDocument();
+                        //读取xml
+                        xmlDoc.Load(NextFile.FullName);
+                        //判断为SPCUtil解析的元件类型并提示
+                        if (NextFile.Name.Substring(0, 1) == "M" || NextFile.Name.Substring(0, 1) == "A" || NextFile.Name.Substring(0, NextFile.Name.Length - 4) == "A_Main")
+                        {
+                            MessageBox.Show("抱歉，不支持用SPCUtil解析PAM得到的元件");
+                        }
+                        //判断为TwinKles-ToolKit解析的元件类型并提示
+                        if (NextFile.Name.Substring(0, 2) == "sp" || NextFile.Name.Substring(0, 2) == "an" || NextFile.Name.Substring(0, NextFile.Name.Length - 4) == "main_animation")
+                        {
+                            MessageBox.Show("抱歉，不支持用TwinKles-ToolKit解析PAM得到的元件");
+                        }
+                        //判定是a元件还是i元件
+                        if (NextFile.Name.Substring(0, 1) == "a")
+                        {
+                            //将数组填充空白至目前所在序号中
+                            for (; arecord.Count < int.Parse(NextFile.Name.Substring(1, NextFile.Name.Length - 5)) + 1; arecord.Add(null)) ;
+                            //检测是否存在a元件引用位图的情况
+                            if (xmlDoc.GetElementsByTagName("DOMBitmapInstance").Count != 0) { }
+                            else { }
+                            //读取节点DOMSymbolInstance
+                            XmlElement delement = (XmlElement)xmlDoc.GetElementsByTagName("DOMSymbolInstance")[0];
+                            //判断该a元件是否引用元件
+                            if (delement == null) { }
+                            else
+                            {
+                                //读取DOMSymbolInstance节点，检查a元件是否引用元件
+                                foreach (XmlElement el in xmlDoc.GetElementsByTagName("DOMSymbolInstance"))
+                                {
+                                    //判断是否写引用元件名
+                                    if (el.GetAttribute("libraryItemName") == "" || el.GetAttribute("libraryItemName") == null || el == null)
+                                    {
+                                        break;
+                                    }
+                                    else { }
+                                }
+
+                                //检测是否一个图层读取多个元件
+                                //获取根节点root
+                                XmlNode root = xmlDoc.DocumentElement;
+                                //获取节点layers
+                                XmlNode layers = root.FirstChild.FirstChild.FirstChild;
+                                //获取layers图层列表
+                                XmlNodeList layersnodeList = layers.ChildNodes;
+                                //检测引用位图的图层和帧数
+                                foreach (XmlNode node in layersnodeList)
+                                {
+                                    //转换DOMLayer为XmlElement以便于识别是否存在位图引用
+                                    XmlElement DOMLayer = (XmlElement)node;
+                                    //判断是否存在DOMSymbolInstance，以判定是否引用多元件
+                                    foreach (XmlElement DOMFrame in DOMLayer.FirstChild.ChildNodes)
+                                    {
+                                        if (DOMFrame.GetElementsByTagName("DOMSymbolInstance").Count != 0)
+                                        {
+                                            if (DOMFrame.GetElementsByTagName("DOMSymbolInstance").Count != 1)
+                                            {
+                                                break;
+                                            }
+                                            else { }
+                                        }
+                                        else { }
+                                    }
+                                }
+
+                                //读取DOMSymbolInstance节点
+                                foreach (XmlElement el in xmlDoc.GetElementsByTagName("DOMSymbolInstance"))
+                                {
+                                    //a元件高低位检测
+                                    //元件序号定义
+                                    int anum = int.Parse(NextFile.Name.Substring(1, NextFile.Name.Length - 5));
+                                    //被引用的首位定义
+                                    string fname = el.GetAttribute("libraryItemName").Substring(0, 1);
+                                    //被引用元件序号定义//20240320修复
+                                    long ianum = long.Parse(el.GetAttribute("libraryItemName").Substring(1, el.GetAttribute("libraryItemName").Length - 1));
+                                    //检测被引用的是否为a元件
+                                    if (fname == "a")
+                                    {
+                                        //检测是否引用的元件为高序号
+                                        if (anum > ianum)
+                                        {
+
+                                            if (acrnum.Contains(ianum.ToString()))
+                                            {
+                                                //记录元件序号对应的元件名称
+                                                arecord[int.Parse(NextFile.Name.Substring(1, NextFile.Name.Length - 5))] = el.GetAttribute("libraryItemName");
+                                            }
+                                            else
+                                            {
+                                                break;
+                                            }
+                                        }
+                                        else
+                                        {
+                                            break;
+                                        }
+                                    }
+                                    //检测被引用的是否为i元件
+                                    if (fname == "i")
+                                    {
+                                        //引用被删除i元件的情况20240304添加
+                                        if (delirecord.Contains("i" + ianum.ToString()))
+                                        {
+                                            form1.textBox15.AppendText(NextFile.Name.Substring(0, NextFile.Name.Length - 4) + "元件引用被删除元件" + el.GetAttribute("libraryItemName") + "，已移除" + "\r\n");
+                                            //插入空白记录
+                                            arecord[int.Parse(NextFile.Name.Substring(1, NextFile.Name.Length - 5))] = null;
+                                            //删除错误的元件
+                                            File.Delete(Fpath + "\\" + NextFile.Name);
+                                            break;
+                                        }
+                                        //正常引用记录
+                                        else if (inum.Contains(ianum.ToString()))
+                                        {
+                                            //记录元件序号对应的元件名称
+                                            arecord[int.Parse(NextFile.Name.Substring(1, NextFile.Name.Length - 5))] = el.GetAttribute("libraryItemName");
+                                            //记录被引用的i元件序号，并且避免重复
+                                            if (!airecord.Contains(el.GetAttribute("libraryItemName").Substring(1, el.GetAttribute("libraryItemName").Length - 1)))
+                                            {
+                                                //记录被引用的i元件序号
+                                                airecord.Add(el.GetAttribute("libraryItemName").Substring(1, el.GetAttribute("libraryItemName").Length - 1));
+                                            }
+                                            else { }
+                                        }
+                                        else
+                                        {
+                                            break;
+                                        }
+                                    }
+                                    else { }
+                                }
+                            }
+                        }
+                        else { }
+                    }
+                    else { }
+                }
+            }
+            catch
+            {
+                MessageBox.Show("AnimateClipRead ERROR");
+            }
+        }
     }
 }

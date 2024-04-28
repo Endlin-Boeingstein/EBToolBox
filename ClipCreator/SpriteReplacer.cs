@@ -67,7 +67,7 @@ namespace ClipCreator
                                 //替换DOMBitmapInstance为DOMSymbolInstance
                                 xml = xml.Replace("DOMBitmapInstance", "DOMSymbolInstance");
                                 //替换libraryItemName
-                                xml = xml.Replace((string)this.rsrecord[i], "i" + this.rsirecord.IndexOf((string)this.rsrecord[i]).ToString());
+                                xml = xml.Replace("\"" + (string)this.rsrecord[i] + "\"", "\"" + "i" + this.rsirecord.IndexOf((string)this.rsrecord[i]).ToString() + "\"");
                                 form1.textBox15.AppendText("元件" + "i" + this.rsirecord.IndexOf((string)this.rsrecord[i]).ToString() + "已替换" + "元件" + NextFile.Name.Substring(0, NextFile.Name.Length - 4) + "的位图" + (string)this.rsrecord[i] + "\r\n");
                             }
                             else

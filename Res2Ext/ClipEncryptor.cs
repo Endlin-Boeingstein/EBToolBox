@@ -19,8 +19,167 @@ namespace Res2Ext
         long count = 9999999999999999;
         //创建cd实例
         public ClipDecryptor cd = new ClipDecryptor();
+        //创建ddla实例20240323添加
+        public DOMDocumentLabelAdder ddla = new DOMDocumentLabelAdder();
+        //生成加密元件插入部分20240319添加
+        public void SpecialClipEncrypt(string Jpath, string Fpath, string cname)
+        {
+            try
+            {
+                if (cname != null)
+                {
+                    //创建路径文件夹实例
+                    DirectoryInfo TheFolder = new DirectoryInfo(Fpath);
+                    //创建文件数组
+                    FileInfo[] files = TheFolder.GetFiles();
+                    //为文件数组排序
+                    Array.Sort(files, new FileNameSort());
+                    //遍历文件夹内文件
+                    foreach (FileInfo NextFile in files)
+                    {
+                        //流式读取文件类型
+                        FileStream stream = new FileStream(NextFile.FullName, FileMode.Open, FileAccess.Read);
+                        BinaryReader reader = new BinaryReader(stream);
+                        string fileclass = "";
+                        try
+                        {
+                            for (int i = 0; i < 2; i++)
+                            {
+                                fileclass += reader.ReadByte().ToString();
+                            }
+                        }
+                        catch (Exception)
+                        {
+                            throw;
+                        }
+                        stream.Close();
+                        //判定是否为xml
+                        if (fileclass == "6068")
+                        {
+                            //创建xml读取对象
+                            XmlDocument xmlDoc = new XmlDocument();
+                            //读取xml
+                            xmlDoc.Load(NextFile.FullName);
+                            //预置DOMLayer节点
+                            XmlElement DOMLayer = xmlDoc.CreateElement("DOMLayer", xmlDoc.DocumentElement.NamespaceURI);
+                            //设name为encrypt_layer
+                            DOMLayer.SetAttribute("name", "encrypt_layer");
+                            //预置frames节点
+                            XmlElement frames = xmlDoc.CreateElement("frames", xmlDoc.DocumentElement.NamespaceURI);
+                            //预置DOMFrame节点
+                            XmlElement DOMFrame = xmlDoc.CreateElement("DOMFrame", xmlDoc.DocumentElement.NamespaceURI);
+                            //设index为0
+                            DOMFrame.SetAttribute("index", "0");
+                            //设duration为1
+                            DOMFrame.SetAttribute("duration", "1");
+                            //预置elements节点
+                            XmlElement elements = xmlDoc.CreateElement("elements", xmlDoc.DocumentElement.NamespaceURI);
+                            //预置DOMSymbolInstance节点
+                            XmlElement DOMSymbolInstance = xmlDoc.CreateElement("DOMSymbolInstance", xmlDoc.DocumentElement.NamespaceURI);
+                            //设libraryItemName为encrypt_clip
+                            DOMSymbolInstance.SetAttribute("libraryItemName", cname.Substring(0, cname.Length - 4));
+                            //预置matrix节点
+                            XmlElement matrix = xmlDoc.CreateElement("matrix", xmlDoc.DocumentElement.NamespaceURI);
+                            //预置Matrix节点
+                            XmlElement Matrix = xmlDoc.CreateElement("Matrix", xmlDoc.DocumentElement.NamespaceURI);
+                            //设a为1.000000
+                            Matrix.SetAttribute("a", "1.000000");
+                            //设d为1.000000
+                            Matrix.SetAttribute("d", "1.000000");
+                            //将Matrix作为matrix的子节点
+                            matrix.PrependChild(Matrix);
+                            //将matrix作为DOMSymbolInstance的子节点
+                            DOMSymbolInstance.PrependChild(matrix);
+                            //将DOMSymbolInstance作为elements的子节点
+                            elements.PrependChild(DOMSymbolInstance);
+                            //将elements作为DOMFrame的子节点
+                            DOMFrame.PrependChild(elements);
+                            //将DOMFrame作为frames的子节点
+                            frames.PrependChild(DOMFrame);
+                            //将frames作为DOMLayer的子节点
+                            DOMLayer.PrependChild(frames);
+
+                            //判断为SPCUtil解析的元件类型并提示
+                            if (NextFile.Name.Substring(0, 1) == "M" || NextFile.Name.Substring(0, 1) == "A" || NextFile.Name.Substring(0, NextFile.Name.Length - 4) == "A_Main")
+                            {
+                                MessageBox.Show("抱歉，不支持用SPCUtil解析PAM得到的元件");
+                            }
+                            //判断为TwinKles-ToolKit解析的元件类型并提示
+                            if (NextFile.Name.Substring(0, 2) == "sp" || NextFile.Name.Substring(0, 2) == "an" || NextFile.Name.Substring(0, NextFile.Name.Length - 4) == "main_animation")
+                            {
+                                MessageBox.Show("抱歉，不支持用TwinKles-ToolKit解析PAM得到的元件");
+                            }
+                            //判断为a元件并加密
+                            if (NextFile.Name.Substring(0, 1) == "a")
+                            {
+                                //预置DOMLayerl节点
+                                XmlElement DOMLayerl = xmlDoc.CreateElement("DOMLayer", xmlDoc.DocumentElement.NamespaceURI);
+                                //设name为encrypt_layer
+                                DOMLayerl.SetAttribute("name", "encrypt_layer");
+                                //预置framesl节点
+                                XmlElement framesl = xmlDoc.CreateElement("frames", xmlDoc.DocumentElement.NamespaceURI);
+                                //预置DOMFramel节点
+                                XmlElement DOMFramel = xmlDoc.CreateElement("DOMFrame", xmlDoc.DocumentElement.NamespaceURI);
+                                //设index为0
+                                DOMFramel.SetAttribute("index", "0");
+                                //设duration为1
+                                DOMFramel.SetAttribute("duration", "1");
+                                //预置elementsl节点
+                                XmlElement elementsl = xmlDoc.CreateElement("elements", xmlDoc.DocumentElement.NamespaceURI);
+                                //预置DOMSymbolInstancel节点
+                                XmlElement DOMSymbolInstancel = xmlDoc.CreateElement("DOMSymbolInstance", xmlDoc.DocumentElement.NamespaceURI);
+                                //设libraryItemName为encrypt_clip
+                                DOMSymbolInstancel.SetAttribute("libraryItemName", cname.Substring(0, cname.Length - 4));
+                                //预置matrixl节点
+                                XmlElement matrixl = xmlDoc.CreateElement("matrix", xmlDoc.DocumentElement.NamespaceURI);
+                                //预置Matrixl节点
+                                XmlElement Matrixl = xmlDoc.CreateElement("Matrix", xmlDoc.DocumentElement.NamespaceURI);
+                                //设a为1.000000
+                                Matrixl.SetAttribute("a", "1.000000");
+                                //设d为1.000000
+                                Matrixl.SetAttribute("d", "1.000000");
+                                //将Matrixl作为matrixl的子节点
+                                matrixl.PrependChild(Matrixl);
+                                //将matrixl作为DOMSymbolInstancel的子节点
+                                DOMSymbolInstancel.PrependChild(matrixl);
+                                //将DOMSymbolInstancel作为elementsl的子节点
+                                elementsl.PrependChild(DOMSymbolInstancel);
+                                //将elementsl作为DOMFramel的子节点
+                                DOMFramel.PrependChild(elementsl);
+                                //将DOMFramel作为framesl的子节点
+                                framesl.PrependChild(DOMFramel);
+                                //将framesl作为DOMLayerl的子节点
+                                DOMLayerl.PrependChild(framesl);
+
+                                XmlElement layers = (XmlElement)xmlDoc.GetElementsByTagName("layers")[0];
+                                layers.PrependChild(DOMLayerl);
+                                //保存xml
+                                xmlDoc.Save(NextFile.FullName);
+                            }
+                            //判断为main元件并加密
+                            if (NextFile.Name.Substring(0, 4) == "main")
+                            {
+                                XmlElement layers = (XmlElement)xmlDoc.GetElementsByTagName("layers")[0];
+                                layers.PrependChild(DOMLayer);
+                                //保存xml
+                                xmlDoc.Save(NextFile.FullName);
+                            }
+                            else { }
+                        }
+                        else { }
+                    }
+                }
+                else { }
+            }
+            catch
+            {
+                MessageBox.Show("SpecialClipEncrypt ERROR");
+            }
+        }
+
+
         //生成元件加密部分
-        public void ClipEncrypt(string Jpath, string Fpath)
+        public void ClipEncrypt(string Jpath, string Fpath, string Dpath)
         {
             try
             {
@@ -45,16 +204,24 @@ namespace Res2Ext
                     form1.textBox16.AppendText("开始进行main元件加密操作......" + "\r\n");
                     mc = 1;
                 }
+                else if (form1.radioButton33.Checked)
+                {
+                    form1.textBox16.AppendText("开始进行DOMDocument的labels加密操作......" + "\r\n");
+                    //labels加密20240323添加
+                    ddla.DOMDocumentLabelAdd(Dpath);
+                }
                 else if (form1.radioButton8.Checked)
                 {
                     form1.textBox16.AppendText("开始进行全部加密操作......" + "\r\n");
                     ac = 1;
                     mc = 1;
+                    //labels加密20240323添加
+                    ddla.DOMDocumentLabelAdd(Dpath);
                 }
                 else if (form1.radioButton9.Checked)
                 {
                     form1.textBox16.AppendText("开始进行全部解密操作......" + "\r\n");
-                    cd.ClipDecrypt(Jpath, Fpath);
+                    cd.ClipDecrypt(Jpath, Fpath, Dpath);
                 }
                 else
                 {

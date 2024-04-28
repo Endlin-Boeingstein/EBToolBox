@@ -21,6 +21,8 @@ namespace Res2Ext
         public string pid = null;
         //建立imgMapper的JSON对象
         public JObject imgMapper = new JObject();
+        //建立id引用数组
+        public ArrayList idal = new ArrayList();
         //此功能因画蛇添足而移除//建立imgSz的输出成员
         //此功能因画蛇添足而移除///public JObject ImgSz;
         //新功能更新而停用//建立animMapper的JSON对象
@@ -30,6 +32,7 @@ namespace Res2Ext
         {
             try
             {
+                form1.textBox16.AppendText("开始对元件进行尺寸矫正和引用检测......" + "\r\n");
                 //创建路径文件夹实例
                 DirectoryInfo TheFolder = new DirectoryInfo(Fpath);
                 //创建文件数组
@@ -136,9 +139,14 @@ namespace Res2Ext
                                         }
                                         if (matrixtrue == 0)
                                         {
-                                            el.PrependChild(matrix);
-                                            //保存xml
-                                            xmlDoc.Save(NextFile.FullName);
+                                            //20240321添加判定不对加密元件修复
+                                            if (xmlDoc.ToString().Contains("encrypt_clip_layer")) { }
+                                            else
+                                            {
+                                                el.PrependChild(matrix);
+                                                //保存xml
+                                                xmlDoc.Save(NextFile.FullName);
+                                            }
                                         }
                                         else { }
                                     }
@@ -149,6 +157,8 @@ namespace Res2Ext
                                 element = (XmlElement)xmlDoc.GetElementsByTagName("DOMBitmapInstance")[0];
                                 //读取DOMBitmapInstance节点libraryItemName属性
                                 string name = element.GetAttribute("libraryItemName");
+                                //防止二级路径//添加删除.png后缀功能20240303修改
+                                name = name.Substring(name.LastIndexOf('/') + 1, name.Length - name.LastIndexOf('/') - 1).Replace(".png","");
                                 //新功能更新而停用//记录id用于资源引用部分size重写的变量
                                 //新功能更新而停用///string rid = null;
                                 //遍历resources数组
@@ -165,16 +175,28 @@ namespace Res2Ext
                                         string pid = path[path.Count - 1].ToString();
                                         if (pid == name)
                                         {
-                                            //添加i元件切图引用数据
-                                            imgMapper.Add(new JProperty(NextFile.Name.Substring(0, NextFile.Name.Length - 4), id));
-                                            //新功能更新而停用//记录id用来对资源引用部分size进行重写
-                                            //新功能更新而停用///rid = id;
+                                            if (!imgMapper.ContainsKey(NextFile.Name.Substring(0, NextFile.Name.Length - 4)))
+                                            {
+                                                //添加i元件切图引用数据
+                                                imgMapper.Add(new JProperty(NextFile.Name.Substring(0, NextFile.Name.Length - 4), id));
+                                                //新功能更新而停用//记录id用来对资源引用部分size进行重写
+                                                //新功能更新而停用///rid = id;
+                                                //记录被引用的id
+                                                idal.Add(id);
+                                            }
+                                            else { }
                                             break;
                                         }
                                         else continue;
                                     }
                                     else { }
                                 }
+                                //新增未能录入引用信息检测20240325添加
+                                if (!imgMapper.ContainsKey(NextFile.Name.Substring(0, NextFile.Name.Length - 4)))
+                                {
+                                    form1.textBox16.AppendText("未能找到" + NextFile.Name.Substring(0, NextFile.Name.Length - 4) + "元件的对应位图信息，将会引发错误" + "\r\n");
+                                }
+                                else { }
 
 
                                 //修复a和d的值
@@ -197,14 +219,24 @@ namespace Res2Ext
                                     //a不存在
                                     if (ma == null || ma == "0" || ma == "")
                                     {
-                                        //设a为1.000000
-                                        melement.SetAttribute("a", "1.000000");
+                                        //20240321添加判定不对加密元件修复
+                                        if (xmlDoc.ToString().Contains("encrypt_clip_layer")) { }
+                                        else
+                                        {
+                                            //设a为1.000000
+                                            melement.SetAttribute("a", "1.000000");
+                                        }
                                     }
                                     //d不存在
                                     if (md == null || md == "0" || md == "")
                                     {
-                                        //设d为1.000000
-                                        melement.SetAttribute("d", "1.000000");
+                                        //20240321添加判定不对加密元件修复
+                                        if (xmlDoc.ToString().Contains("encrypt_clip_layer")) { }
+                                        else
+                                        {
+                                            //设d为1.000000
+                                            melement.SetAttribute("d", "1.000000");
+                                        }
                                     }
                                     else { }
                                     //保存xml
@@ -293,8 +325,10 @@ namespace Res2Ext
                             else
                             {
                                 //递归检测是否有matrix未修复
+                                /*删除matrix修复计数器以及代码
                                 for (int i = 0; i < xmlDoc.GetElementsByTagName("DOMSymbolInstance").Count;)
                                 {
+                                */
                                     //读取DOMSymbolInstance节点，检查a元件是否引用元件
                                     foreach (XmlElement el in xmlDoc.GetElementsByTagName("DOMSymbolInstance"))
                                     {
@@ -306,6 +340,7 @@ namespace Res2Ext
                                         else
                                         {
                                             //判断是否存在matrix，默认为0
+                                            /*删除matrix修复计数器以及代码
                                             int matrixtrue = 0;
                                             foreach (XmlElement mat in el.ChildNodes)
                                             {
@@ -323,9 +358,11 @@ namespace Res2Ext
                                                 xmlDoc.Save(NextFile.FullName);
                                             }
                                             else { }
+                                            */
                                         }
                                     }
                                     //检测是否所有matrix都修复完毕，否则重置计数器
+                                    /*删除matrix修复计数器以及代码
                                     if (i < xmlDoc.GetElementsByTagName("DOMSymbolInstance").Count)
                                     {
                                         //重置计数器
@@ -335,6 +372,7 @@ namespace Res2Ext
                                     }
                                     else { }
                                 }
+                                    */
 
                                 //检测是否一个图层读取多个元件
                                 //获取根节点root
@@ -396,8 +434,8 @@ namespace Res2Ext
                                     int anum = int.Parse(NextFile.Name.Substring(1, NextFile.Name.Length - 5));
                                     //被引用的首位定义
                                     string fname = el.GetAttribute("libraryItemName").Substring(0, 1);
-                                    //被引用元件序号定义
-                                    int ianum = int.Parse(el.GetAttribute("libraryItemName").Substring(1, el.GetAttribute("libraryItemName").Length - 1));
+                                    //被引用元件序号定义//20240319修复
+                                    long ianum = long.Parse(el.GetAttribute("libraryItemName").Substring(1, el.GetAttribute("libraryItemName").Length - 1));
                                     //检测被引用的是否为a元件
                                     if (fname == "a")
                                     {
@@ -412,6 +450,7 @@ namespace Res2Ext
 
 
                                     //读取matrix节点
+                                    /*经理论与两年的实验，表示a元件matrix的检测和修复做无用功，故删除
                                     //新功能更新而停用，用了报错///XmlElement melement = (XmlElement)xmlDoc.SelectSingleNode("DOMSymbolItem/timeline/DOMTimeline/layers/DOMLayer/frames/DOMFrame/elements/DOMSymbolInstance/matrix/Matrix");
                                     XmlElement melement = (XmlElement)el.GetElementsByTagName("Matrix")[0];
                                     //设定ma和md
@@ -450,6 +489,7 @@ namespace Res2Ext
                                     md = melement.GetAttribute("d");
                                     //保存xml
                                     xmlDoc.Save(NextFile.FullName);
+                                    */
                                 }
                             }
                             //保存xml
@@ -546,6 +586,7 @@ namespace Res2Ext
                 //新功能更新而停用，用了报错///ext.Property("imgSz").AddAfterSelf(new JProperty("imgMapper", imgMapper));
                 //新功能更新而停用，用了报错//创建成员便于传输ext
                 //新功能更新而停用，用了报错///public var iext = ext;
+                form1.textBox16.AppendText("元件尺寸矫正和引用检测完成" + "\r\n");
             }
             catch
             {

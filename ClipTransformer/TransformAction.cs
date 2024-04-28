@@ -14,7 +14,7 @@ namespace ClipTransformer
     class TransformAction
     {
         //生成元件转换部分
-        public void ClipTransform(string Fpath, ArrayList ca, ArrayList cca)
+        public void ClipTransform(string Fpath, ArrayList ca, ArrayList cca, int graphic)
         {
             try
             {
@@ -57,19 +57,43 @@ namespace ClipTransformer
                         string oxname = xname;
                         //替换引用和名字
                         //替换引用
-                        for (int i = ca.Count - 1; i >= 0; i--)
+                        //废弃代码，使用出错///for (int i = ca.Count-1; i >= 0; i--)
+                        for (int i = 0; i < ca.Count; i++)
                         {
-                            xml = xml.Replace(ca[i].ToString(), cca[i].ToString());
-                            //替换完毕就退出循环
-                            if (xml != oxml) break;
+                            xml = xml.Replace("\""+ca[i].ToString()+"\"", "\""+cca[i].ToString()+"\"");
+                            //用了出错没替换完就跳出了//替换完毕就退出循环
+                            //用了出错没替换完就跳出了///if (xml != oxml) break;
                         }
                         //替换名字
-                        for (int i = ca.Count - 1; i >= 0; i--)
+                        //废弃代码，使用出错///for (int i = ca.Count - 1; i >= 0; i--)
+                        for (int i = 0; i < ca.Count; i++)
                         {
-                            xname = xname.Replace(ca[i].ToString(), cca[i].ToString());
+                            xname = xname.Replace(ca[i].ToString() + ".xml", cca[i].ToString() + ".xml");
                             //替换完毕就退出循环
                             if (xname != oxname) break;
                         }
+
+                        //增加元件类型判断20240402添加
+                        if (graphic == 0)
+                        {
+                            //删除原有图形类型
+                            xml = xml.Replace(" symbolType=\"graphic\"", "");
+                            //删除原有图形类型
+                            xml = xml.Replace(" loop=\"loop\"", "");
+                        }
+                        else
+                        {
+                            //删除原有图形类型
+                            xml = xml.Replace(" symbolType=\"graphic\"", "");
+                            //删除原有图形类型
+                            xml = xml.Replace(" loop=\"loop\"", "");
+                            //全部增加图形类型引用
+                            xml = xml.Replace("<DOMSymbolInstance", "<DOMSymbolInstance symbolType=\"graphic\" loop=\"loop\"");
+                            //全部变成图形类型
+                            xml = xml.Replace("<DOMSymbolItem", "<DOMSymbolItem symbolType=\"graphic\"");
+                        }
+                        
+
                         //输出文本
                         File.WriteAllText(Fpath + "\\" + xname, xml);
                         if (Fpath + "\\" + xname != NextFile.FullName)
@@ -88,7 +112,7 @@ namespace ClipTransformer
             }
         }
         //生成DOMDocument转换部分
-        public void DOMDocumentTransform(string DPath, string about, ArrayList ca, ArrayList cca)
+        public void DOMDocumentTransform(string DPath, string about, ArrayList ca, ArrayList cca, int graphic)
         {
             try
             {
@@ -101,8 +125,29 @@ namespace ClipTransformer
                 //替换引用
                 for (int i = 0; i < ca.Count; i++)
                 {
-                    xml = xml.Replace(ca[i].ToString(), cca[i].ToString());
+                    xml = xml.Replace("\"" + ca[i].ToString() + "\"", "\"" + cca[i].ToString() + "\"");
+                    xml = xml.Replace("\"" + ca[i].ToString() + ".xml\"", "\"" + cca[i].ToString() + ".xml\"");
                 }
+
+                //增加元件类型判断20240402添加
+                if (graphic == 0)
+                {
+                    //删除原有图形类型
+                    xml = xml.Replace(" symbolType=\"graphic\"", "");
+                    //删除原有图形类型
+                    xml = xml.Replace(" loop=\"loop\"", "");
+                }
+                else
+                {
+                    //删除原有图形类型
+                    xml = xml.Replace(" symbolType=\"graphic\"", "");
+                    //删除原有图形类型
+                    xml = xml.Replace(" loop=\"loop\"", "");
+                    //全部增加图形类型引用
+                    xml = xml.Replace("<DOMSymbolInstance", "<DOMSymbolInstance symbolType=\"graphic\" loop=\"loop\"");
+                }
+                
+
                 //输出文本
                 File.WriteAllText(DPath, xml);
                 form1.textBox18.AppendText("DOMDocument重写完成" + "\r\n");
@@ -121,15 +166,15 @@ namespace ClipTransformer
                 //读取json
                 string json = File.ReadAllText(Fpath + "\\" + oname);
                 //替换
-                json = json.Replace(o1, j1);
-                json = json.Replace(o2, j2);
-                json = json.Replace(o3, j3);
-                json = json.Replace(o4, j4);
-                json = json.Replace(o5, j5);
+                json = json.Replace("\"" + o1 + "\"", "\"" + j1 + "\"");
+                json = json.Replace("\"" + o2 + "\"", "\"" + j2 + "\"");
+                json = json.Replace("\"" + o3 + "\"", "\"" + j3 + "\"");
+                json = json.Replace("\"" + o4 + "\"", "\"" + j4 + "\"");
+                json = json.Replace("\"" + o5 + "\"", "\"" + j5 + "\"");
                 //替换引用和名字
                 for (int i = 0; i < ca.Count; i++)
                 {
-                    json = json.Replace(ca[i].ToString(), cca[i].ToString());
+                    json = json.Replace("\"" + ca[i].ToString() + "\"", "\"" + cca[i].ToString() + "\"");
                 }
                 //输出文本
                 File.WriteAllText(Fpath + "\\" + jname, json);

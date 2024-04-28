@@ -21,6 +21,11 @@ namespace ResSC
             {
                 //读取文本
                 string json = File.ReadAllText(Jpath);
+                //避免误打
+                json = json.Replace(@"\\", "双");
+                //中文版不规范修复
+                json = json.Replace(@"\x", "十六进制转换");
+                json = json.Replace(@"..\\..\\resprops\\rgtemp\\all", "中文临时路径");
                 //将读取文本转换为JSON对象
                 JObject rss = JObject.Parse(json);
                 //新功能更新而停用//提取slot
@@ -41,8 +46,60 @@ namespace ResSC
                 //遍历输出分割后的resource.json
                 foreach (var item in Gja)
                 {
+                    //记录文件名称
                     string id = ((JObject)item)["id"].ToString();
-                    File.WriteAllText(Path.GetDirectoryName(Jpath) + "/resources.dir/" + id + ".json", JsonConvert.SerializeObject(item, Formatting.Indented));
+                    //功能更新而弃用///if (json.Contains("双") && !json.Contains("十六进制转换"))
+                    //功能更新而弃用///{
+                    //功能更新而弃用///}
+                    //功能更新而弃用///else { }
+                    if (((JObject)item)["type"].ToString() == "simple")
+                    {
+                        //resources转JArray数组
+                        JArray resources = JArray.Parse(item["resources"].ToString());
+                        foreach (var im in resources)
+                        {
+                            if (im["path"].ToString().Contains("双"))
+                            {
+                                //从路径提取文件夹名
+                                string[] imagename = im["path"].ToString().Split('双');
+                                //转换为List
+                                List<String> imagenamelist = new List<String>(imagename);
+                                //修改path
+                                im["path"] = (JToken)JsonConvert.DeserializeObject(JsonConvert.SerializeObject(imagenamelist));
+                            }
+                            else if (!(im["path"].ToString().Contains("[") && im["path"].ToString().Contains("]")))
+                            {
+                                JArray sgpath = new JArray();
+                                sgpath.Add(im["path"]);
+                                im["path"] = sgpath;
+                            }
+                            else { }
+                            //判定srcpath是否存在
+                            if (im["srcpath"] != null)
+                            {
+                                if (im["srcpath"].ToString().Contains("双"))
+                                {
+                                    //从路径提取文件夹名
+                                    string[] srcname = im["srcpath"].ToString().Split('双');
+                                    //转换为List
+                                    List<String> srcnamelist = new List<String>(srcname);
+                                    //修改srcpath
+                                    im["srcpath"] = (JToken)JsonConvert.DeserializeObject(JsonConvert.SerializeObject(srcnamelist));
+                                }
+                                else if (!(im["srcpath"].ToString().Contains("[") && im["srcpath"].ToString().Contains("]")))
+                                {
+                                    JArray sgpath = new JArray();
+                                    sgpath.Add(im["srcpath"]);
+                                    im["srcpath"] = sgpath;
+                                }
+                                else { }
+                            }
+                            else { }
+                        }
+                        item["resources"] = resources;
+                    }
+                    else { }
+                    File.WriteAllText(Path.GetDirectoryName(Jpath) + "/resources.dir/" + id + ".json", JsonConvert.SerializeObject(item, Formatting.Indented).Replace("双", @"\\").Replace("十六进制转换", @"\x"));
                 }
                 //提示分解完成
                 MessageBox.Show("ResSplite Done");

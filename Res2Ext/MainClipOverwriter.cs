@@ -150,6 +150,60 @@ namespace Res2Ext
                     xmlDoc.Save(TheFolder.FullName);
                 }
                 form1.textBox16.AppendText("图层修复检测完成" + "\r\n");
+
+                form1.textBox16.AppendText("检测图层帧间空帧中......" + "\r\n");
+                //创建新xml读取对象
+                XmlDocument newxmlDoc = new XmlDocument();
+                newxmlDoc.Load(TheFolder.FullName);
+                xmlDoc = newxmlDoc;
+                //时间长而弃用//重载xml
+                //时间长而弃用///xmlDoc.Load(TheFolder.FullName);
+                //获取根节点root
+                root = xmlDoc.DocumentElement;
+                //获取节点layers
+                layers = root.FirstChild.FirstChild.FirstChild;
+                //获取layers图层列表
+                layersnodeList = layers.ChildNodes;
+                //检测
+                foreach (XmlNode node in layersnodeList)
+                {
+                    //转换DOMLayer为XmlElement以便于识别是否存在实帧
+                    XmlElement DOMLayer = (XmlElement)node;
+                    //判断是否存在DOMSymbolInstance，以判定是否为末尾空帧，默认为0(最终结果为0则存在末尾空帧)
+                    int dsitrue = 0;
+                    //记录帧间空帧所在帧数
+                    foreach (XmlElement element in DOMLayer.FirstChild.ChildNodes)
+                    {
+                        if (element.GetElementsByTagName("DOMBitmapInstance").Count != 0 || element.GetElementsByTagName("DOMSymbolInstance").Count != 0)
+                        {
+                            dsitrue = 1;
+                        }
+                        else
+                        {
+                            if (dsitrue == 1)
+                            {
+                                //获取帧间空帧的图层名称
+                                string nname = DOMLayer.GetAttribute("name");
+                                //获取帧间空帧的帧位置
+                                int nindex = int.Parse(element.GetAttribute("index"));
+                                //获取帧间空帧的帧长度
+                                int nduration;
+                                if (element.GetAttribute("duration") == null || element.GetAttribute("duration") == "")
+                                {
+                                    nduration = 1;
+                                }
+                                else
+                                {
+                                    nduration = int.Parse(element.GetAttribute("duration"));
+                                }
+                                form1.textBox16.AppendText("main元件图层" + nname + "第" + nindex + "帧（在Adobe Animate中为第" + (nindex + 1) + "帧）为帧间空帧，长度" + nduration + "帧，将会引发错误" + "\r\n");
+                            }
+                            else { }
+                            dsitrue = 0;
+                        }
+                    }
+                }
+                form1.textBox16.AppendText("图层帧间空帧检测完成" + "\r\n");
             }
             catch
             {

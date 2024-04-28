@@ -26,6 +26,8 @@ namespace ClipTransformer
         public string about = null;
         //预置json名称及属性
         public string oname, jname, j1, j2, j3, j4, j5, o1, o2, o3, o4, o5;
+        //判断元件类型20240402添加
+        int graphic = 0;
 
         //生成序号重写选择部分
         public int NumRewrite()
@@ -39,6 +41,25 @@ namespace ClipTransformer
                 num = 1;
             }
             if (form1.radioButton16.Checked&&!form1.radioButton17.Checked)
+            {
+                num = 0;
+            }
+            else { }
+            return num;
+        }
+
+        //生成元件类型选择部分20240402添加
+        public int NumGraphic()
+        {
+            int num = 0;
+            ///Console.WriteLine("请选择元件类型（不输入按回车默认图形元件）\n1.图形元件\n2.影片剪辑");
+            //选项收录
+            ///string s = Console.ReadLine();
+            if (form1.radioButton37.Checked && !form1.radioButton36.Checked)
+            {
+                num = 1;
+            }
+            if (form1.radioButton36.Checked && !form1.radioButton37.Checked)
             {
                 num = 0;
             }
@@ -167,6 +188,8 @@ namespace ClipTransformer
             {
                 //判断是否重写元件序号
                 int num = NumRewrite(), aj = 0, ij = 0;
+                //判断元件类型20240402添加
+                graphic = NumGraphic();
                 if (num == 1)
                 {
                     form1.textBox18.AppendText("元件序号重写中......" + "\r\n");
@@ -305,9 +328,9 @@ namespace ClipTransformer
                 if (icca != 0)
                 {
                     //转换行为
-                    ta.ClipTransform(Fpath + "\\LIBRARY", ca, cca);
+                    ta.ClipTransform(Fpath + "\\LIBRARY", ca, cca, graphic);
                     //DOMDocument重写
-                    ta.DOMDocumentTransform(Fpath + "\\DOMDocument.xml", about, ca, cca);
+                    ta.DOMDocumentTransform(Fpath + "\\DOMDocument.xml", about, ca, cca, graphic);
                     //json重写
                     ta.JsonRewrite(Fpath, oname, jname, j1, j2, j3, j4, j5, o1, o2, o3, o4, o5, icca, ca, cca);
                 }

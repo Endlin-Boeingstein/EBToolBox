@@ -46,17 +46,30 @@
             this.bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.materialButton30 = new ReaLTaiizor.Controls.MaterialButton();
-            this.materialButton15 = new ReaLTaiizor.Controls.MaterialButton();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.foxLabel26 = new ReaLTaiizor.Controls.FoxLabel();
+            this.materialButton15 = new ReaLTaiizor.Controls.MaterialButton();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.radioButton30 = new System.Windows.Forms.RadioButton();
+            this.radioButton26 = new System.Windows.Forms.RadioButton();
+            this.radioButton27 = new System.Windows.Forms.RadioButton();
+            this.foxLabel42 = new ReaLTaiizor.Controls.FoxLabel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.radioButton20 = new System.Windows.Forms.RadioButton();
+            this.radioButton21 = new System.Windows.Forms.RadioButton();
+            this.foxLabel39 = new ReaLTaiizor.Controls.FoxLabel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.radioButton18 = new System.Windows.Forms.RadioButton();
+            this.radioButton19 = new System.Windows.Forms.RadioButton();
+            this.foxLabel38 = new ReaLTaiizor.Controls.FoxLabel();
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.foxLabel31 = new ReaLTaiizor.Controls.FoxLabel();
             this.materialButton20 = new ReaLTaiizor.Controls.MaterialButton();
             this.spaceButton1 = new ReaLTaiizor.Controls.SpaceButton();
-            this.materialButton7 = new ReaLTaiizor.Controls.MaterialButton();
             this.foxLabel14 = new ReaLTaiizor.Controls.FoxLabel();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.materialButton7 = new ReaLTaiizor.Controls.MaterialButton();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.materialTabControl2 = new ReaLTaiizor.Controls.MaterialTabControl();
             this.tabPage12 = new System.Windows.Forms.TabPage();
@@ -66,38 +79,50 @@
             this.foxLabel18 = new ReaLTaiizor.Controls.FoxLabel();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.tabPage13 = new System.Windows.Forms.TabPage();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.radioButton34 = new System.Windows.Forms.RadioButton();
+            this.radioButton35 = new System.Windows.Forms.RadioButton();
+            this.foxLabel45 = new ReaLTaiizor.Controls.FoxLabel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.radioButton28 = new System.Windows.Forms.RadioButton();
+            this.radioButton29 = new System.Windows.Forms.RadioButton();
+            this.foxLabel43 = new ReaLTaiizor.Controls.FoxLabel();
             this.materialButton22 = new ReaLTaiizor.Controls.MaterialButton();
             this.spaceButton3 = new ReaLTaiizor.Controls.SpaceButton();
-            this.materialButton10 = new ReaLTaiizor.Controls.MaterialButton();
             this.foxLabel19 = new ReaLTaiizor.Controls.FoxLabel();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.materialButton10 = new ReaLTaiizor.Controls.MaterialButton();
             this.foxLabel17 = new ReaLTaiizor.Controls.FoxLabel();
             this.foxLabel16 = new ReaLTaiizor.Controls.FoxLabel();
             this.materialSwitch1 = new ReaLTaiizor.Controls.MaterialSwitch();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.materialButton23 = new ReaLTaiizor.Controls.MaterialButton();
-            this.materialButton8 = new ReaLTaiizor.Controls.MaterialButton();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.foxLabel15 = new ReaLTaiizor.Controls.FoxLabel();
+            this.materialButton8 = new ReaLTaiizor.Controls.MaterialButton();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.materialButton24 = new ReaLTaiizor.Controls.MaterialButton();
-            this.materialButton18 = new ReaLTaiizor.Controls.MaterialButton();
-            this.materialButton17 = new ReaLTaiizor.Controls.MaterialButton();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.foxLabel29 = new ReaLTaiizor.Controls.FoxLabel();
             this.foxLabel28 = new ReaLTaiizor.Controls.FoxLabel();
+            this.materialButton18 = new ReaLTaiizor.Controls.MaterialButton();
+            this.materialButton17 = new ReaLTaiizor.Controls.MaterialButton();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.materialButton25 = new ReaLTaiizor.Controls.MaterialButton();
-            this.materialButton13 = new ReaLTaiizor.Controls.MaterialButton();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.foxLabel32 = new ReaLTaiizor.Controls.FoxLabel();
             this.foxLabel24 = new ReaLTaiizor.Controls.FoxLabel();
+            this.materialButton13 = new ReaLTaiizor.Controls.MaterialButton();
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.radioButton36 = new System.Windows.Forms.RadioButton();
+            this.radioButton37 = new System.Windows.Forms.RadioButton();
+            this.foxLabel46 = new ReaLTaiizor.Controls.FoxLabel();
             this.textBox18 = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.radioButton16 = new System.Windows.Forms.RadioButton();
@@ -110,14 +135,28 @@
             this.radioButton13 = new System.Windows.Forms.RadioButton();
             this.radioButton14 = new System.Windows.Forms.RadioButton();
             this.materialButton26 = new ReaLTaiizor.Controls.MaterialButton();
-            this.materialButton14 = new ReaLTaiizor.Controls.MaterialButton();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.foxLabel37 = new ReaLTaiizor.Controls.FoxLabel();
             this.foxLabel36 = new ReaLTaiizor.Controls.FoxLabel();
             this.foxLabel25 = new ReaLTaiizor.Controls.FoxLabel();
+            this.materialButton14 = new ReaLTaiizor.Controls.MaterialButton();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.radioButton31 = new System.Windows.Forms.RadioButton();
+            this.radioButton32 = new System.Windows.Forms.RadioButton();
+            this.foxLabel44 = new ReaLTaiizor.Controls.FoxLabel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.radioButton24 = new System.Windows.Forms.RadioButton();
+            this.radioButton25 = new System.Windows.Forms.RadioButton();
+            this.foxLabel41 = new ReaLTaiizor.Controls.FoxLabel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.radioButton22 = new System.Windows.Forms.RadioButton();
+            this.radioButton23 = new System.Windows.Forms.RadioButton();
+            this.foxLabel40 = new ReaLTaiizor.Controls.FoxLabel();
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.radioButton33 = new System.Windows.Forms.RadioButton();
             this.radioButton7 = new System.Windows.Forms.RadioButton();
             this.radioButton9 = new System.Windows.Forms.RadioButton();
             this.radioButton8 = new System.Windows.Forms.RadioButton();
@@ -133,12 +172,12 @@
             this.foxLabel35 = new ReaLTaiizor.Controls.FoxLabel();
             this.foxLabel34 = new ReaLTaiizor.Controls.FoxLabel();
             this.foxLabel33 = new ReaLTaiizor.Controls.FoxLabel();
-            this.materialButton19 = new ReaLTaiizor.Controls.MaterialButton();
             this.foxLabel30 = new ReaLTaiizor.Controls.FoxLabel();
             this.textBox13 = new System.Windows.Forms.TextBox();
-            this.materialButton16 = new ReaLTaiizor.Controls.MaterialButton();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.foxLabel27 = new ReaLTaiizor.Controls.FoxLabel();
+            this.materialButton19 = new ReaLTaiizor.Controls.MaterialButton();
+            this.materialButton16 = new ReaLTaiizor.Controls.MaterialButton();
             this.tabPage11 = new System.Windows.Forms.TabPage();
             this.materialTabControl4 = new ReaLTaiizor.Controls.MaterialTabControl();
             this.tabPage15 = new System.Windows.Forms.TabPage();
@@ -148,9 +187,9 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.tabPage16 = new System.Windows.Forms.TabPage();
             this.materialButton29 = new ReaLTaiizor.Controls.MaterialButton();
-            this.materialButton12 = new ReaLTaiizor.Controls.MaterialButton();
             this.foxLabel23 = new ReaLTaiizor.Controls.FoxLabel();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.materialButton12 = new ReaLTaiizor.Controls.MaterialButton();
             this.foxLabel20 = new ReaLTaiizor.Controls.FoxLabel();
             this.foxLabel21 = new ReaLTaiizor.Controls.FoxLabel();
             this.materialSwitch2 = new ReaLTaiizor.Controls.MaterialSwitch();
@@ -165,6 +204,17 @@
             this.materialButton5 = new ReaLTaiizor.Controls.MaterialButton();
             this.materialButton4 = new ReaLTaiizor.Controls.MaterialButton();
             this.materialButton3 = new ReaLTaiizor.Controls.MaterialButton();
+            this.tabPage17 = new System.Windows.Forms.TabPage();
+            this.foxLabel56 = new ReaLTaiizor.Controls.FoxLabel();
+            this.foxLabel55 = new ReaLTaiizor.Controls.FoxLabel();
+            this.foxLabel54 = new ReaLTaiizor.Controls.FoxLabel();
+            this.foxLabel53 = new ReaLTaiizor.Controls.FoxLabel();
+            this.foxLabel52 = new ReaLTaiizor.Controls.FoxLabel();
+            this.foxLabel51 = new ReaLTaiizor.Controls.FoxLabel();
+            this.foxLabel50 = new ReaLTaiizor.Controls.FoxLabel();
+            this.foxLabel49 = new ReaLTaiizor.Controls.FoxLabel();
+            this.foxLabel48 = new ReaLTaiizor.Controls.FoxLabel();
+            this.foxLabel47 = new ReaLTaiizor.Controls.FoxLabel();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.colorDialog2 = new System.Windows.Forms.ColorDialog();
@@ -183,23 +233,33 @@
             this.folderBrowserDialog8 = new System.Windows.Forms.FolderBrowserDialog();
             this.folderBrowserDialog9 = new System.Windows.Forms.FolderBrowserDialog();
             this.openFileDialog4 = new System.Windows.Forms.OpenFileDialog();
+            this.folderBrowserDialog10 = new System.Windows.Forms.FolderBrowserDialog();
             this.materialTabControl1.SuspendLayout();
             this.tabPage8.SuspendLayout();
             this.materialTabControl3.SuspendLayout();
             this.tabPage14.SuspendLayout();
             this.tabPage10.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.panel10.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.materialTabControl2.SuspendLayout();
             this.tabPage12.SuspendLayout();
             this.tabPage13.SuspendLayout();
+            this.panel13.SuspendLayout();
+            this.panel11.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage7.SuspendLayout();
+            this.panel14.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            this.panel12.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -208,6 +268,7 @@
             this.tabPage15.SuspendLayout();
             this.tabPage16.SuspendLayout();
             this.tabPage9.SuspendLayout();
+            this.tabPage17.SuspendLayout();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -224,6 +285,7 @@
             this.materialTabControl1.Controls.Add(this.tabPage4);
             this.materialTabControl1.Controls.Add(this.tabPage11);
             this.materialTabControl1.Controls.Add(this.tabPage9);
+            this.materialTabControl1.Controls.Add(this.tabPage17);
             this.materialTabControl1.Depth = 0;
             this.materialTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.materialTabControl1.ImageList = this.imageList1;
@@ -248,9 +310,9 @@
             this.tabPage8.Controls.Add(this.foxLabel5);
             this.tabPage8.Controls.Add(this.bigLabel1);
             this.tabPage8.ImageKey = "首页.png";
-            this.tabPage8.Location = new System.Drawing.Point(4, 39);
+            this.tabPage8.Location = new System.Drawing.Point(4, 74);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(1545, 934);
+            this.tabPage8.Size = new System.Drawing.Size(1545, 899);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "Welcome";
             // 
@@ -259,7 +321,7 @@
             this.materialTabControl3.Controls.Add(this.tabPage14);
             this.materialTabControl3.Depth = 0;
             this.materialTabControl3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.materialTabControl3.Location = new System.Drawing.Point(0, 784);
+            this.materialTabControl3.Location = new System.Drawing.Point(0, 749);
             this.materialTabControl3.Margin = new System.Windows.Forms.Padding(4);
             this.materialTabControl3.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.materialTabControl3.Multiline = true;
@@ -288,7 +350,7 @@
             this.foxLabel13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.foxLabel13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.foxLabel13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.foxLabel13.Location = new System.Drawing.Point(1085, 4);
+            this.foxLabel13.Location = new System.Drawing.Point(1085, -4);
             this.foxLabel13.Name = "foxLabel13";
             this.foxLabel13.Size = new System.Drawing.Size(440, 39);
             this.foxLabel13.TabIndex = 2;
@@ -299,18 +361,18 @@
             this.foxLabel12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.foxLabel12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.foxLabel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.foxLabel12.Location = new System.Drawing.Point(1085, 50);
+            this.foxLabel12.Location = new System.Drawing.Point(1085, 40);
             this.foxLabel12.Name = "foxLabel12";
             this.foxLabel12.Size = new System.Drawing.Size(440, 39);
             this.foxLabel12.TabIndex = 3;
-            this.foxLabel12.Text = "版本：1.0.0";
+            this.foxLabel12.Text = "版本：1.2.2.0";
             // 
             // foxLabel11
             // 
             this.foxLabel11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.foxLabel11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.foxLabel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.foxLabel11.Location = new System.Drawing.Point(9, 4);
+            this.foxLabel11.Location = new System.Drawing.Point(9, -4);
             this.foxLabel11.Name = "foxLabel11";
             this.foxLabel11.Size = new System.Drawing.Size(1022, 39);
             this.foxLabel11.TabIndex = 4;
@@ -321,7 +383,7 @@
             this.foxLabel10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.foxLabel10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.foxLabel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.foxLabel10.Location = new System.Drawing.Point(9, 50);
+            this.foxLabel10.Location = new System.Drawing.Point(9, 40);
             this.foxLabel10.Name = "foxLabel10";
             this.foxLabel10.Size = new System.Drawing.Size(1022, 39);
             this.foxLabel10.TabIndex = 5;
@@ -397,15 +459,15 @@
             this.tabPage10.AutoScroll = true;
             this.tabPage10.BackColor = System.Drawing.Color.White;
             this.tabPage10.Controls.Add(this.materialButton30);
-            this.tabPage10.Controls.Add(this.materialButton15);
             this.tabPage10.Controls.Add(this.textBox9);
             this.tabPage10.Controls.Add(this.foxLabel26);
+            this.tabPage10.Controls.Add(this.materialButton15);
             this.tabPage10.ImageKey = "folder.png";
-            this.tabPage10.Location = new System.Drawing.Point(4, 39);
+            this.tabPage10.Location = new System.Drawing.Point(4, 74);
             this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Size = new System.Drawing.Size(1545, 934);
+            this.tabPage10.Size = new System.Drawing.Size(1545, 899);
             this.tabPage10.TabIndex = 9;
-            this.tabPage10.Text = "DictionaryCreator";
+            this.tabPage10.Text = "DirectoryCreator";
             // 
             // materialButton30
             // 
@@ -417,7 +479,7 @@
             this.materialButton30.HighEmphasis = true;
             this.materialButton30.Icon = null;
             this.materialButton30.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            this.materialButton30.Location = new System.Drawing.Point(182, 133);
+            this.materialButton30.Location = new System.Drawing.Point(182, 134);
             this.materialButton30.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton30.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.materialButton30.Name = "materialButton30";
@@ -429,26 +491,6 @@
             this.materialButton30.UseAccentColor = false;
             this.materialButton30.UseVisualStyleBackColor = true;
             this.materialButton30.Click += new System.EventHandler(this.materialButton30_Click);
-            // 
-            // materialButton15
-            // 
-            this.materialButton15.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton15.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton15.Depth = 0;
-            this.materialButton15.HighEmphasis = true;
-            this.materialButton15.Icon = global::EBToolBox.Properties.Resources.ic_查找;
-            this.materialButton15.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            this.materialButton15.Location = new System.Drawing.Point(1108, 30);
-            this.materialButton15.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton15.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.materialButton15.Name = "materialButton15";
-            this.materialButton15.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton15.Size = new System.Drawing.Size(64, 36);
-            this.materialButton15.TabIndex = 7;
-            this.materialButton15.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton15.UseAccentColor = false;
-            this.materialButton15.UseVisualStyleBackColor = true;
-            this.materialButton15.Click += new System.EventHandler(this.materialButton15_Click);
             // 
             // textBox9
             // 
@@ -470,31 +512,205 @@
             this.foxLabel26.TabIndex = 5;
             this.foxLabel26.Text = "文件夹路径";
             // 
+            // materialButton15
+            // 
+            this.materialButton15.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton15.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton15.Depth = 0;
+            this.materialButton15.HighEmphasis = true;
+            this.materialButton15.Icon = global::EBToolBox.Properties.Resources.ic_查找;
+            this.materialButton15.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            this.materialButton15.Location = new System.Drawing.Point(1108, 30);
+            this.materialButton15.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton15.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.materialButton15.Name = "materialButton15";
+            this.materialButton15.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton15.Size = new System.Drawing.Size(64, 36);
+            this.materialButton15.TabIndex = 7;
+            this.materialButton15.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton15.UseAccentColor = false;
+            this.materialButton15.UseVisualStyleBackColor = true;
+            this.materialButton15.Click += new System.EventHandler(this.materialButton15_Click);
+            // 
             // tabPage1
             // 
             this.tabPage1.AllowDrop = true;
             this.tabPage1.AutoScroll = true;
             this.tabPage1.BackColor = System.Drawing.Color.White;
+            this.tabPage1.Controls.Add(this.panel10);
+            this.tabPage1.Controls.Add(this.foxLabel42);
+            this.tabPage1.Controls.Add(this.panel7);
+            this.tabPage1.Controls.Add(this.foxLabel39);
+            this.tabPage1.Controls.Add(this.panel6);
+            this.tabPage1.Controls.Add(this.foxLabel38);
             this.tabPage1.Controls.Add(this.textBox14);
             this.tabPage1.Controls.Add(this.foxLabel31);
             this.tabPage1.Controls.Add(this.materialButton20);
             this.tabPage1.Controls.Add(this.spaceButton1);
-            this.tabPage1.Controls.Add(this.materialButton7);
             this.tabPage1.Controls.Add(this.foxLabel14);
             this.tabPage1.Controls.Add(this.textBox1);
+            this.tabPage1.Controls.Add(this.materialButton7);
             this.tabPage1.ImageKey = "图像.png";
-            this.tabPage1.Location = new System.Drawing.Point(4, 39);
+            this.tabPage1.Location = new System.Drawing.Point(4, 74);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabPage1.Size = new System.Drawing.Size(1545, 934);
+            this.tabPage1.Size = new System.Drawing.Size(1545, 899);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Ftp2Res";
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.radioButton30);
+            this.panel10.Controls.Add(this.radioButton26);
+            this.panel10.Controls.Add(this.radioButton27);
+            this.panel10.Location = new System.Drawing.Point(396, 296);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(654, 48);
+            this.panel10.TabIndex = 26;
+            // 
+            // radioButton30
+            // 
+            this.radioButton30.AutoSize = true;
+            this.radioButton30.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.radioButton30.Location = new System.Drawing.Point(537, 14);
+            this.radioButton30.Name = "radioButton30";
+            this.radioButton30.Size = new System.Drawing.Size(117, 29);
+            this.radioButton30.TabIndex = 19;
+            this.radioButton30.Text = "无需计算";
+            this.radioButton30.UseVisualStyleBackColor = true;
+            // 
+            // radioButton26
+            // 
+            this.radioButton26.AutoSize = true;
+            this.radioButton26.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.radioButton26.Location = new System.Drawing.Point(268, 14);
+            this.radioButton26.Name = "radioButton26";
+            this.radioButton26.Size = new System.Drawing.Size(117, 29);
+            this.radioButton26.TabIndex = 18;
+            this.radioButton26.Text = "国际新版";
+            this.radioButton26.UseVisualStyleBackColor = true;
+            // 
+            // radioButton27
+            // 
+            this.radioButton27.AutoSize = true;
+            this.radioButton27.Checked = true;
+            this.radioButton27.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.radioButton27.Location = new System.Drawing.Point(0, 14);
+            this.radioButton27.Name = "radioButton27";
+            this.radioButton27.Size = new System.Drawing.Size(117, 29);
+            this.radioButton27.TabIndex = 18;
+            this.radioButton27.TabStop = true;
+            this.radioButton27.Text = "国际旧版";
+            this.radioButton27.UseVisualStyleBackColor = true;
+            // 
+            // foxLabel42
+            // 
+            this.foxLabel42.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.foxLabel42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.foxLabel42.Location = new System.Drawing.Point(182, 302);
+            this.foxLabel42.Name = "foxLabel42";
+            this.foxLabel42.Size = new System.Drawing.Size(208, 39);
+            this.foxLabel42.TabIndex = 25;
+            this.foxLabel42.Text = "卡槽偏移自动计算";
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.radioButton20);
+            this.panel7.Controls.Add(this.radioButton21);
+            this.panel7.Location = new System.Drawing.Point(396, 165);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(654, 48);
+            this.panel7.TabIndex = 24;
+            // 
+            // radioButton20
+            // 
+            this.radioButton20.AutoSize = true;
+            this.radioButton20.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.radioButton20.Location = new System.Drawing.Point(537, 14);
+            this.radioButton20.Name = "radioButton20";
+            this.radioButton20.Size = new System.Drawing.Size(117, 29);
+            this.radioButton20.TabIndex = 18;
+            this.radioButton20.Text = "中文版本";
+            this.radioButton20.UseVisualStyleBackColor = true;
+            // 
+            // radioButton21
+            // 
+            this.radioButton21.AutoSize = true;
+            this.radioButton21.Checked = true;
+            this.radioButton21.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.radioButton21.Location = new System.Drawing.Point(0, 14);
+            this.radioButton21.Name = "radioButton21";
+            this.radioButton21.Size = new System.Drawing.Size(117, 29);
+            this.radioButton21.TabIndex = 18;
+            this.radioButton21.TabStop = true;
+            this.radioButton21.Text = "国际版本";
+            this.radioButton21.UseVisualStyleBackColor = true;
+            // 
+            // foxLabel39
+            // 
+            this.foxLabel39.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.foxLabel39.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.foxLabel39.Location = new System.Drawing.Point(182, 174);
+            this.foxLabel39.Name = "foxLabel39";
+            this.foxLabel39.Size = new System.Drawing.Size(208, 39);
+            this.foxLabel39.TabIndex = 23;
+            this.foxLabel39.Text = "资源文件版本";
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.radioButton18);
+            this.panel6.Controls.Add(this.radioButton19);
+            this.panel6.Location = new System.Drawing.Point(396, 230);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(654, 48);
+            this.panel6.TabIndex = 22;
+            // 
+            // radioButton18
+            // 
+            this.radioButton18.AutoSize = true;
+            this.radioButton18.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.radioButton18.Location = new System.Drawing.Point(537, 14);
+            this.radioButton18.Name = "radioButton18";
+            this.radioButton18.Size = new System.Drawing.Size(117, 29);
+            this.radioButton18.TabIndex = 18;
+            this.radioButton18.Text = "无需计算";
+            this.radioButton18.UseVisualStyleBackColor = true;
+            // 
+            // radioButton19
+            // 
+            this.radioButton19.AutoSize = true;
+            this.radioButton19.Checked = true;
+            this.radioButton19.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.radioButton19.Location = new System.Drawing.Point(0, 14);
+            this.radioButton19.Name = "radioButton19";
+            this.radioButton19.Size = new System.Drawing.Size(117, 29);
+            this.radioButton19.TabIndex = 18;
+            this.radioButton19.TabStop = true;
+            this.radioButton19.Text = "自动计算";
+            this.radioButton19.UseVisualStyleBackColor = true;
+            // 
+            // foxLabel38
+            // 
+            this.foxLabel38.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.foxLabel38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.foxLabel38.Location = new System.Drawing.Point(182, 238);
+            this.foxLabel38.Name = "foxLabel38";
+            this.foxLabel38.Size = new System.Drawing.Size(208, 39);
+            this.foxLabel38.TabIndex = 21;
+            this.foxLabel38.Text = "僵尸图鉴偏移";
             // 
             // textBox14
             // 
             this.textBox14.AllowDrop = true;
-            this.textBox14.Location = new System.Drawing.Point(396, 109);
+            this.textBox14.Location = new System.Drawing.Point(396, 110);
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(654, 28);
             this.textBox14.TabIndex = 8;
@@ -504,7 +720,7 @@
             // 
             this.foxLabel31.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.foxLabel31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.foxLabel31.Location = new System.Drawing.Point(182, 109);
+            this.foxLabel31.Location = new System.Drawing.Point(182, 110);
             this.foxLabel31.Name = "foxLabel31";
             this.foxLabel31.Size = new System.Drawing.Size(208, 39);
             this.foxLabel31.TabIndex = 7;
@@ -520,7 +736,7 @@
             this.materialButton20.HighEmphasis = true;
             this.materialButton20.Icon = null;
             this.materialButton20.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            this.materialButton20.Location = new System.Drawing.Point(182, 198);
+            this.materialButton20.Location = new System.Drawing.Point(182, 392);
             this.materialButton20.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton20.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.materialButton20.Name = "materialButton20";
@@ -540,7 +756,7 @@
             this.spaceButton1.Enabled = false;
             this.spaceButton1.Font = new System.Drawing.Font("Verdana", 8F);
             this.spaceButton1.Image = null;
-            this.spaceButton1.Location = new System.Drawing.Point(182, 198);
+            this.spaceButton1.Location = new System.Drawing.Point(182, 392);
             this.spaceButton1.Name = "spaceButton1";
             this.spaceButton1.NoRounding = false;
             this.spaceButton1.Size = new System.Drawing.Size(1023, 40);
@@ -549,26 +765,6 @@
             this.spaceButton1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.spaceButton1.Transparent = false;
             this.spaceButton1.Click += new System.EventHandler(this.spaceButton1_Click);
-            // 
-            // materialButton7
-            // 
-            this.materialButton7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton7.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton7.Depth = 0;
-            this.materialButton7.HighEmphasis = true;
-            this.materialButton7.Icon = global::EBToolBox.Properties.Resources.查询;
-            this.materialButton7.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            this.materialButton7.Location = new System.Drawing.Point(1108, 30);
-            this.materialButton7.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton7.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.materialButton7.Name = "materialButton7";
-            this.materialButton7.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton7.Size = new System.Drawing.Size(64, 36);
-            this.materialButton7.TabIndex = 2;
-            this.materialButton7.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton7.UseAccentColor = false;
-            this.materialButton7.UseVisualStyleBackColor = true;
-            this.materialButton7.Click += new System.EventHandler(this.materialButton7_Click);
             // 
             // foxLabel14
             // 
@@ -590,6 +786,26 @@
             this.textBox1.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox1_DragDrop);
             this.textBox1.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox1_DragEnter);
             // 
+            // materialButton7
+            // 
+            this.materialButton7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton7.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton7.Depth = 0;
+            this.materialButton7.HighEmphasis = true;
+            this.materialButton7.Icon = global::EBToolBox.Properties.Resources.查询;
+            this.materialButton7.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            this.materialButton7.Location = new System.Drawing.Point(1108, 30);
+            this.materialButton7.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton7.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.materialButton7.Name = "materialButton7";
+            this.materialButton7.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton7.Size = new System.Drawing.Size(64, 36);
+            this.materialButton7.TabIndex = 2;
+            this.materialButton7.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton7.UseAccentColor = false;
+            this.materialButton7.UseVisualStyleBackColor = true;
+            this.materialButton7.Click += new System.EventHandler(this.materialButton7_Click);
+            // 
             // tabPage2
             // 
             this.tabPage2.AllowDrop = true;
@@ -600,10 +816,10 @@
             this.tabPage2.Controls.Add(this.foxLabel16);
             this.tabPage2.Controls.Add(this.materialSwitch1);
             this.tabPage2.ImageKey = "winfo-icon-分解.png";
-            this.tabPage2.Location = new System.Drawing.Point(4, 39);
+            this.tabPage2.Location = new System.Drawing.Point(4, 74);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1545, 934);
+            this.tabPage2.Size = new System.Drawing.Size(1545, 899);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "ResSC";
             // 
@@ -723,17 +939,111 @@
             this.tabPage13.AllowDrop = true;
             this.tabPage13.AutoScroll = true;
             this.tabPage13.BackColor = System.Drawing.Color.White;
+            this.tabPage13.Controls.Add(this.panel13);
+            this.tabPage13.Controls.Add(this.foxLabel45);
+            this.tabPage13.Controls.Add(this.panel11);
+            this.tabPage13.Controls.Add(this.foxLabel43);
             this.tabPage13.Controls.Add(this.materialButton22);
             this.tabPage13.Controls.Add(this.spaceButton3);
-            this.tabPage13.Controls.Add(this.materialButton10);
             this.tabPage13.Controls.Add(this.foxLabel19);
             this.tabPage13.Controls.Add(this.textBox4);
+            this.tabPage13.Controls.Add(this.materialButton10);
             this.tabPage13.Location = new System.Drawing.Point(4, 28);
             this.tabPage13.Name = "tabPage13";
             this.tabPage13.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage13.Size = new System.Drawing.Size(1092, 462);
             this.tabPage13.TabIndex = 1;
             this.tabPage13.Text = "tabPage13";
+            // 
+            // panel13
+            // 
+            this.panel13.Controls.Add(this.radioButton34);
+            this.panel13.Controls.Add(this.radioButton35);
+            this.panel13.Location = new System.Drawing.Point(225, 137);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(654, 48);
+            this.panel13.TabIndex = 29;
+            // 
+            // radioButton34
+            // 
+            this.radioButton34.AutoSize = true;
+            this.radioButton34.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.radioButton34.Location = new System.Drawing.Point(537, 14);
+            this.radioButton34.Name = "radioButton34";
+            this.radioButton34.Size = new System.Drawing.Size(117, 29);
+            this.radioButton34.TabIndex = 18;
+            this.radioButton34.Text = "破坏结构";
+            this.radioButton34.UseVisualStyleBackColor = true;
+            // 
+            // radioButton35
+            // 
+            this.radioButton35.AutoSize = true;
+            this.radioButton35.Checked = true;
+            this.radioButton35.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.radioButton35.Location = new System.Drawing.Point(0, 14);
+            this.radioButton35.Name = "radioButton35";
+            this.radioButton35.Size = new System.Drawing.Size(117, 29);
+            this.radioButton35.TabIndex = 18;
+            this.radioButton35.TabStop = true;
+            this.radioButton35.Text = "正常输出";
+            this.radioButton35.UseVisualStyleBackColor = true;
+            // 
+            // foxLabel45
+            // 
+            this.foxLabel45.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.foxLabel45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.foxLabel45.Location = new System.Drawing.Point(10, 148);
+            this.foxLabel45.Name = "foxLabel45";
+            this.foxLabel45.Size = new System.Drawing.Size(208, 39);
+            this.foxLabel45.TabIndex = 28;
+            this.foxLabel45.Text = "合成结构破坏";
+            // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.radioButton28);
+            this.panel11.Controls.Add(this.radioButton29);
+            this.panel11.Location = new System.Drawing.Point(225, 72);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(654, 48);
+            this.panel11.TabIndex = 27;
+            // 
+            // radioButton28
+            // 
+            this.radioButton28.AutoSize = true;
+            this.radioButton28.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.radioButton28.Location = new System.Drawing.Point(537, 14);
+            this.radioButton28.Name = "radioButton28";
+            this.radioButton28.Size = new System.Drawing.Size(117, 29);
+            this.radioButton28.TabIndex = 18;
+            this.radioButton28.Text = "斜杠版本";
+            this.radioButton28.UseVisualStyleBackColor = true;
+            // 
+            // radioButton29
+            // 
+            this.radioButton29.AutoSize = true;
+            this.radioButton29.Checked = true;
+            this.radioButton29.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.radioButton29.Location = new System.Drawing.Point(0, 14);
+            this.radioButton29.Name = "radioButton29";
+            this.radioButton29.Size = new System.Drawing.Size(117, 29);
+            this.radioButton29.TabIndex = 18;
+            this.radioButton29.TabStop = true;
+            this.radioButton29.Text = "数组版本";
+            this.radioButton29.UseVisualStyleBackColor = true;
+            // 
+            // foxLabel43
+            // 
+            this.foxLabel43.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.foxLabel43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.foxLabel43.Location = new System.Drawing.Point(10, 82);
+            this.foxLabel43.Name = "foxLabel43";
+            this.foxLabel43.Size = new System.Drawing.Size(208, 39);
+            this.foxLabel43.TabIndex = 26;
+            this.foxLabel43.Text = "合成资源文件版本";
             // 
             // materialButton22
             // 
@@ -745,7 +1055,7 @@
             this.materialButton22.HighEmphasis = true;
             this.materialButton22.Icon = null;
             this.materialButton22.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            this.materialButton22.Location = new System.Drawing.Point(10, 105);
+            this.materialButton22.Location = new System.Drawing.Point(10, 237);
             this.materialButton22.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton22.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.materialButton22.Name = "materialButton22";
@@ -765,7 +1075,7 @@
             this.spaceButton3.Enabled = false;
             this.spaceButton3.Font = new System.Drawing.Font("Verdana", 8F);
             this.spaceButton3.Image = null;
-            this.spaceButton3.Location = new System.Drawing.Point(10, 105);
+            this.spaceButton3.Location = new System.Drawing.Point(10, 237);
             this.spaceButton3.Name = "spaceButton3";
             this.spaceButton3.NoRounding = false;
             this.spaceButton3.Size = new System.Drawing.Size(1023, 40);
@@ -774,26 +1084,6 @@
             this.spaceButton3.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.spaceButton3.Transparent = false;
             this.spaceButton3.Click += new System.EventHandler(this.spaceButton3_Click);
-            // 
-            // materialButton10
-            // 
-            this.materialButton10.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton10.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton10.Depth = 0;
-            this.materialButton10.HighEmphasis = true;
-            this.materialButton10.Icon = global::EBToolBox.Properties.Resources.ic_查找;
-            this.materialButton10.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            this.materialButton10.Location = new System.Drawing.Point(938, 3);
-            this.materialButton10.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton10.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.materialButton10.Name = "materialButton10";
-            this.materialButton10.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton10.Size = new System.Drawing.Size(64, 36);
-            this.materialButton10.TabIndex = 8;
-            this.materialButton10.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton10.UseAccentColor = false;
-            this.materialButton10.UseVisualStyleBackColor = true;
-            this.materialButton10.Click += new System.EventHandler(this.materialButton10_Click);
             // 
             // foxLabel19
             // 
@@ -814,6 +1104,26 @@
             this.textBox4.TabIndex = 6;
             this.textBox4.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox4_DragDrop);
             this.textBox4.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox4_DragEnter);
+            // 
+            // materialButton10
+            // 
+            this.materialButton10.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton10.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton10.Depth = 0;
+            this.materialButton10.HighEmphasis = true;
+            this.materialButton10.Icon = global::EBToolBox.Properties.Resources.ic_查找;
+            this.materialButton10.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            this.materialButton10.Location = new System.Drawing.Point(938, 3);
+            this.materialButton10.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton10.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.materialButton10.Name = "materialButton10";
+            this.materialButton10.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton10.Size = new System.Drawing.Size(64, 36);
+            this.materialButton10.TabIndex = 8;
+            this.materialButton10.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton10.UseAccentColor = false;
+            this.materialButton10.UseVisualStyleBackColor = true;
+            this.materialButton10.Click += new System.EventHandler(this.materialButton10_Click);
             // 
             // foxLabel17
             // 
@@ -858,24 +1168,24 @@
             this.tabPage3.BackColor = System.Drawing.Color.White;
             this.tabPage3.Controls.Add(this.textBox19);
             this.tabPage3.Controls.Add(this.materialButton23);
-            this.tabPage3.Controls.Add(this.materialButton8);
             this.tabPage3.Controls.Add(this.textBox2);
             this.tabPage3.Controls.Add(this.foxLabel15);
+            this.tabPage3.Controls.Add(this.materialButton8);
             this.tabPage3.ImageKey = "文件音乐.png";
-            this.tabPage3.Location = new System.Drawing.Point(4, 39);
+            this.tabPage3.Location = new System.Drawing.Point(4, 74);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1545, 934);
+            this.tabPage3.Size = new System.Drawing.Size(1545, 899);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "BnkCvt";
             // 
             // textBox19
             // 
-            this.textBox19.Location = new System.Drawing.Point(182, 223);
+            this.textBox19.Location = new System.Drawing.Point(182, 224);
             this.textBox19.Multiline = true;
             this.textBox19.Name = "textBox19";
             this.textBox19.ReadOnly = true;
             this.textBox19.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox19.Size = new System.Drawing.Size(1023, 708);
+            this.textBox19.Size = new System.Drawing.Size(1022, 708);
             this.textBox19.TabIndex = 25;
             // 
             // materialButton23
@@ -888,7 +1198,7 @@
             this.materialButton23.HighEmphasis = true;
             this.materialButton23.Icon = null;
             this.materialButton23.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            this.materialButton23.Location = new System.Drawing.Point(182, 133);
+            this.materialButton23.Location = new System.Drawing.Point(182, 134);
             this.materialButton23.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton23.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.materialButton23.Name = "materialButton23";
@@ -900,26 +1210,6 @@
             this.materialButton23.UseAccentColor = false;
             this.materialButton23.UseVisualStyleBackColor = true;
             this.materialButton23.Click += new System.EventHandler(this.materialButton23_Click);
-            // 
-            // materialButton8
-            // 
-            this.materialButton8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton8.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton8.Depth = 0;
-            this.materialButton8.HighEmphasis = true;
-            this.materialButton8.Icon = global::EBToolBox.Properties.Resources.ic_查找;
-            this.materialButton8.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            this.materialButton8.Location = new System.Drawing.Point(1108, 30);
-            this.materialButton8.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton8.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.materialButton8.Name = "materialButton8";
-            this.materialButton8.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton8.Size = new System.Drawing.Size(64, 36);
-            this.materialButton8.TabIndex = 4;
-            this.materialButton8.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton8.UseAccentColor = false;
-            this.materialButton8.UseVisualStyleBackColor = true;
-            this.materialButton8.Click += new System.EventHandler(this.materialButton8_Click);
             // 
             // textBox2
             // 
@@ -941,6 +1231,26 @@
             this.foxLabel15.TabIndex = 2;
             this.foxLabel15.Text = "文件夹路径";
             // 
+            // materialButton8
+            // 
+            this.materialButton8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton8.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton8.Depth = 0;
+            this.materialButton8.HighEmphasis = true;
+            this.materialButton8.Icon = global::EBToolBox.Properties.Resources.ic_查找;
+            this.materialButton8.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            this.materialButton8.Location = new System.Drawing.Point(1108, 30);
+            this.materialButton8.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton8.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.materialButton8.Name = "materialButton8";
+            this.materialButton8.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton8.Size = new System.Drawing.Size(64, 36);
+            this.materialButton8.TabIndex = 4;
+            this.materialButton8.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton8.UseAccentColor = false;
+            this.materialButton8.UseVisualStyleBackColor = true;
+            this.materialButton8.Click += new System.EventHandler(this.materialButton8_Click);
+            // 
             // tabPage6
             // 
             this.tabPage6.AllowDrop = true;
@@ -948,16 +1258,16 @@
             this.tabPage6.BackColor = System.Drawing.Color.White;
             this.tabPage6.Controls.Add(this.textBox17);
             this.tabPage6.Controls.Add(this.materialButton24);
-            this.tabPage6.Controls.Add(this.materialButton18);
-            this.tabPage6.Controls.Add(this.materialButton17);
             this.tabPage6.Controls.Add(this.textBox12);
             this.tabPage6.Controls.Add(this.textBox11);
             this.tabPage6.Controls.Add(this.foxLabel29);
             this.tabPage6.Controls.Add(this.foxLabel28);
+            this.tabPage6.Controls.Add(this.materialButton18);
+            this.tabPage6.Controls.Add(this.materialButton17);
             this.tabPage6.ImageKey = "copy.png";
-            this.tabPage6.Location = new System.Drawing.Point(4, 39);
+            this.tabPage6.Location = new System.Drawing.Point(4, 74);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(1545, 934);
+            this.tabPage6.Size = new System.Drawing.Size(1545, 899);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "SpriteToLibrary";
             // 
@@ -968,7 +1278,7 @@
             this.textBox17.Name = "textBox17";
             this.textBox17.ReadOnly = true;
             this.textBox17.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox17.Size = new System.Drawing.Size(1023, 643);
+            this.textBox17.Size = new System.Drawing.Size(1022, 643);
             this.textBox17.TabIndex = 11;
             // 
             // materialButton24
@@ -994,6 +1304,46 @@
             this.materialButton24.UseVisualStyleBackColor = true;
             this.materialButton24.Click += new System.EventHandler(this.materialButton24_Click);
             // 
+            // textBox12
+            // 
+            this.textBox12.AllowDrop = true;
+            this.textBox12.Location = new System.Drawing.Point(396, 110);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(654, 28);
+            this.textBox12.TabIndex = 6;
+            this.textBox12.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox12_DragDrop);
+            this.textBox12.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox12_DragEnter);
+            // 
+            // textBox11
+            // 
+            this.textBox11.AllowDrop = true;
+            this.textBox11.Location = new System.Drawing.Point(396, 44);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(654, 28);
+            this.textBox11.TabIndex = 6;
+            this.textBox11.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox11_DragDrop);
+            this.textBox11.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox11_DragEnter);
+            // 
+            // foxLabel29
+            // 
+            this.foxLabel29.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.foxLabel29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.foxLabel29.Location = new System.Drawing.Point(182, 110);
+            this.foxLabel29.Name = "foxLabel29";
+            this.foxLabel29.Size = new System.Drawing.Size(208, 39);
+            this.foxLabel29.TabIndex = 5;
+            this.foxLabel29.Text = "位图总文件夹路径";
+            // 
+            // foxLabel28
+            // 
+            this.foxLabel28.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.foxLabel28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.foxLabel28.Location = new System.Drawing.Point(182, 44);
+            this.foxLabel28.Name = "foxLabel28";
+            this.foxLabel28.Size = new System.Drawing.Size(208, 39);
+            this.foxLabel28.TabIndex = 5;
+            this.foxLabel28.Text = "XFL总文件夹路径";
+            // 
             // materialButton18
             // 
             this.materialButton18.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -1002,7 +1352,7 @@
             this.materialButton18.HighEmphasis = true;
             this.materialButton18.Icon = global::EBToolBox.Properties.Resources.ic_查找;
             this.materialButton18.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            this.materialButton18.Location = new System.Drawing.Point(1108, 95);
+            this.materialButton18.Location = new System.Drawing.Point(1108, 94);
             this.materialButton18.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton18.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.materialButton18.Name = "materialButton18";
@@ -1034,46 +1384,6 @@
             this.materialButton17.UseVisualStyleBackColor = true;
             this.materialButton17.Click += new System.EventHandler(this.materialButton17_Click);
             // 
-            // textBox12
-            // 
-            this.textBox12.AllowDrop = true;
-            this.textBox12.Location = new System.Drawing.Point(396, 109);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(654, 28);
-            this.textBox12.TabIndex = 6;
-            this.textBox12.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox12_DragDrop);
-            this.textBox12.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox12_DragEnter);
-            // 
-            // textBox11
-            // 
-            this.textBox11.AllowDrop = true;
-            this.textBox11.Location = new System.Drawing.Point(396, 44);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(654, 28);
-            this.textBox11.TabIndex = 6;
-            this.textBox11.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox11_DragDrop);
-            this.textBox11.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox11_DragEnter);
-            // 
-            // foxLabel29
-            // 
-            this.foxLabel29.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.foxLabel29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.foxLabel29.Location = new System.Drawing.Point(182, 109);
-            this.foxLabel29.Name = "foxLabel29";
-            this.foxLabel29.Size = new System.Drawing.Size(208, 39);
-            this.foxLabel29.TabIndex = 5;
-            this.foxLabel29.Text = "位图总文件夹路径";
-            // 
-            // foxLabel28
-            // 
-            this.foxLabel28.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.foxLabel28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.foxLabel28.Location = new System.Drawing.Point(182, 44);
-            this.foxLabel28.Name = "foxLabel28";
-            this.foxLabel28.Size = new System.Drawing.Size(208, 39);
-            this.foxLabel28.TabIndex = 5;
-            this.foxLabel28.Text = "XFL总文件夹路径";
-            // 
             // tabPage5
             // 
             this.tabPage5.AllowDrop = true;
@@ -1082,25 +1392,25 @@
             this.tabPage5.Controls.Add(this.textBox15);
             this.tabPage5.Controls.Add(this.checkedListBox1);
             this.tabPage5.Controls.Add(this.materialButton25);
-            this.tabPage5.Controls.Add(this.materialButton13);
             this.tabPage5.Controls.Add(this.textBox7);
             this.tabPage5.Controls.Add(this.foxLabel32);
             this.tabPage5.Controls.Add(this.foxLabel24);
+            this.tabPage5.Controls.Add(this.materialButton13);
             this.tabPage5.ImageKey = "模型.png";
-            this.tabPage5.Location = new System.Drawing.Point(4, 39);
+            this.tabPage5.Location = new System.Drawing.Point(4, 74);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1545, 934);
+            this.tabPage5.Size = new System.Drawing.Size(1545, 899);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "ClipCreator";
             // 
             // textBox15
             // 
-            this.textBox15.Location = new System.Drawing.Point(182, 417);
+            this.textBox15.Location = new System.Drawing.Point(182, 446);
             this.textBox15.Multiline = true;
             this.textBox15.Name = "textBox15";
             this.textBox15.ReadOnly = true;
             this.textBox15.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox15.Size = new System.Drawing.Size(1023, 514);
+            this.textBox15.Size = new System.Drawing.Size(1022, 514);
             this.textBox15.TabIndex = 10;
             // 
             // checkedListBox1
@@ -1119,7 +1429,7 @@
             "4.多位图/元件图层分解",
             "5.引用重写",
             "6.自动按照标准顺序执行（1=>3=>4=>2=>5）"});
-            this.checkedListBox1.Location = new System.Drawing.Point(396, 109);
+            this.checkedListBox1.Location = new System.Drawing.Point(396, 110);
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(776, 168);
             this.checkedListBox1.TabIndex = 9;
@@ -1136,7 +1446,7 @@
             this.materialButton25.HighEmphasis = true;
             this.materialButton25.Icon = null;
             this.materialButton25.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            this.materialButton25.Location = new System.Drawing.Point(182, 327);
+            this.materialButton25.Location = new System.Drawing.Point(182, 342);
             this.materialButton25.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton25.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.materialButton25.Name = "materialButton25";
@@ -1148,6 +1458,36 @@
             this.materialButton25.UseAccentColor = false;
             this.materialButton25.UseVisualStyleBackColor = true;
             this.materialButton25.Click += new System.EventHandler(this.materialButton25_Click);
+            // 
+            // textBox7
+            // 
+            this.textBox7.AllowDrop = true;
+            this.textBox7.Location = new System.Drawing.Point(396, 44);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(654, 28);
+            this.textBox7.TabIndex = 6;
+            this.textBox7.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox7_DragDrop);
+            this.textBox7.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox7_DragEnter);
+            // 
+            // foxLabel32
+            // 
+            this.foxLabel32.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.foxLabel32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.foxLabel32.Location = new System.Drawing.Point(182, 110);
+            this.foxLabel32.Name = "foxLabel32";
+            this.foxLabel32.Size = new System.Drawing.Size(208, 39);
+            this.foxLabel32.TabIndex = 5;
+            this.foxLabel32.Text = "功能选项";
+            // 
+            // foxLabel24
+            // 
+            this.foxLabel24.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.foxLabel24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.foxLabel24.Location = new System.Drawing.Point(182, 44);
+            this.foxLabel24.Name = "foxLabel24";
+            this.foxLabel24.Size = new System.Drawing.Size(208, 39);
+            this.foxLabel24.TabIndex = 5;
+            this.foxLabel24.Text = "XFL文件夹路径";
             // 
             // materialButton13
             // 
@@ -1169,65 +1509,82 @@
             this.materialButton13.UseVisualStyleBackColor = true;
             this.materialButton13.Click += new System.EventHandler(this.materialButton13_Click);
             // 
-            // textBox7
-            // 
-            this.textBox7.AllowDrop = true;
-            this.textBox7.Location = new System.Drawing.Point(396, 44);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(654, 28);
-            this.textBox7.TabIndex = 6;
-            this.textBox7.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox7_DragDrop);
-            this.textBox7.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox7_DragEnter);
-            // 
-            // foxLabel32
-            // 
-            this.foxLabel32.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.foxLabel32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.foxLabel32.Location = new System.Drawing.Point(182, 109);
-            this.foxLabel32.Name = "foxLabel32";
-            this.foxLabel32.Size = new System.Drawing.Size(208, 39);
-            this.foxLabel32.TabIndex = 5;
-            this.foxLabel32.Text = "功能选项";
-            // 
-            // foxLabel24
-            // 
-            this.foxLabel24.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.foxLabel24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.foxLabel24.Location = new System.Drawing.Point(182, 44);
-            this.foxLabel24.Name = "foxLabel24";
-            this.foxLabel24.Size = new System.Drawing.Size(208, 39);
-            this.foxLabel24.TabIndex = 5;
-            this.foxLabel24.Text = "XFL文件夹路径";
-            // 
             // tabPage7
             // 
             this.tabPage7.AllowDrop = true;
             this.tabPage7.AutoScroll = true;
             this.tabPage7.BackColor = System.Drawing.Color.White;
+            this.tabPage7.Controls.Add(this.panel14);
+            this.tabPage7.Controls.Add(this.foxLabel46);
             this.tabPage7.Controls.Add(this.textBox18);
             this.tabPage7.Controls.Add(this.panel5);
             this.tabPage7.Controls.Add(this.panel4);
             this.tabPage7.Controls.Add(this.materialButton26);
-            this.tabPage7.Controls.Add(this.materialButton14);
             this.tabPage7.Controls.Add(this.textBox8);
             this.tabPage7.Controls.Add(this.foxLabel37);
             this.tabPage7.Controls.Add(this.foxLabel36);
             this.tabPage7.Controls.Add(this.foxLabel25);
+            this.tabPage7.Controls.Add(this.materialButton14);
             this.tabPage7.ImageKey = "引擎_旋转视图.png";
-            this.tabPage7.Location = new System.Drawing.Point(4, 39);
+            this.tabPage7.Location = new System.Drawing.Point(4, 74);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(1545, 934);
+            this.tabPage7.Size = new System.Drawing.Size(1545, 899);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "ClipTransformer";
             // 
+            // panel14
+            // 
+            this.panel14.Controls.Add(this.radioButton36);
+            this.panel14.Controls.Add(this.radioButton37);
+            this.panel14.Location = new System.Drawing.Point(396, 165);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(654, 48);
+            this.panel14.TabIndex = 26;
+            // 
+            // radioButton36
+            // 
+            this.radioButton36.AutoSize = true;
+            this.radioButton36.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.radioButton36.Location = new System.Drawing.Point(537, 14);
+            this.radioButton36.Name = "radioButton36";
+            this.radioButton36.Size = new System.Drawing.Size(117, 29);
+            this.radioButton36.TabIndex = 18;
+            this.radioButton36.Text = "影片剪辑";
+            this.radioButton36.UseVisualStyleBackColor = true;
+            // 
+            // radioButton37
+            // 
+            this.radioButton37.AutoSize = true;
+            this.radioButton37.Checked = true;
+            this.radioButton37.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.radioButton37.Location = new System.Drawing.Point(0, 14);
+            this.radioButton37.Name = "radioButton37";
+            this.radioButton37.Size = new System.Drawing.Size(117, 29);
+            this.radioButton37.TabIndex = 18;
+            this.radioButton37.TabStop = true;
+            this.radioButton37.Text = "图形元件";
+            this.radioButton37.UseVisualStyleBackColor = true;
+            // 
+            // foxLabel46
+            // 
+            this.foxLabel46.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.foxLabel46.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.foxLabel46.Location = new System.Drawing.Point(182, 174);
+            this.foxLabel46.Name = "foxLabel46";
+            this.foxLabel46.Size = new System.Drawing.Size(208, 39);
+            this.foxLabel46.TabIndex = 25;
+            this.foxLabel46.Text = "元件类型";
+            // 
             // textBox18
             // 
-            this.textBox18.Location = new System.Drawing.Point(182, 520);
+            this.textBox18.Location = new System.Drawing.Point(182, 584);
             this.textBox18.Multiline = true;
             this.textBox18.Name = "textBox18";
             this.textBox18.ReadOnly = true;
             this.textBox18.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox18.Size = new System.Drawing.Size(1023, 411);
+            this.textBox18.Size = new System.Drawing.Size(1022, 410);
             this.textBox18.TabIndex = 24;
             // 
             // panel5
@@ -1273,7 +1630,7 @@
             this.panel4.Controls.Add(this.radioButton12);
             this.panel4.Controls.Add(this.radioButton13);
             this.panel4.Controls.Add(this.radioButton14);
-            this.panel4.Location = new System.Drawing.Point(396, 174);
+            this.panel4.Location = new System.Drawing.Point(396, 238);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(776, 206);
             this.panel4.TabIndex = 22;
@@ -1283,7 +1640,7 @@
             this.radioButton10.AutoSize = true;
             this.radioButton10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.radioButton10.Location = new System.Drawing.Point(0, 5);
+            this.radioButton10.Location = new System.Drawing.Point(0, 4);
             this.radioButton10.Name = "radioButton10";
             this.radioButton10.Size = new System.Drawing.Size(183, 29);
             this.radioButton10.TabIndex = 18;
@@ -1295,7 +1652,7 @@
             this.radioButton15.AutoSize = true;
             this.radioButton15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.radioButton15.Location = new System.Drawing.Point(0, 175);
+            this.radioButton15.Location = new System.Drawing.Point(0, 176);
             this.radioButton15.Name = "radioButton15";
             this.radioButton15.Size = new System.Drawing.Size(263, 29);
             this.radioButton15.TabIndex = 18;
@@ -1320,7 +1677,7 @@
             this.radioButton12.Enabled = false;
             this.radioButton12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.radioButton12.Location = new System.Drawing.Point(0, 107);
+            this.radioButton12.Location = new System.Drawing.Point(0, 106);
             this.radioButton12.Name = "radioButton12";
             this.radioButton12.Size = new System.Drawing.Size(461, 29);
             this.radioButton12.TabIndex = 18;
@@ -1333,7 +1690,7 @@
             this.radioButton13.Enabled = false;
             this.radioButton13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.radioButton13.Location = new System.Drawing.Point(0, 73);
+            this.radioButton13.Location = new System.Drawing.Point(0, 74);
             this.radioButton13.Name = "radioButton13";
             this.radioButton13.Size = new System.Drawing.Size(516, 29);
             this.radioButton13.TabIndex = 18;
@@ -1364,7 +1721,7 @@
             this.materialButton26.HighEmphasis = true;
             this.materialButton26.Icon = null;
             this.materialButton26.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            this.materialButton26.Location = new System.Drawing.Point(182, 430);
+            this.materialButton26.Location = new System.Drawing.Point(182, 494);
             this.materialButton26.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton26.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.materialButton26.Name = "materialButton26";
@@ -1376,6 +1733,46 @@
             this.materialButton26.UseAccentColor = false;
             this.materialButton26.UseVisualStyleBackColor = true;
             this.materialButton26.Click += new System.EventHandler(this.materialButton26_Click);
+            // 
+            // textBox8
+            // 
+            this.textBox8.AllowDrop = true;
+            this.textBox8.Location = new System.Drawing.Point(396, 44);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(654, 28);
+            this.textBox8.TabIndex = 9;
+            this.textBox8.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox8_DragDrop);
+            this.textBox8.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox8_DragEnter);
+            // 
+            // foxLabel37
+            // 
+            this.foxLabel37.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.foxLabel37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.foxLabel37.Location = new System.Drawing.Point(182, 238);
+            this.foxLabel37.Name = "foxLabel37";
+            this.foxLabel37.Size = new System.Drawing.Size(208, 39);
+            this.foxLabel37.TabIndex = 8;
+            this.foxLabel37.Text = "功能选项";
+            // 
+            // foxLabel36
+            // 
+            this.foxLabel36.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.foxLabel36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.foxLabel36.Location = new System.Drawing.Point(182, 110);
+            this.foxLabel36.Name = "foxLabel36";
+            this.foxLabel36.Size = new System.Drawing.Size(208, 39);
+            this.foxLabel36.TabIndex = 8;
+            this.foxLabel36.Text = "元件序号";
+            // 
+            // foxLabel25
+            // 
+            this.foxLabel25.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.foxLabel25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.foxLabel25.Location = new System.Drawing.Point(182, 44);
+            this.foxLabel25.Name = "foxLabel25";
+            this.foxLabel25.Size = new System.Drawing.Size(208, 39);
+            this.foxLabel25.TabIndex = 8;
+            this.foxLabel25.Text = "XFL文件夹路径";
             // 
             // materialButton14
             // 
@@ -1397,51 +1794,17 @@
             this.materialButton14.UseVisualStyleBackColor = true;
             this.materialButton14.Click += new System.EventHandler(this.materialButton14_Click);
             // 
-            // textBox8
-            // 
-            this.textBox8.AllowDrop = true;
-            this.textBox8.Location = new System.Drawing.Point(396, 44);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(654, 28);
-            this.textBox8.TabIndex = 9;
-            this.textBox8.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox8_DragDrop);
-            this.textBox8.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox8_DragEnter);
-            // 
-            // foxLabel37
-            // 
-            this.foxLabel37.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.foxLabel37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.foxLabel37.Location = new System.Drawing.Point(182, 174);
-            this.foxLabel37.Name = "foxLabel37";
-            this.foxLabel37.Size = new System.Drawing.Size(208, 39);
-            this.foxLabel37.TabIndex = 8;
-            this.foxLabel37.Text = "功能选项";
-            // 
-            // foxLabel36
-            // 
-            this.foxLabel36.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.foxLabel36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.foxLabel36.Location = new System.Drawing.Point(182, 109);
-            this.foxLabel36.Name = "foxLabel36";
-            this.foxLabel36.Size = new System.Drawing.Size(208, 39);
-            this.foxLabel36.TabIndex = 8;
-            this.foxLabel36.Text = "元件序号";
-            // 
-            // foxLabel25
-            // 
-            this.foxLabel25.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.foxLabel25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.foxLabel25.Location = new System.Drawing.Point(182, 44);
-            this.foxLabel25.Name = "foxLabel25";
-            this.foxLabel25.Size = new System.Drawing.Size(208, 39);
-            this.foxLabel25.TabIndex = 8;
-            this.foxLabel25.Text = "XFL文件夹路径";
-            // 
             // tabPage4
             // 
             this.tabPage4.AllowDrop = true;
             this.tabPage4.AutoScroll = true;
             this.tabPage4.BackColor = System.Drawing.Color.White;
+            this.tabPage4.Controls.Add(this.panel12);
+            this.tabPage4.Controls.Add(this.foxLabel44);
+            this.tabPage4.Controls.Add(this.panel9);
+            this.tabPage4.Controls.Add(this.foxLabel41);
+            this.tabPage4.Controls.Add(this.panel8);
+            this.tabPage4.Controls.Add(this.foxLabel40);
             this.tabPage4.Controls.Add(this.textBox16);
             this.tabPage4.Controls.Add(this.panel3);
             this.tabPage4.Controls.Add(this.panel2);
@@ -1450,41 +1813,201 @@
             this.tabPage4.Controls.Add(this.foxLabel35);
             this.tabPage4.Controls.Add(this.foxLabel34);
             this.tabPage4.Controls.Add(this.foxLabel33);
-            this.tabPage4.Controls.Add(this.materialButton19);
             this.tabPage4.Controls.Add(this.foxLabel30);
             this.tabPage4.Controls.Add(this.textBox13);
-            this.tabPage4.Controls.Add(this.materialButton16);
             this.tabPage4.Controls.Add(this.textBox10);
             this.tabPage4.Controls.Add(this.foxLabel27);
+            this.tabPage4.Controls.Add(this.materialButton19);
+            this.tabPage4.Controls.Add(this.materialButton16);
             this.tabPage4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage4.ImageKey = "四参数转换.png";
-            this.tabPage4.Location = new System.Drawing.Point(4, 39);
+            this.tabPage4.Location = new System.Drawing.Point(4, 74);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1545, 934);
+            this.tabPage4.Size = new System.Drawing.Size(1545, 899);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Res2Ext";
             // 
+            // panel12
+            // 
+            this.panel12.Controls.Add(this.textBox20);
+            this.panel12.Controls.Add(this.radioButton31);
+            this.panel12.Controls.Add(this.radioButton32);
+            this.panel12.Location = new System.Drawing.Point(396, 422);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(776, 48);
+            this.panel12.TabIndex = 28;
+            // 
+            // textBox20
+            // 
+            this.textBox20.AllowDrop = true;
+            this.textBox20.Enabled = false;
+            this.textBox20.Location = new System.Drawing.Point(680, 11);
+            this.textBox20.Name = "textBox20";
+            this.textBox20.Size = new System.Drawing.Size(93, 31);
+            this.textBox20.TabIndex = 19;
+            // 
+            // radioButton31
+            // 
+            this.radioButton31.AutoSize = true;
+            this.radioButton31.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.radioButton31.Location = new System.Drawing.Point(537, 14);
+            this.radioButton31.Name = "radioButton31";
+            this.radioButton31.Size = new System.Drawing.Size(137, 29);
+            this.radioButton31.TabIndex = 18;
+            this.radioButton31.Text = "加密位图为";
+            this.radioButton31.UseVisualStyleBackColor = true;
+            this.radioButton31.CheckedChanged += new System.EventHandler(this.radioButton31_CheckedChanged);
+            // 
+            // radioButton32
+            // 
+            this.radioButton32.AutoSize = true;
+            this.radioButton32.Checked = true;
+            this.radioButton32.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.radioButton32.Location = new System.Drawing.Point(0, 14);
+            this.radioButton32.Name = "radioButton32";
+            this.radioButton32.Size = new System.Drawing.Size(137, 29);
+            this.radioButton32.TabIndex = 18;
+            this.radioButton32.TabStop = true;
+            this.radioButton32.Text = "不进行加密";
+            this.radioButton32.UseVisualStyleBackColor = true;
+            this.radioButton32.CheckedChanged += new System.EventHandler(this.radioButton32_CheckedChanged);
+            // 
+            // foxLabel44
+            // 
+            this.foxLabel44.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.foxLabel44.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.foxLabel44.Location = new System.Drawing.Point(182, 433);
+            this.foxLabel44.Name = "foxLabel44";
+            this.foxLabel44.Size = new System.Drawing.Size(208, 39);
+            this.foxLabel44.TabIndex = 27;
+            this.foxLabel44.Text = "资源含加密信息";
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.radioButton24);
+            this.panel9.Controls.Add(this.radioButton25);
+            this.panel9.Location = new System.Drawing.Point(396, 165);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(654, 48);
+            this.panel9.TabIndex = 26;
+            // 
+            // radioButton24
+            // 
+            this.radioButton24.AutoSize = true;
+            this.radioButton24.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.radioButton24.Location = new System.Drawing.Point(537, 14);
+            this.radioButton24.Name = "radioButton24";
+            this.radioButton24.Size = new System.Drawing.Size(117, 29);
+            this.radioButton24.TabIndex = 18;
+            this.radioButton24.Text = "使用默认";
+            this.radioButton24.UseVisualStyleBackColor = true;
+            // 
+            // radioButton25
+            // 
+            this.radioButton25.AutoSize = true;
+            this.radioButton25.Checked = true;
+            this.radioButton25.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.radioButton25.Location = new System.Drawing.Point(0, 14);
+            this.radioButton25.Name = "radioButton25";
+            this.radioButton25.Size = new System.Drawing.Size(117, 29);
+            this.radioButton25.TabIndex = 18;
+            this.radioButton25.TabStop = true;
+            this.radioButton25.Text = "参考旧版";
+            this.radioButton25.UseVisualStyleBackColor = true;
+            // 
+            // foxLabel41
+            // 
+            this.foxLabel41.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.foxLabel41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.foxLabel41.Location = new System.Drawing.Point(182, 174);
+            this.foxLabel41.Name = "foxLabel41";
+            this.foxLabel41.Size = new System.Drawing.Size(208, 39);
+            this.foxLabel41.TabIndex = 25;
+            this.foxLabel41.Text = "缩放大小";
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.radioButton22);
+            this.panel8.Controls.Add(this.radioButton23);
+            this.panel8.Location = new System.Drawing.Point(396, 294);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(654, 48);
+            this.panel8.TabIndex = 24;
+            // 
+            // radioButton22
+            // 
+            this.radioButton22.AutoSize = true;
+            this.radioButton22.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.radioButton22.Location = new System.Drawing.Point(537, 14);
+            this.radioButton22.Name = "radioButton22";
+            this.radioButton22.Size = new System.Drawing.Size(117, 29);
+            this.radioButton22.TabIndex = 18;
+            this.radioButton22.Text = "中文1200";
+            this.radioButton22.UseVisualStyleBackColor = true;
+            // 
+            // radioButton23
+            // 
+            this.radioButton23.AutoSize = true;
+            this.radioButton23.Checked = true;
+            this.radioButton23.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.radioButton23.Location = new System.Drawing.Point(0, 14);
+            this.radioButton23.Name = "radioButton23";
+            this.radioButton23.Size = new System.Drawing.Size(117, 29);
+            this.radioButton23.TabIndex = 18;
+            this.radioButton23.TabStop = true;
+            this.radioButton23.Text = "国际1536";
+            this.radioButton23.UseVisualStyleBackColor = true;
+            // 
+            // foxLabel40
+            // 
+            this.foxLabel40.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.foxLabel40.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.foxLabel40.Location = new System.Drawing.Point(182, 303);
+            this.foxLabel40.Name = "foxLabel40";
+            this.foxLabel40.Size = new System.Drawing.Size(208, 39);
+            this.foxLabel40.TabIndex = 23;
+            this.foxLabel40.Text = "分辨比率";
+            // 
             // textBox16
             // 
-            this.textBox16.Location = new System.Drawing.Point(182, 636);
+            this.textBox16.Location = new System.Drawing.Point(182, 830);
             this.textBox16.Multiline = true;
             this.textBox16.Name = "textBox16";
             this.textBox16.ReadOnly = true;
             this.textBox16.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox16.Size = new System.Drawing.Size(1023, 295);
+            this.textBox16.Size = new System.Drawing.Size(1022, 295);
             this.textBox16.TabIndex = 22;
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.radioButton33);
             this.panel3.Controls.Add(this.radioButton7);
             this.panel3.Controls.Add(this.radioButton9);
             this.panel3.Controls.Add(this.radioButton8);
             this.panel3.Controls.Add(this.radioButton1);
             this.panel3.Controls.Add(this.radioButton2);
-            this.panel3.Location = new System.Drawing.Point(396, 304);
+            this.panel3.Location = new System.Drawing.Point(396, 499);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(776, 177);
+            this.panel3.Size = new System.Drawing.Size(776, 212);
             this.panel3.TabIndex = 21;
+            // 
+            // radioButton33
+            // 
+            this.radioButton33.AutoSize = true;
+            this.radioButton33.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.radioButton33.Location = new System.Drawing.Point(0, 109);
+            this.radioButton33.Name = "radioButton33";
+            this.radioButton33.Size = new System.Drawing.Size(146, 29);
+            this.radioButton33.TabIndex = 19;
+            this.radioButton33.Text = "仅加密labels";
+            this.radioButton33.UseVisualStyleBackColor = true;
             // 
             // radioButton7
             // 
@@ -1492,7 +2015,7 @@
             this.radioButton7.Checked = true;
             this.radioButton7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.radioButton7.Location = new System.Drawing.Point(0, 5);
+            this.radioButton7.Location = new System.Drawing.Point(0, 4);
             this.radioButton7.Name = "radioButton7";
             this.radioButton7.Size = new System.Drawing.Size(177, 29);
             this.radioButton7.TabIndex = 18;
@@ -1505,7 +2028,7 @@
             this.radioButton9.AutoSize = true;
             this.radioButton9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.radioButton9.Location = new System.Drawing.Point(0, 141);
+            this.radioButton9.Location = new System.Drawing.Point(0, 179);
             this.radioButton9.Name = "radioButton9";
             this.radioButton9.Size = new System.Drawing.Size(117, 29);
             this.radioButton9.TabIndex = 18;
@@ -1517,7 +2040,7 @@
             this.radioButton8.AutoSize = true;
             this.radioButton8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.radioButton8.Location = new System.Drawing.Point(0, 107);
+            this.radioButton8.Location = new System.Drawing.Point(0, 144);
             this.radioButton8.Name = "radioButton8";
             this.radioButton8.Size = new System.Drawing.Size(117, 29);
             this.radioButton8.TabIndex = 18;
@@ -1529,7 +2052,7 @@
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.radioButton1.Location = new System.Drawing.Point(0, 73);
+            this.radioButton1.Location = new System.Drawing.Point(0, 74);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(179, 29);
             this.radioButton1.TabIndex = 18;
@@ -1552,7 +2075,7 @@
             // 
             this.panel2.Controls.Add(this.radioButton5);
             this.panel2.Controls.Add(this.radioButton6);
-            this.panel2.Location = new System.Drawing.Point(396, 165);
+            this.panel2.Location = new System.Drawing.Point(396, 230);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(654, 48);
             this.panel2.TabIndex = 20;
@@ -1587,7 +2110,7 @@
             // 
             this.panel1.Controls.Add(this.radioButton4);
             this.panel1.Controls.Add(this.radioButton3);
-            this.panel1.Location = new System.Drawing.Point(396, 230);
+            this.panel1.Location = new System.Drawing.Point(396, 358);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(654, 48);
             this.panel1.TabIndex = 20;
@@ -1628,7 +2151,7 @@
             this.materialButton27.HighEmphasis = true;
             this.materialButton27.Icon = null;
             this.materialButton27.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            this.materialButton27.Location = new System.Drawing.Point(182, 546);
+            this.materialButton27.Location = new System.Drawing.Point(182, 740);
             this.materialButton27.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton27.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.materialButton27.Name = "materialButton27";
@@ -1645,7 +2168,7 @@
             // 
             this.foxLabel35.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.foxLabel35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.foxLabel35.Location = new System.Drawing.Point(182, 304);
+            this.foxLabel35.Location = new System.Drawing.Point(182, 499);
             this.foxLabel35.Name = "foxLabel35";
             this.foxLabel35.Size = new System.Drawing.Size(208, 39);
             this.foxLabel35.TabIndex = 14;
@@ -1655,7 +2178,7 @@
             // 
             this.foxLabel34.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.foxLabel34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.foxLabel34.Location = new System.Drawing.Point(182, 239);
+            this.foxLabel34.Location = new System.Drawing.Point(182, 368);
             this.foxLabel34.Name = "foxLabel34";
             this.foxLabel34.Size = new System.Drawing.Size(208, 39);
             this.foxLabel34.TabIndex = 14;
@@ -1665,71 +2188,31 @@
             // 
             this.foxLabel33.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.foxLabel33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.foxLabel33.Location = new System.Drawing.Point(182, 174);
+            this.foxLabel33.Location = new System.Drawing.Point(182, 238);
             this.foxLabel33.Name = "foxLabel33";
             this.foxLabel33.Size = new System.Drawing.Size(208, 39);
             this.foxLabel33.TabIndex = 14;
             this.foxLabel33.Text = "位图尺寸";
             // 
-            // materialButton19
-            // 
-            this.materialButton19.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton19.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton19.Depth = 0;
-            this.materialButton19.HighEmphasis = true;
-            this.materialButton19.Icon = global::EBToolBox.Properties.Resources.查询;
-            this.materialButton19.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            this.materialButton19.Location = new System.Drawing.Point(1108, 95);
-            this.materialButton19.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton19.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.materialButton19.Name = "materialButton19";
-            this.materialButton19.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton19.Size = new System.Drawing.Size(64, 36);
-            this.materialButton19.TabIndex = 16;
-            this.materialButton19.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton19.UseAccentColor = false;
-            this.materialButton19.UseVisualStyleBackColor = true;
-            this.materialButton19.Click += new System.EventHandler(this.materialButton19_Click);
-            // 
             // foxLabel30
             // 
             this.foxLabel30.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.foxLabel30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.foxLabel30.Location = new System.Drawing.Point(182, 109);
+            this.foxLabel30.Location = new System.Drawing.Point(182, 110);
             this.foxLabel30.Name = "foxLabel30";
             this.foxLabel30.Size = new System.Drawing.Size(208, 39);
             this.foxLabel30.TabIndex = 14;
-            this.foxLabel30.Text = "资源片段文件路径";
+            this.foxLabel30.Text = "资源片段路径";
             // 
             // textBox13
             // 
             this.textBox13.AllowDrop = true;
-            this.textBox13.Location = new System.Drawing.Point(396, 109);
+            this.textBox13.Location = new System.Drawing.Point(396, 110);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(654, 31);
             this.textBox13.TabIndex = 15;
             this.textBox13.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox13_DragDrop);
             this.textBox13.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox13_DragEnter);
-            // 
-            // materialButton16
-            // 
-            this.materialButton16.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton16.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton16.Depth = 0;
-            this.materialButton16.HighEmphasis = true;
-            this.materialButton16.Icon = global::EBToolBox.Properties.Resources.ic_查找;
-            this.materialButton16.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            this.materialButton16.Location = new System.Drawing.Point(1108, 30);
-            this.materialButton16.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton16.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.materialButton16.Name = "materialButton16";
-            this.materialButton16.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton16.Size = new System.Drawing.Size(64, 36);
-            this.materialButton16.TabIndex = 13;
-            this.materialButton16.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton16.UseAccentColor = false;
-            this.materialButton16.UseVisualStyleBackColor = true;
-            this.materialButton16.Click += new System.EventHandler(this.materialButton16_Click);
             // 
             // textBox10
             // 
@@ -1751,6 +2234,46 @@
             this.foxLabel27.TabIndex = 11;
             this.foxLabel27.Text = "XFL文件夹路径";
             // 
+            // materialButton19
+            // 
+            this.materialButton19.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton19.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton19.Depth = 0;
+            this.materialButton19.HighEmphasis = true;
+            this.materialButton19.Icon = global::EBToolBox.Properties.Resources.ic_查找;
+            this.materialButton19.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            this.materialButton19.Location = new System.Drawing.Point(1108, 94);
+            this.materialButton19.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton19.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.materialButton19.Name = "materialButton19";
+            this.materialButton19.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton19.Size = new System.Drawing.Size(64, 36);
+            this.materialButton19.TabIndex = 16;
+            this.materialButton19.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton19.UseAccentColor = false;
+            this.materialButton19.UseVisualStyleBackColor = true;
+            this.materialButton19.Click += new System.EventHandler(this.materialButton19_Click);
+            // 
+            // materialButton16
+            // 
+            this.materialButton16.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton16.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton16.Depth = 0;
+            this.materialButton16.HighEmphasis = true;
+            this.materialButton16.Icon = global::EBToolBox.Properties.Resources.ic_查找;
+            this.materialButton16.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            this.materialButton16.Location = new System.Drawing.Point(1108, 30);
+            this.materialButton16.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton16.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.materialButton16.Name = "materialButton16";
+            this.materialButton16.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton16.Size = new System.Drawing.Size(64, 36);
+            this.materialButton16.TabIndex = 13;
+            this.materialButton16.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton16.UseAccentColor = false;
+            this.materialButton16.UseVisualStyleBackColor = true;
+            this.materialButton16.Click += new System.EventHandler(this.materialButton16_Click);
+            // 
             // tabPage11
             // 
             this.tabPage11.AllowDrop = true;
@@ -1761,9 +2284,9 @@
             this.tabPage11.Controls.Add(this.foxLabel21);
             this.tabPage11.Controls.Add(this.materialSwitch2);
             this.tabPage11.ImageKey = "plist.png";
-            this.tabPage11.Location = new System.Drawing.Point(4, 39);
+            this.tabPage11.Location = new System.Drawing.Point(4, 74);
             this.tabPage11.Name = "tabPage11";
-            this.tabPage11.Size = new System.Drawing.Size(1545, 934);
+            this.tabPage11.Size = new System.Drawing.Size(1545, 899);
             this.tabPage11.TabIndex = 10;
             this.tabPage11.Text = "LevelSC";
             // 
@@ -1803,7 +2326,6 @@
             this.materialButton28.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialButton28.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.materialButton28.Depth = 0;
-            this.materialButton28.Enabled = false;
             this.materialButton28.Font = new System.Drawing.Font("宋体", 12F);
             this.materialButton28.HighEmphasis = true;
             this.materialButton28.Icon = null;
@@ -1866,9 +2388,9 @@
             this.tabPage16.AllowDrop = true;
             this.tabPage16.BackColor = System.Drawing.Color.White;
             this.tabPage16.Controls.Add(this.materialButton29);
-            this.tabPage16.Controls.Add(this.materialButton12);
             this.tabPage16.Controls.Add(this.foxLabel23);
             this.tabPage16.Controls.Add(this.textBox6);
+            this.tabPage16.Controls.Add(this.materialButton12);
             this.tabPage16.Location = new System.Drawing.Point(4, 28);
             this.tabPage16.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage16.Name = "tabPage16";
@@ -1883,7 +2405,6 @@
             this.materialButton29.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialButton29.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.materialButton29.Depth = 0;
-            this.materialButton29.Enabled = false;
             this.materialButton29.Font = new System.Drawing.Font("宋体", 12F);
             this.materialButton29.HighEmphasis = true;
             this.materialButton29.Icon = null;
@@ -1900,26 +2421,6 @@
             this.materialButton29.UseAccentColor = false;
             this.materialButton29.UseVisualStyleBackColor = true;
             this.materialButton29.Click += new System.EventHandler(this.materialButton29_Click);
-            // 
-            // materialButton12
-            // 
-            this.materialButton12.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton12.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton12.Depth = 0;
-            this.materialButton12.HighEmphasis = true;
-            this.materialButton12.Icon = global::EBToolBox.Properties.Resources.ic_查找;
-            this.materialButton12.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            this.materialButton12.Location = new System.Drawing.Point(938, 3);
-            this.materialButton12.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton12.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.materialButton12.Name = "materialButton12";
-            this.materialButton12.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton12.Size = new System.Drawing.Size(64, 36);
-            this.materialButton12.TabIndex = 11;
-            this.materialButton12.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton12.UseAccentColor = false;
-            this.materialButton12.UseVisualStyleBackColor = true;
-            this.materialButton12.Click += new System.EventHandler(this.materialButton12_Click);
             // 
             // foxLabel23
             // 
@@ -1940,6 +2441,26 @@
             this.textBox6.TabIndex = 9;
             this.textBox6.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox6_DragDrop);
             this.textBox6.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox6_DragEnter);
+            // 
+            // materialButton12
+            // 
+            this.materialButton12.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton12.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton12.Depth = 0;
+            this.materialButton12.HighEmphasis = true;
+            this.materialButton12.Icon = global::EBToolBox.Properties.Resources.ic_查找;
+            this.materialButton12.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            this.materialButton12.Location = new System.Drawing.Point(938, 3);
+            this.materialButton12.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton12.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.materialButton12.Name = "materialButton12";
+            this.materialButton12.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton12.Size = new System.Drawing.Size(64, 36);
+            this.materialButton12.TabIndex = 11;
+            this.materialButton12.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton12.UseAccentColor = false;
+            this.materialButton12.UseVisualStyleBackColor = true;
+            this.materialButton12.Click += new System.EventHandler(this.materialButton12_Click);
             // 
             // foxLabel20
             // 
@@ -1993,9 +2514,9 @@
             this.tabPage9.Controls.Add(this.materialButton4);
             this.tabPage9.Controls.Add(this.materialButton3);
             this.tabPage9.ImageKey = "setting.png";
-            this.tabPage9.Location = new System.Drawing.Point(4, 39);
+            this.tabPage9.Location = new System.Drawing.Point(4, 74);
             this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Size = new System.Drawing.Size(1545, 934);
+            this.tabPage9.Size = new System.Drawing.Size(1545, 899);
             this.tabPage9.TabIndex = 8;
             this.tabPage9.Text = "Settings";
             // 
@@ -2161,6 +2682,128 @@
             this.materialButton3.UseVisualStyleBackColor = true;
             this.materialButton3.Click += new System.EventHandler(this.materialButton3_MouseHover);
             // 
+            // tabPage17
+            // 
+            this.tabPage17.AllowDrop = true;
+            this.tabPage17.AutoScroll = true;
+            this.tabPage17.BackColor = System.Drawing.Color.White;
+            this.tabPage17.Controls.Add(this.foxLabel56);
+            this.tabPage17.Controls.Add(this.foxLabel55);
+            this.tabPage17.Controls.Add(this.foxLabel54);
+            this.tabPage17.Controls.Add(this.foxLabel53);
+            this.tabPage17.Controls.Add(this.foxLabel52);
+            this.tabPage17.Controls.Add(this.foxLabel51);
+            this.tabPage17.Controls.Add(this.foxLabel50);
+            this.tabPage17.Controls.Add(this.foxLabel49);
+            this.tabPage17.Controls.Add(this.foxLabel48);
+            this.tabPage17.Controls.Add(this.foxLabel47);
+            this.tabPage17.ImageKey = "特别鸣谢.png";
+            this.tabPage17.Location = new System.Drawing.Point(4, 74);
+            this.tabPage17.Name = "tabPage17";
+            this.tabPage17.Size = new System.Drawing.Size(1545, 899);
+            this.tabPage17.TabIndex = 11;
+            this.tabPage17.Text = "Credits";
+            // 
+            // foxLabel56
+            // 
+            this.foxLabel56.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.foxLabel56.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.foxLabel56.Location = new System.Drawing.Point(3, 327);
+            this.foxLabel56.Name = "foxLabel56";
+            this.foxLabel56.Size = new System.Drawing.Size(1022, 39);
+            this.foxLabel56.TabIndex = 22;
+            this.foxLabel56.Text = "LevelSC:Min_mozj、SMF Drummer";
+            // 
+            // foxLabel55
+            // 
+            this.foxLabel55.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.foxLabel55.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.foxLabel55.Location = new System.Drawing.Point(3, 291);
+            this.foxLabel55.Name = "foxLabel55";
+            this.foxLabel55.Size = new System.Drawing.Size(1022, 39);
+            this.foxLabel55.TabIndex = 21;
+            this.foxLabel55.Text = "DirectoryCreator:Min_mozj、SMF Drummer";
+            // 
+            // foxLabel54
+            // 
+            this.foxLabel54.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.foxLabel54.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.foxLabel54.Location = new System.Drawing.Point(3, 255);
+            this.foxLabel54.Name = "foxLabel54";
+            this.foxLabel54.Size = new System.Drawing.Size(1022, 39);
+            this.foxLabel54.TabIndex = 20;
+            this.foxLabel54.Text = "SpriteToLibrary:Beta Beast";
+            // 
+            // foxLabel53
+            // 
+            this.foxLabel53.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.foxLabel53.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.foxLabel53.Location = new System.Drawing.Point(3, 219);
+            this.foxLabel53.Name = "foxLabel53";
+            this.foxLabel53.Size = new System.Drawing.Size(1022, 39);
+            this.foxLabel53.TabIndex = 19;
+            this.foxLabel53.Text = "ClipTransformer:Min_mozj、SMF Drummer";
+            // 
+            // foxLabel52
+            // 
+            this.foxLabel52.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.foxLabel52.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.foxLabel52.Location = new System.Drawing.Point(3, 183);
+            this.foxLabel52.Name = "foxLabel52";
+            this.foxLabel52.Size = new System.Drawing.Size(1022, 39);
+            this.foxLabel52.TabIndex = 18;
+            this.foxLabel52.Text = "ClipCreator:小黑_yyds、Min_mozj、小范Drummer";
+            // 
+            // foxLabel51
+            // 
+            this.foxLabel51.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.foxLabel51.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.foxLabel51.Location = new System.Drawing.Point(3, 147);
+            this.foxLabel51.Name = "foxLabel51";
+            this.foxLabel51.Size = new System.Drawing.Size(1022, 39);
+            this.foxLabel51.TabIndex = 17;
+            this.foxLabel51.Text = "Res2Ext:小黑_yyds、Min_mozj、ATSGF";
+            // 
+            // foxLabel50
+            // 
+            this.foxLabel50.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.foxLabel50.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.foxLabel50.Location = new System.Drawing.Point(3, 111);
+            this.foxLabel50.Name = "foxLabel50";
+            this.foxLabel50.Size = new System.Drawing.Size(1022, 39);
+            this.foxLabel50.TabIndex = 16;
+            this.foxLabel50.Text = "BnkCvt:Min_mozj";
+            // 
+            // foxLabel49
+            // 
+            this.foxLabel49.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.foxLabel49.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.foxLabel49.Location = new System.Drawing.Point(3, 75);
+            this.foxLabel49.Name = "foxLabel49";
+            this.foxLabel49.Size = new System.Drawing.Size(1022, 39);
+            this.foxLabel49.TabIndex = 15;
+            this.foxLabel49.Text = "ResSC:某Eight-Bit、轩";
+            // 
+            // foxLabel48
+            // 
+            this.foxLabel48.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.foxLabel48.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.foxLabel48.Location = new System.Drawing.Point(3, 39);
+            this.foxLabel48.Name = "foxLabel48";
+            this.foxLabel48.Size = new System.Drawing.Size(1022, 39);
+            this.foxLabel48.TabIndex = 14;
+            this.foxLabel48.Text = "Ftp2Res:某Eight-Bit、Min_mozj、SMF Drummer、河里骑士、CERK、yyz、珂教永存";
+            // 
+            // foxLabel47
+            // 
+            this.foxLabel47.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.foxLabel47.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.foxLabel47.Location = new System.Drawing.Point(3, 3);
+            this.foxLabel47.Name = "foxLabel47";
+            this.foxLabel47.Size = new System.Drawing.Size(1022, 39);
+            this.foxLabel47.TabIndex = 13;
+            this.foxLabel47.Text = "参与EBToolBox各项功能的测试人员如下：";
+            // 
             // imageList1
             // 
             this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
@@ -2186,6 +2829,7 @@
             this.imageList1.Images.SetKeyName(18, "文件音乐.png");
             this.imageList1.Images.SetKeyName(19, "page level-line.png");
             this.imageList1.Images.SetKeyName(20, "plist.png");
+            this.imageList1.Images.SetKeyName(21, "特别鸣谢.png");
             // 
             // openFileDialog1
             // 
@@ -2231,6 +2875,12 @@
             this.tabPage10.PerformLayout();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.materialTabControl2.ResumeLayout(false);
@@ -2238,6 +2888,10 @@
             this.tabPage12.PerformLayout();
             this.tabPage13.ResumeLayout(false);
             this.tabPage13.PerformLayout();
+            this.panel13.ResumeLayout(false);
+            this.panel13.PerformLayout();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.tabPage6.ResumeLayout(false);
@@ -2246,12 +2900,20 @@
             this.tabPage5.PerformLayout();
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
+            this.panel14.ResumeLayout(false);
+            this.panel14.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -2267,6 +2929,7 @@
             this.tabPage16.PerformLayout();
             this.tabPage9.ResumeLayout(false);
             this.tabPage9.PerformLayout();
+            this.tabPage17.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -2426,6 +3089,57 @@
         private ReaLTaiizor.Controls.FoxLabel foxLabel37;
         public System.Windows.Forms.TextBox textBox18;
         public System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.Panel panel7;
+        public System.Windows.Forms.RadioButton radioButton20;
+        public System.Windows.Forms.RadioButton radioButton21;
+        private ReaLTaiizor.Controls.FoxLabel foxLabel39;
+        private System.Windows.Forms.Panel panel6;
+        public System.Windows.Forms.RadioButton radioButton18;
+        public System.Windows.Forms.RadioButton radioButton19;
+        private ReaLTaiizor.Controls.FoxLabel foxLabel38;
+        private System.Windows.Forms.Panel panel8;
+        public System.Windows.Forms.RadioButton radioButton22;
+        public System.Windows.Forms.RadioButton radioButton23;
+        private ReaLTaiizor.Controls.FoxLabel foxLabel40;
+        private System.Windows.Forms.Panel panel9;
+        public System.Windows.Forms.RadioButton radioButton24;
+        public System.Windows.Forms.RadioButton radioButton25;
+        private ReaLTaiizor.Controls.FoxLabel foxLabel41;
+        private System.Windows.Forms.Panel panel11;
+        public System.Windows.Forms.RadioButton radioButton28;
+        public System.Windows.Forms.RadioButton radioButton29;
+        private ReaLTaiizor.Controls.FoxLabel foxLabel43;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog10;
+        private System.Windows.Forms.Panel panel10;
+        public System.Windows.Forms.RadioButton radioButton26;
+        public System.Windows.Forms.RadioButton radioButton27;
+        private ReaLTaiizor.Controls.FoxLabel foxLabel42;
+        public System.Windows.Forms.RadioButton radioButton30;
+        private System.Windows.Forms.Panel panel12;
+        public System.Windows.Forms.RadioButton radioButton31;
+        public System.Windows.Forms.RadioButton radioButton32;
+        private ReaLTaiizor.Controls.FoxLabel foxLabel44;
+        public System.Windows.Forms.TextBox textBox20;
+        public System.Windows.Forms.RadioButton radioButton33;
+        private System.Windows.Forms.Panel panel13;
+        public System.Windows.Forms.RadioButton radioButton34;
+        public System.Windows.Forms.RadioButton radioButton35;
+        private ReaLTaiizor.Controls.FoxLabel foxLabel45;
+        private System.Windows.Forms.Panel panel14;
+        public System.Windows.Forms.RadioButton radioButton36;
+        public System.Windows.Forms.RadioButton radioButton37;
+        private ReaLTaiizor.Controls.FoxLabel foxLabel46;
+        private System.Windows.Forms.TabPage tabPage17;
+        private ReaLTaiizor.Controls.FoxLabel foxLabel56;
+        private ReaLTaiizor.Controls.FoxLabel foxLabel55;
+        private ReaLTaiizor.Controls.FoxLabel foxLabel54;
+        private ReaLTaiizor.Controls.FoxLabel foxLabel53;
+        private ReaLTaiizor.Controls.FoxLabel foxLabel52;
+        private ReaLTaiizor.Controls.FoxLabel foxLabel51;
+        private ReaLTaiizor.Controls.FoxLabel foxLabel50;
+        private ReaLTaiizor.Controls.FoxLabel foxLabel49;
+        private ReaLTaiizor.Controls.FoxLabel foxLabel48;
+        private ReaLTaiizor.Controls.FoxLabel foxLabel47;
     }
 }
 
