@@ -365,7 +365,7 @@
             this.foxLabel12.Name = "foxLabel12";
             this.foxLabel12.Size = new System.Drawing.Size(440, 39);
             this.foxLabel12.TabIndex = 3;
-            this.foxLabel12.Text = "版本：1.2.2.0";
+            this.foxLabel12.Text = "版本：1.3.1.0";
             // 
             // foxLabel11
             // 
@@ -2752,7 +2752,7 @@
             this.foxLabel52.Name = "foxLabel52";
             this.foxLabel52.Size = new System.Drawing.Size(1022, 39);
             this.foxLabel52.TabIndex = 18;
-            this.foxLabel52.Text = "ClipCreator:小黑_yyds、Min_mozj、小范Drummer";
+            this.foxLabel52.Text = "ClipCreator:小黑_yyds、Min_mozj、SMF Drummer";
             // 
             // foxLabel51
             // 
