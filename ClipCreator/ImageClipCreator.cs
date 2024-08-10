@@ -71,6 +71,7 @@ namespace ClipCreator
                         //判定图片是否被元件引用
                         if (!this.irecord.Contains(pid))
                         {
+                            /*此处废除自动补位功能20240810
                             if (this.irecord.Contains(null))
                             {
                                 icname += this.irecord.IndexOf(null).ToString() + ".xml";
@@ -83,6 +84,13 @@ namespace ClipCreator
                                 //信息录入数组
                                 this.irecord.Add(pid);
                             }
+                            */
+                            //赋予名称
+                            icname += this.irecord.Count.ToString() + ".xml";
+                            //信息录入数组
+                            this.irecord.Add(pid);
+
+
                             //定义预置元件名
                             string sample = "samplei.xml";
                             //判定使用0.781250还是1.000000参数的i元件

@@ -131,6 +131,8 @@ namespace ClipCreator
                                         string lin = el.GetAttribute("libraryItemName");
                                         //防止二级路径//添加删除.png后缀功能20240303修改
                                         lin = lin.Substring(lin.LastIndexOf('/') + 1, lin.Length - lin.LastIndexOf('/') - 1).Replace(".png","");
+                                        //防止add$//20240810添加
+                                        lin = lin.Substring(lin.LastIndexOf('$') + 1, lin.Length - lin.LastIndexOf('$') - 1).Replace(".png", "");
                                         //删除引用不存在位图的元件
                                         if (isr.srecord.Contains(el.GetAttribute("libraryItemName")))
                                         {

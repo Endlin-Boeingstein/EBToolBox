@@ -33,6 +33,8 @@ namespace SpriteToLibrary
                     string href = DOMBitmapItem.GetAttribute("name");
                     //防止二级路径//防止元件引用的位图有.png后缀20240304修改
                     href = href.Substring(href.LastIndexOf('/') + 1, href.Length - href.LastIndexOf('/') - 1).Replace(".png","") + ".png";
+                    //防止add$//20240810添加
+                    href = href.Substring(href.LastIndexOf('$') + 1, href.Length - href.LastIndexOf('$') - 1).Replace(".png", "") + ".png";
                     if (!sarray.Contains(href))
                     {
                         //记录引用信息

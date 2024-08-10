@@ -159,6 +159,8 @@ namespace Res2Ext
                                 string name = element.GetAttribute("libraryItemName");
                                 //防止二级路径//添加删除.png后缀功能20240303修改
                                 name = name.Substring(name.LastIndexOf('/') + 1, name.Length - name.LastIndexOf('/') - 1).Replace(".png","");
+                                //防止add$//20240810添加
+                                name = name.Substring(name.LastIndexOf('$') + 1, name.Length - name.LastIndexOf('$') - 1).Replace(".png", "");
                                 //新功能更新而停用//记录id用于资源引用部分size重写的变量
                                 //新功能更新而停用///string rid = null;
                                 //遍历resources数组

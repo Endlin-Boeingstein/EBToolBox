@@ -56,6 +56,7 @@ namespace ClipCreator
                     {
                         //获得未被引用的i元件名称
                         iid += item;
+                        /*此处废除自动补位功能20240810
                         if (this.arecord.Contains(null))
                         {
                             acname += this.arecord.IndexOf(null).ToString() + ".xml";
@@ -70,6 +71,14 @@ namespace ClipCreator
                             this.arecord.Add(iid);
                             this.airecord.Add(item);
                         }
+                        */
+                        //赋予名称
+                        acname += this.arecord.Count.ToString() + ".xml";
+                        //信息录入数组
+                        this.arecord.Add(iid);
+                        this.airecord.Add(item);
+
+
                         //得到预置的和exe同文件夹的samplea.xml的路径
                         FileInfo fi = new FileInfo(System.Environment.CurrentDirectory + "\\ClipCreator\\samplea.xml");
                         //判定根目录读取函数是否生效，否则换第二条函数

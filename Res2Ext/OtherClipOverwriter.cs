@@ -24,6 +24,7 @@ namespace Res2Ext
                 DirectoryInfo TheFolder = new DirectoryInfo(Fpath);
                 //创建文件数组
                 FileInfo[] files = TheFolder.GetFiles();
+                //其余元件帧间空帧检测//20240513新增
                 form1.textBox16.AppendText("修复检测图层帧间空帧中......" + "\r\n");
                 //遍历文件夹内文件
                 foreach (FileInfo NextFile in files)
@@ -71,41 +72,12 @@ namespace Res2Ext
                             int nullandhasele = 0;
 
 
-
-
-                            //记录图层序号
-                            int layernum = 0;
-                            //预置addDOMLayer节点，新建图层
-                            XmlElement addDOMLayer = xmlDoc.CreateElement("DOMLayer", xmlDoc.DocumentElement.NamespaceURI);
-                            //预置addframes节点
-                            XmlElement addframes = xmlDoc.CreateElement("frames", xmlDoc.DocumentElement.NamespaceURI);
-                            //设name为DOMLayer的name值（此处会出现极大卡顿，暂无法修复）
-                            addDOMLayer.SetAttribute("name", DOMLayer.GetAttribute("name") + "_" + layernum);
-                            //将addframes作为addDOMLayer的子节点
-                            addDOMLayer.AppendChild(addframes);
-
-
-
+                            //先行检测
                             //记录帧间空帧所在帧数
                             for (int j = 0; j < DOMLayer.FirstChild.ChildNodes.Count; j++)
                             {
                                 //转换为XmlElement
                                 XmlElement DOMFrame = (XmlElement)DOMLayer.FirstChild.ChildNodes[j];
-                                //此处填充新建图层的实帧前的空帧
-                                //预置addDOMFrame节点
-                                XmlElement addDOMFrame = xmlDoc.CreateElement("DOMFrame", xmlDoc.DocumentElement.NamespaceURI);
-                                //设index为DOMFrame的index值
-                                addDOMFrame.SetAttribute("index", DOMFrame.GetAttribute("index"));
-                                //设duration为DOMFrame的duration值
-                                string fduration = DOMFrame.GetAttribute("duration");
-                                if (fduration == "" || fduration == "0" || fduration == null)
-                                {
-                                    fduration = "1";
-                                }
-                                else { }
-                                addDOMFrame.SetAttribute("duration", fduration);
-
-
                                 if (DOMFrame.GetElementsByTagName("DOMBitmapInstance").Count != 0 || DOMFrame.GetElementsByTagName("DOMSymbolInstance").Count != 0)
                                 {
                                     if (dsitrue == 0)
@@ -139,33 +111,94 @@ namespace Res2Ext
                                     else { }
                                     dsitrue = 0;
                                 }
-                                //如果未检测到空帧
-                                if (nullandhasele <= 1)
+                            }
+
+
+
+                            //处理
+                            if (nullandhasele > 1)
+                            {
+                                //重置
+                                dsitrue = 0;
+                                //重置
+                                nullandhasele = 0;
+                                //记录图层序号
+                                int layernum = 0;
+                                //预置addDOMLayer节点，新建图层
+                                XmlElement addDOMLayer = xmlDoc.CreateElement("DOMLayer", xmlDoc.DocumentElement.NamespaceURI);
+                                //预置addframes节点
+                                XmlElement addframes = xmlDoc.CreateElement("frames", xmlDoc.DocumentElement.NamespaceURI);
+                                //设name为DOMLayer的name值（此处会出现极大卡顿，暂无法修复）
+                                addDOMLayer.SetAttribute("name", DOMLayer.GetAttribute("name") + "_" + layernum);
+                                //将addframes作为addDOMLayer的子节点
+                                addDOMLayer.AppendChild(addframes);
+
+
+
+                                //记录帧间空帧所在帧数
+                                for (int j = 0; j < DOMLayer.FirstChild.ChildNodes.Count; j++)
                                 {
-                                    //将addDOMFrame作为addframes的子节点
-                                    addframes.AppendChild(addDOMFrame);
+                                    //转换为XmlElement
+                                    XmlElement DOMFrame = (XmlElement)DOMLayer.FirstChild.ChildNodes[j];
+
+
+
+                                    if (DOMFrame.GetElementsByTagName("DOMBitmapInstance").Count != 0 || DOMFrame.GetElementsByTagName("DOMSymbolInstance").Count != 0)
+                                    {
+                                        if (dsitrue == 0)
+                                        {
+                                            nullandhasele++;
+                                        }
+                                        else { }
+                                        dsitrue = 1;
+                                    }
+                                    else
+                                    {
+                                        //已迁移至检测
+                                        dsitrue = 0;
+                                    }
+                                    //如果未检测到空帧
+                                    if (nullandhasele <= 1)
+                                    {
+                                        //此处填充新建图层的实帧前的空帧
+                                        //预置addDOMFrame节点
+                                        XmlElement addDOMFrame = xmlDoc.CreateElement("DOMFrame", xmlDoc.DocumentElement.NamespaceURI);
+                                        //设index为DOMFrame的index值
+                                        addDOMFrame.SetAttribute("index", DOMFrame.GetAttribute("index"));
+                                        //设duration为DOMFrame的duration值
+                                        string fduration = DOMFrame.GetAttribute("duration");
+                                        if (fduration == "" || fduration == "0" || fduration == null)
+                                        {
+                                            fduration = "1";
+                                        }
+                                        else { }
+                                        addDOMFrame.SetAttribute("duration", fduration);
+                                        //将addDOMFrame作为addframes的子节点
+                                        addframes.AppendChild(addDOMFrame);
+                                    }
+                                    else
+                                    {
+                                        //将本DOMFrame作为addframes的子节点
+                                        addframes.AppendChild(DOMFrame);
+                                        //回落
+                                        j--;
+                                    }
                                 }
+                                if (nullandhasele <= 1) { }
                                 else
                                 {
-                                    //将本DOMFrame作为addframes的子节点
-                                    addframes.AppendChild(DOMFrame);
+                                    //将addDOMLayer插在DOMLayer的前面
+                                    root.FirstChild.FirstChild.FirstChild.InsertBefore(addDOMLayer, node);
+                                    form1.textBox16.AppendText("已提取" + NextFile.Name.Substring(0, NextFile.Name.Length - 4) + "元件的" + DOMLayer.GetAttribute("name") + "图层的帧间空帧并新建图层" + "\r\n");
+                                    //图层下标增加
+                                    layernum++;
                                     //回落
-                                    j--;
+                                    i--;
+                                    //保存xml
+                                    xmlDoc.Save(NextFile.FullName);
                                 }
                             }
-                            if (nullandhasele <= 1) { }
-                            else
-                            {
-                                //将addDOMLayer插在DOMLayer的前面
-                                root.FirstChild.FirstChild.FirstChild.InsertBefore(addDOMLayer, node);
-                                form1.textBox16.AppendText("已提取" + NextFile.Name.Substring(0, NextFile.Name.Length - 4) + "元件的" + DOMLayer.GetAttribute("name") + "图层的帧间空帧并新建图层" + "\r\n");
-                                //图层下标增加
-                                layernum++;
-                                //回落
-                                i--;
-                            }
-                            //保存xml
-                            xmlDoc.Save(NextFile.FullName);
+                            else { }
                         }
                     }
                 }
