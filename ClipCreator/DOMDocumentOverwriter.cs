@@ -83,7 +83,7 @@ namespace ClipCreator
                     {
                         //预置Include节点
                         XmlElement incl = xmlDoc.CreateElement("Include", xmlDoc.DocumentElement.NamespaceURI);
-                        //录入i元件全名
+                        //录入a元件全名
                         incl.SetAttribute("href", "a" + item.ToString() + ".xml");
                         //将incl作为symbols的子节点
                         symbols.AppendChild(incl);
@@ -96,7 +96,7 @@ namespace ClipCreator
                 xmlDoc.Save(DPath);
                 //预置Include节点
                 XmlElement inclu = xmlDoc.CreateElement("Include", xmlDoc.DocumentElement.NamespaceURI);
-                //录入i元件全名
+                //录入main元件全名
                 inclu.SetAttribute("href", "main.xml");
                 //将inclu作为symbols的子节点
                 symbols.AppendChild(inclu);
