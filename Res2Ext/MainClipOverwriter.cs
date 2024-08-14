@@ -314,7 +314,7 @@ namespace Res2Ext
             }
             catch
             {
-                MessageBox.Show("ImageClipFormat ERROR");
+                MessageBox.Show("MainClipOverwrite ERROR");
             }
         }
     }

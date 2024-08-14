@@ -365,7 +365,7 @@
             this.foxLabel12.Name = "foxLabel12";
             this.foxLabel12.Size = new System.Drawing.Size(440, 39);
             this.foxLabel12.TabIndex = 3;
-            this.foxLabel12.Text = "版本：1.3.2.1";
+            this.foxLabel12.Text = "版本：1.3.2.2";
             // 
             // foxLabel11
             // 
