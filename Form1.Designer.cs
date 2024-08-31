@@ -365,7 +365,7 @@
             this.foxLabel12.Name = "foxLabel12";
             this.foxLabel12.Size = new System.Drawing.Size(440, 39);
             this.foxLabel12.TabIndex = 3;
-            this.foxLabel12.Text = "版本：1.3.2.3";
+            this.foxLabel12.Text = "版本：1.3.2.4";
             // 
             // foxLabel11
             // 
@@ -2792,7 +2792,7 @@
             this.foxLabel48.Name = "foxLabel48";
             this.foxLabel48.Size = new System.Drawing.Size(1022, 39);
             this.foxLabel48.TabIndex = 14;
-            this.foxLabel48.Text = "Ftp2Res:某Eight-Bit、Min_mozj、SMF Drummer、河里骑士、CERK、yyz、珂教永存";
+            this.foxLabel48.Text = "Ftp2Res:某Eight-Bit、Min_mozj、SMF Drummer、河里骑士、CERK、uuz、珂教永存";
             // 
             // foxLabel47
             // 

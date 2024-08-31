@@ -312,14 +312,15 @@ namespace Ftp2Res
                         channel.Property("pivot").Remove();
                         //将frame尺寸参数Object化
                         JObject scaledata = (JObject)channel["frame"];
-                        //宝开化尺寸信息//20240810改写
+                        //宝开化尺寸信息//20240810改写//20240810废除
                         if (scaledata.ContainsKey("x"))
                         {
-                            if (scaledata.ContainsKey("w") && scaledata.ContainsKey("h"))
+                            /*废除宝开化20240831
+                            if(scaledata.ContainsKey("w")&& scaledata.ContainsKey("h"))
                             {
-                                if ((int)scaledata["w"] > 2 && (int)scaledata["h"] > 2)
+                                if((int)scaledata["w"]>2&& (int)scaledata["h"] > 2)
                                 {
-                                    channel.Property("frame").AddBeforeSelf(new JProperty("ax", (int)scaledata["x"] + 1));
+                                    channel.Property("frame").AddBeforeSelf(new JProperty("ax", (int)scaledata["x"]+1));
                                 }
                                 else
                                 {
@@ -327,14 +328,18 @@ namespace Ftp2Res
                                 }
                             }
                             else { }
+                            */
+                            //废除后添加20240831
+                            channel.Property("frame").AddBeforeSelf(new JProperty("ax", scaledata["x"]));
                         }
                         if (scaledata.ContainsKey("y"))
                         {
+                            /*废除宝开化20240831
                             if (scaledata.ContainsKey("w") && scaledata.ContainsKey("h"))
                             {
                                 if ((int)scaledata["w"] > 2 && (int)scaledata["h"] > 2)
                                 {
-                                    channel.Property("frame").AddBeforeSelf(new JProperty("ay", (int)scaledata["y"] + 1));
+                                    channel.Property("frame").AddBeforeSelf(new JProperty("ay", (int)scaledata["y"]+1));
                                 }
                                 else
                                 {
@@ -342,14 +347,18 @@ namespace Ftp2Res
                                 }
                             }
                             else { }
+                            */
+                            //废除后添加20240831
+                            channel.Property("frame").AddBeforeSelf(new JProperty("ay", scaledata["y"]));
                         }
                         if (scaledata.ContainsKey("w"))
                         {
+                            /*废除宝开化20240831
                             if (scaledata.ContainsKey("w") && scaledata.ContainsKey("h"))
                             {
                                 if ((int)scaledata["w"] > 2 && (int)scaledata["h"] > 2)
                                 {
-                                    channel.Property("frame").AddBeforeSelf(new JProperty("aw", (int)scaledata["w"] - 2));
+                                    channel.Property("frame").AddBeforeSelf(new JProperty("aw", (int)scaledata["w"]-2));
                                 }
                                 else
                                 {
@@ -357,16 +366,20 @@ namespace Ftp2Res
                                 }
                             }
                             else { }
+                            */
+                            //废除后添加20240831
+                            channel.Property("frame").AddBeforeSelf(new JProperty("aw", scaledata["w"]));
                             //卡槽自动判定计算20240308迁移至oc类
                             channel = oc.OffsetCalculate(channel, scaledata.Property("w"), isold, atlasname, idl, zoffset);
                         }
                         if (scaledata.ContainsKey("h"))
                         {
+                            /*废除宝开化20240831
                             if (scaledata.ContainsKey("w") && scaledata.ContainsKey("h"))
                             {
                                 if ((int)scaledata["w"] > 2 && (int)scaledata["h"] > 2)
                                 {
-                                    channel.Property("frame").AddBeforeSelf(new JProperty("ah", (int)scaledata["h"] - 2));
+                                    channel.Property("frame").AddBeforeSelf(new JProperty("ah", (int)scaledata["h"]-2));
                                 }
                                 else
                                 {
@@ -374,6 +387,9 @@ namespace Ftp2Res
                                 }
                             }
                             else { }
+                            */
+                            //废除后添加20240831
+                            channel.Property("frame").AddBeforeSelf(new JProperty("ah", scaledata["h"]));
                             //卡槽自动判定计算20240308迁移至oc类
                             channel = oc.OffsetCalculate(channel, scaledata.Property("h"), isold, atlasname, idl, zoffset);
                         }

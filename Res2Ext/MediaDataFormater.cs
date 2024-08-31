@@ -42,15 +42,15 @@ namespace Res2Ext
                         string id = ((JObject)item)["id"].ToString();
                         //读取各个切图的宽度并转换
                         //新功能更新而停用///int width = (int)((int.Parse(((JObject)item)["aw"].ToString())+0.64) * 0.78125);
-                        //20240822宝开化aw+2
-                        int width = (int)((int.Parse(((JObject)item)["aw"].ToString())+2 + round) * scale);
+                        //20240822宝开化aw+2//20240831废弃宝开化
+                        int width = (int)((int.Parse(((JObject)item)["aw"].ToString())/*+2*/ + round) * scale);
                         //废弃代码，用了报错
                         ///JObject width = new JObject();
                         ///width.Add(aw);
                         //读取各个切图的高度并转换
                         //新功能更新而停用///int height = (int)((int.Parse(((JObject)item)["ah"].ToString())+0.64) * 0.78125);
-                        //20240822宝开化ah+2
-                        int height = (int)((int.Parse(((JObject)item)["ah"].ToString())+2 + round) * scale);
+                        //20240822宝开化ah+2//20240831废弃宝开化
+                        int height = (int)((int.Parse(((JObject)item)["ah"].ToString())/*+2*/ + round) * scale);
                         //废弃代码，用了报错
                         ///JObject height = new JObject();
                         ///height.Add(ah);
