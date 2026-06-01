@@ -322,7 +322,7 @@
             this.materialTabControl3.Depth = 0;
             this.materialTabControl3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.materialTabControl3.Location = new System.Drawing.Point(0, 749);
-            this.materialTabControl3.Margin = new System.Windows.Forms.Padding(4);
+            this.materialTabControl3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.materialTabControl3.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.materialTabControl3.Multiline = true;
             this.materialTabControl3.Name = "materialTabControl3";
@@ -338,9 +338,9 @@
             this.tabPage14.Controls.Add(this.foxLabel11);
             this.tabPage14.Controls.Add(this.foxLabel10);
             this.tabPage14.Location = new System.Drawing.Point(4, 28);
-            this.tabPage14.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage14.Name = "tabPage14";
-            this.tabPage14.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPage14.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage14.Size = new System.Drawing.Size(1537, 118);
             this.tabPage14.TabIndex = 0;
             this.tabPage14.Text = "tabPage14";
@@ -350,7 +350,7 @@
             this.foxLabel13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.foxLabel13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.foxLabel13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.foxLabel13.Location = new System.Drawing.Point(1085, -4);
+            this.foxLabel13.Location = new System.Drawing.Point(1085, -8);
             this.foxLabel13.Name = "foxLabel13";
             this.foxLabel13.Size = new System.Drawing.Size(440, 39);
             this.foxLabel13.TabIndex = 2;
@@ -361,18 +361,18 @@
             this.foxLabel12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.foxLabel12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.foxLabel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.foxLabel12.Location = new System.Drawing.Point(1085, 40);
+            this.foxLabel12.Location = new System.Drawing.Point(1085, 38);
             this.foxLabel12.Name = "foxLabel12";
             this.foxLabel12.Size = new System.Drawing.Size(440, 39);
             this.foxLabel12.TabIndex = 3;
-            this.foxLabel12.Text = "版本：1.3.2.4";
+            this.foxLabel12.Text = "版本：1.3.2.5";
             // 
             // foxLabel11
             // 
             this.foxLabel11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.foxLabel11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.foxLabel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.foxLabel11.Location = new System.Drawing.Point(9, -4);
+            this.foxLabel11.Location = new System.Drawing.Point(9, -8);
             this.foxLabel11.Name = "foxLabel11";
             this.foxLabel11.Size = new System.Drawing.Size(1022, 39);
             this.foxLabel11.TabIndex = 4;
@@ -383,7 +383,7 @@
             this.foxLabel10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.foxLabel10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.foxLabel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.foxLabel10.Location = new System.Drawing.Point(9, 40);
+            this.foxLabel10.Location = new System.Drawing.Point(9, 38);
             this.foxLabel10.Name = "foxLabel10";
             this.foxLabel10.Size = new System.Drawing.Size(1022, 39);
             this.foxLabel10.TabIndex = 5;
@@ -465,7 +465,7 @@
             this.tabPage10.ImageKey = "folder.png";
             this.tabPage10.Location = new System.Drawing.Point(4, 74);
             this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Size = new System.Drawing.Size(1545, 899);
+            this.tabPage10.Size = new System.Drawing.Size(1544, 898);
             this.tabPage10.TabIndex = 9;
             this.tabPage10.Text = "DirectoryCreator";
             // 
@@ -553,9 +553,9 @@
             this.tabPage1.ImageKey = "图像.png";
             this.tabPage1.Location = new System.Drawing.Point(4, 74);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.tabPage1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabPage1.Size = new System.Drawing.Size(1545, 899);
+            this.tabPage1.Size = new System.Drawing.Size(1544, 898);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Ftp2Res";
             // 
@@ -818,8 +818,8 @@
             this.tabPage2.ImageKey = "winfo-icon-分解.png";
             this.tabPage2.Location = new System.Drawing.Point(4, 74);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1545, 899);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Size = new System.Drawing.Size(1544, 898);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "ResSC";
             // 
@@ -849,7 +849,7 @@
             this.tabPage12.Controls.Add(this.textBox3);
             this.tabPage12.Location = new System.Drawing.Point(4, 28);
             this.tabPage12.Name = "tabPage12";
-            this.tabPage12.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage12.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.tabPage12.Size = new System.Drawing.Size(1092, 462);
             this.tabPage12.TabIndex = 0;
             this.tabPage12.Text = "tabPage12";
@@ -950,7 +950,7 @@
             this.tabPage13.Controls.Add(this.materialButton10);
             this.tabPage13.Location = new System.Drawing.Point(4, 28);
             this.tabPage13.Name = "tabPage13";
-            this.tabPage13.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage13.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.tabPage13.Size = new System.Drawing.Size(1092, 462);
             this.tabPage13.TabIndex = 1;
             this.tabPage13.Text = "tabPage13";
@@ -959,7 +959,7 @@
             // 
             this.panel13.Controls.Add(this.radioButton34);
             this.panel13.Controls.Add(this.radioButton35);
-            this.panel13.Location = new System.Drawing.Point(225, 137);
+            this.panel13.Location = new System.Drawing.Point(225, 136);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(654, 48);
             this.panel13.TabIndex = 29;
@@ -1174,7 +1174,7 @@
             this.tabPage3.ImageKey = "文件音乐.png";
             this.tabPage3.Location = new System.Drawing.Point(4, 74);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1545, 899);
+            this.tabPage3.Size = new System.Drawing.Size(1544, 898);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "BnkCvt";
             // 
@@ -1267,7 +1267,7 @@
             this.tabPage6.ImageKey = "copy.png";
             this.tabPage6.Location = new System.Drawing.Point(4, 74);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(1545, 899);
+            this.tabPage6.Size = new System.Drawing.Size(1544, 898);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "SpriteToLibrary";
             // 
@@ -1399,7 +1399,7 @@
             this.tabPage5.ImageKey = "模型.png";
             this.tabPage5.Location = new System.Drawing.Point(4, 74);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1545, 899);
+            this.tabPage5.Size = new System.Drawing.Size(1544, 898);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "ClipCreator";
             // 
@@ -1431,7 +1431,7 @@
             "6.自动按照标准顺序执行（1=>3=>4=>2=>5）"});
             this.checkedListBox1.Location = new System.Drawing.Point(396, 110);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(776, 168);
+            this.checkedListBox1.Size = new System.Drawing.Size(776, 140);
             this.checkedListBox1.TabIndex = 9;
             this.checkedListBox1.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.checkedListBox1_ItemCheck);
             this.checkedListBox1.Layout += new System.Windows.Forms.LayoutEventHandler(this.checkedListBox1_Layout);
@@ -1528,7 +1528,7 @@
             this.tabPage7.ImageKey = "引擎_旋转视图.png";
             this.tabPage7.Location = new System.Drawing.Point(4, 74);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(1545, 899);
+            this.tabPage7.Size = new System.Drawing.Size(1544, 898);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "ClipTransformer";
             // 
@@ -1823,7 +1823,7 @@
             this.tabPage4.ImageKey = "四参数转换.png";
             this.tabPage4.Location = new System.Drawing.Point(4, 74);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1545, 899);
+            this.tabPage4.Size = new System.Drawing.Size(1544, 898);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Res2Ext";
             // 
@@ -1841,9 +1841,9 @@
             // 
             this.textBox20.AllowDrop = true;
             this.textBox20.Enabled = false;
-            this.textBox20.Location = new System.Drawing.Point(680, 11);
+            this.textBox20.Location = new System.Drawing.Point(680, 10);
             this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(93, 31);
+            this.textBox20.Size = new System.Drawing.Size(92, 31);
             this.textBox20.TabIndex = 19;
             // 
             // radioButton31
@@ -1878,7 +1878,7 @@
             // 
             this.foxLabel44.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.foxLabel44.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.foxLabel44.Location = new System.Drawing.Point(182, 433);
+            this.foxLabel44.Location = new System.Drawing.Point(182, 434);
             this.foxLabel44.Name = "foxLabel44";
             this.foxLabel44.Size = new System.Drawing.Size(208, 39);
             this.foxLabel44.TabIndex = 27;
@@ -1992,7 +1992,7 @@
             this.panel3.Controls.Add(this.radioButton8);
             this.panel3.Controls.Add(this.radioButton1);
             this.panel3.Controls.Add(this.radioButton2);
-            this.panel3.Location = new System.Drawing.Point(396, 499);
+            this.panel3.Location = new System.Drawing.Point(396, 500);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(776, 212);
             this.panel3.TabIndex = 21;
@@ -2002,7 +2002,7 @@
             this.radioButton33.AutoSize = true;
             this.radioButton33.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.radioButton33.Location = new System.Drawing.Point(0, 109);
+            this.radioButton33.Location = new System.Drawing.Point(0, 110);
             this.radioButton33.Name = "radioButton33";
             this.radioButton33.Size = new System.Drawing.Size(146, 29);
             this.radioButton33.TabIndex = 19;
@@ -2028,7 +2028,7 @@
             this.radioButton9.AutoSize = true;
             this.radioButton9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.radioButton9.Location = new System.Drawing.Point(0, 179);
+            this.radioButton9.Location = new System.Drawing.Point(0, 178);
             this.radioButton9.Name = "radioButton9";
             this.radioButton9.Size = new System.Drawing.Size(117, 29);
             this.radioButton9.TabIndex = 18;
@@ -2168,7 +2168,7 @@
             // 
             this.foxLabel35.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.foxLabel35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.foxLabel35.Location = new System.Drawing.Point(182, 499);
+            this.foxLabel35.Location = new System.Drawing.Point(182, 500);
             this.foxLabel35.Name = "foxLabel35";
             this.foxLabel35.Size = new System.Drawing.Size(208, 39);
             this.foxLabel35.TabIndex = 14;
@@ -2286,7 +2286,7 @@
             this.tabPage11.ImageKey = "plist.png";
             this.tabPage11.Location = new System.Drawing.Point(4, 74);
             this.tabPage11.Name = "tabPage11";
-            this.tabPage11.Size = new System.Drawing.Size(1545, 899);
+            this.tabPage11.Size = new System.Drawing.Size(1544, 898);
             this.tabPage11.TabIndex = 10;
             this.tabPage11.Text = "LevelSC";
             // 
@@ -2296,7 +2296,7 @@
             this.materialTabControl4.Controls.Add(this.tabPage16);
             this.materialTabControl4.Depth = 0;
             this.materialTabControl4.Location = new System.Drawing.Point(170, 90);
-            this.materialTabControl4.Margin = new System.Windows.Forms.Padding(4);
+            this.materialTabControl4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.materialTabControl4.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.materialTabControl4.Multiline = true;
             this.materialTabControl4.Name = "materialTabControl4";
@@ -2313,9 +2313,9 @@
             this.tabPage15.Controls.Add(this.foxLabel22);
             this.tabPage15.Controls.Add(this.textBox5);
             this.tabPage15.Location = new System.Drawing.Point(4, 28);
-            this.tabPage15.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage15.Name = "tabPage15";
-            this.tabPage15.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPage15.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage15.Size = new System.Drawing.Size(1092, 462);
             this.tabPage15.TabIndex = 0;
             this.tabPage15.Text = "tabPage15";
@@ -2392,9 +2392,9 @@
             this.tabPage16.Controls.Add(this.textBox6);
             this.tabPage16.Controls.Add(this.materialButton12);
             this.tabPage16.Location = new System.Drawing.Point(4, 28);
-            this.tabPage16.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage16.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage16.Name = "tabPage16";
-            this.tabPage16.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPage16.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage16.Size = new System.Drawing.Size(1092, 462);
             this.tabPage16.TabIndex = 1;
             this.tabPage16.Text = "tabPage16";
@@ -2516,7 +2516,7 @@
             this.tabPage9.ImageKey = "setting.png";
             this.tabPage9.Location = new System.Drawing.Point(4, 74);
             this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Size = new System.Drawing.Size(1545, 899);
+            this.tabPage9.Size = new System.Drawing.Size(1544, 898);
             this.tabPage9.TabIndex = 8;
             this.tabPage9.Text = "Settings";
             // 
@@ -2732,7 +2732,7 @@
             this.foxLabel54.Name = "foxLabel54";
             this.foxLabel54.Size = new System.Drawing.Size(1022, 39);
             this.foxLabel54.TabIndex = 20;
-            this.foxLabel54.Text = "SpriteToLibrary:Beta Beast";
+            this.foxLabel54.Text = "SpriteToLibrary:Beta Beast、星尘";
             // 
             // foxLabel53
             // 
@@ -2762,7 +2762,7 @@
             this.foxLabel51.Name = "foxLabel51";
             this.foxLabel51.Size = new System.Drawing.Size(1022, 39);
             this.foxLabel51.TabIndex = 17;
-            this.foxLabel51.Text = "Res2Ext:小黑_yyds、Min_mozj、ATSGF";
+            this.foxLabel51.Text = "Res2Ext:小黑_yyds、Min_mozj、ATSGF、星尘";
             // 
             // foxLabel50
             // 
@@ -2782,7 +2782,7 @@
             this.foxLabel49.Name = "foxLabel49";
             this.foxLabel49.Size = new System.Drawing.Size(1022, 39);
             this.foxLabel49.TabIndex = 15;
-            this.foxLabel49.Text = "ResSC:某Eight-Bit、轩";
+            this.foxLabel49.Text = "ResSC:某Eight-Bit、轩、星尘";
             // 
             // foxLabel48
             // 

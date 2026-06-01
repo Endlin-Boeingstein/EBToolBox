@@ -159,6 +159,7 @@
     <Compile Include="SpriteToLibrary\BigSpriteCopyer.cs" />
     <Compile Include="SpriteToLibrary\DOMDocumentOverwriter.cs" />
     <Compile Include="SpriteToLibrary\DOMDocumentReader.cs" />
+    <Compile Include="SpriteToLibrary\LibraryClipReader.cs" />
     <Compile Include="SpriteToLibrary\MainNameRewriter.cs" />
     <Compile Include="SpriteToLibrary\SpriteCopyer.cs" />
     <Compile Include="SpriteToLibrary\XflReader.cs" />

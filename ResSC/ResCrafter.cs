@@ -151,6 +151,8 @@ namespace ResSC
                 output = Newtonsoft.Json.JsonConvert.SerializeObject(rss, Newtonsoft.Json.Formatting.Indented);
                 //json中文版不规范修复
                 output = output.Replace("十六进制转换", @"\x");
+                //2026年6月1日添加
+                output = output.Replace("零占位", @"\0");
                 //输出文本
                 File.WriteAllText(Path.GetDirectoryName(Fpath) + "/resources.json", output);
                 //提示合成完成

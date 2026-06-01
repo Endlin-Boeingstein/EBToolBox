@@ -24,7 +24,8 @@ namespace Res2Ext
                 DirectoryInfo TheFolder = new DirectoryInfo(MPath);
                 //创建xml读取对象
                 XmlDocument xmlDoc = new XmlDocument();
-                form1.textBox16.AppendText("修复检测图层帧间空帧中......" + "\r\n");
+                //2026年6月1日修改
+                form1.textBox16.AppendText("修复检测图层帧间空帧和图层末尾空帧中......" + "\r\n");
                 //创建新xml读取对象
                 XmlDocument newxmlDoc = new XmlDocument();
                 newxmlDoc.Load(TheFolder.FullName);
@@ -50,6 +51,71 @@ namespace Res2Ext
                     int dsitrue = 0;
                     //判定前空后实数
                     int nullandhasele = 0;
+
+
+
+                    //直接处理末尾空帧（新方案）//2026年5月31日添加
+                    //获取最后一帧并转换为XmlElement
+                    XmlElement EndDOMFrame = (XmlElement)DOMLayer.FirstChild.ChildNodes[DOMLayer.FirstChild.ChildNodes.Count - 1];
+
+                    //防止误杀，检测是否为全空或者全空帧图层
+                    if (DOMLayer.GetElementsByTagName("DOMBitmapInstance").Count == 0 && DOMLayer.GetElementsByTagName("DOMSymbolInstance").Count == 0) { }
+                    else
+                    {
+                        //如果最后一帧为空帧，则一定存在末尾空帧，直接连根拔起
+                        if (EndDOMFrame.GetElementsByTagName("DOMBitmapInstance").Count == 0 && EndDOMFrame.GetElementsByTagName("DOMSymbolInstance").Count == 0)
+                        {
+                            //预置addDOMLayer节点，新建图层
+                            XmlElement addDOMLayer = xmlDoc.CreateElement("DOMLayer", xmlDoc.DocumentElement.NamespaceURI);
+                            //预置addframes节点
+                            XmlElement addframes = xmlDoc.CreateElement("frames", xmlDoc.DocumentElement.NamespaceURI);
+                            //设name为DOMLayer的name值（此处会出现极大卡顿，暂无法修复）
+                            addDOMLayer.SetAttribute("name", DOMLayer.GetAttribute("name") + "_rubbish");
+                            //将addframes作为addDOMLayer的子节点
+                            addDOMLayer.AppendChild(addframes);
+                            //倒序遍历插入空帧给一个大图层以形成空图层被后续清全空图层功能删掉
+                            for (int j = DOMLayer.FirstChild.ChildNodes.Count - 1; j >= 0; j--)
+                            {
+                                //转换为XmlElement
+                                XmlElement DOMFrame = (XmlElement)DOMLayer.FirstChild.ChildNodes[j];
+                                //头插末尾空帧
+                                if (DOMFrame.GetElementsByTagName("DOMBitmapInstance").Count == 0 && DOMFrame.GetElementsByTagName("DOMSymbolInstance").Count == 0)
+                                {
+                                    //头插
+                                    //将本DOMFrame作为addframes的子节点
+                                    addframes.PrependChild(DOMFrame);
+                                }
+                                //遇到实帧则停止插入并填补前方空白区域
+                                else
+                                {
+                                    //此处填充新建图层的实帧前的空帧
+                                    //预置addDOMFrame节点
+                                    XmlElement addDOMFrame = xmlDoc.CreateElement("DOMFrame", xmlDoc.DocumentElement.NamespaceURI);
+                                    //设index为0
+                                    addDOMFrame.SetAttribute("index", "0");
+                                    //设duration为第一个末尾空帧的index值
+                                    addDOMFrame.SetAttribute("duration", ((XmlElement)addframes.FirstChild).GetAttribute("index"));
+                                    //头插
+                                    //将addDOMFrame作为addframes的子节点
+                                    addframes.PrependChild(addDOMFrame);
+                                    //退出循环
+                                    break;
+                                }
+
+
+                            }
+                            //将addDOMLayer插在DOMLayer的前面
+                            root.FirstChild.FirstChild.FirstChild.InsertBefore(addDOMLayer, node);
+                            form1.textBox16.AppendText("已提取main元件的" + DOMLayer.GetAttribute("name") + "图层的末尾空帧并新建图层" + "\r\n");
+                            //回落
+                            i--;
+                            //保存xml
+                            xmlDoc.Save(TheFolder.FullName);
+                            //重新循环防止干扰
+                            continue;
+                        }
+                        else { }
+                    }
 
 
                     //先行检测

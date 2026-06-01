@@ -26,6 +26,8 @@ namespace ResSC
                 //中文版不规范修复
                 json = json.Replace(@"\x", "十六进制转换");
                 json = json.Replace(@"..\\..\\resprops\\rgtemp\\all", "中文临时路径");
+                //2026年6月1日添加
+                json = json.Replace(@"\0", "零占位");
                 //将读取文本转换为JSON对象
                 JObject rss = JObject.Parse(json);
                 //新功能更新而停用//提取slot

@@ -15,6 +15,8 @@ namespace SpriteToLibrary
         SpriteCopyer sc = new SpriteCopyer();
         //创建mnr实例
         MainNameRewriter mnr = new MainNameRewriter();
+        //合并位图记录//2026年5月27日新增
+        ArrayList BitmapAL = new ArrayList();
         //生成xfl读取部分
         public void XflRead(string Fpath, string Spath)
         {
@@ -32,6 +34,8 @@ namespace SpriteToLibrary
                     {
                         //创建ddr实例
                         DOMDocumentReader ddr = new DOMDocumentReader();
+                        //创建lcr实例//2026年5月27日新增
+                        LibraryClipReader lcr = new LibraryClipReader();
                         //创建bsc实例
                         BigSpriteCopyer bsc = new BigSpriteCopyer();
                         //创建ddo实例
@@ -44,8 +48,18 @@ namespace SpriteToLibrary
                         //新功能更新而停用///sc.SpriteCopy(dir);
                         //将位图引用录入数组
                         ddr.DOMDocumentRead(dir + "\\" + "DOMDocument.xml");
-                        //大文件夹图片复制
-                        bsc.BigSpriteCopy(dir, Spath, ddr.sarray);
+                        lcr.LibraryClipRead(dir + "\\LIBRARY");
+                        BitmapAL = (ArrayList)ddr.sarray.Clone();
+                        foreach (string bitmapElement in lcr.sarray)
+                        {
+                            if (!BitmapAL.Contains(bitmapElement))
+                            {
+                                BitmapAL.Add(bitmapElement);
+                            }
+                            else { }
+                        }
+                        //大文件夹图片复制//2026年5月27日修改
+                        bsc.BigSpriteCopy(dir, Spath, BitmapAL);
                         //网格和元件大小标准化
                         ddo.DOMDocumentOverwrite(dir + "\\" + "DOMDocument.xml");
                         form1.textBox17.AppendText(dirname.Name + "的LIBRARY位图已填充" + "\r\n");
