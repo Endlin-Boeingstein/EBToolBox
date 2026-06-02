@@ -30,13 +30,25 @@ namespace SpriteToLibrary
                 //遍历以获取数组
                 foreach (XmlElement DOMBitmapItem in media)
                 {
-                    string href = DOMBitmapItem.GetAttribute("name");
+                    string href = DOMBitmapItem.GetAttribute("href");
                     //防止二级路径//防止元件引用的位图有.png后缀20240304修改
                     href = href.Substring(href.LastIndexOf('/') + 1, href.Length - href.LastIndexOf('/') - 1).Replace(".png","") + ".png";
                     //防止add$//20240810添加
                     href = href.Substring(href.LastIndexOf('$') + 1, href.Length - href.LastIndexOf('$') - 1).Replace(".png", "") + ".png";
-                    //修复二级路径//2026年5月27日添加
-                    DOMBitmapItem.SetAttribute("name", href);
+                    //修复二级路径//2026年5月27日添加//2026年6月2日修复
+                    DOMBitmapItem.SetAttribute("href", href);
+
+
+                    //name和href都要照顾//2026年6月2日修复
+                    string bitmapitem_name = DOMBitmapItem.GetAttribute("name");
+                    //防止二级路径//防止元件引用的位图有.png后缀
+                    bitmapitem_name = bitmapitem_name.Substring(bitmapitem_name.LastIndexOf('/') + 1, bitmapitem_name.Length - bitmapitem_name.LastIndexOf('/') - 1).Replace(".png", "");
+                    //防止add$
+                    bitmapitem_name = bitmapitem_name.Substring(bitmapitem_name.LastIndexOf('$') + 1, bitmapitem_name.Length - bitmapitem_name.LastIndexOf('$') - 1).Replace(".png", "");
+                    //修复二级路径
+                    DOMBitmapItem.SetAttribute("name", bitmapitem_name);
+
+
                     if (!sarray.Contains(href))
                     {
                         //记录引用信息
