@@ -350,8 +350,7 @@
             this.foxLabel13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.foxLabel13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.foxLabel13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.foxLabel13.Location = new System.Drawing.Point(720, -1);
-            this.foxLabel13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.foxLabel13.Location = new System.Drawing.Point(1085, -10);
             this.foxLabel13.Name = "foxLabel13";
             this.foxLabel13.Size = new System.Drawing.Size(293, 26);
             this.foxLabel13.TabIndex = 2;
@@ -362,8 +361,7 @@
             this.foxLabel12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.foxLabel12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.foxLabel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.foxLabel12.Location = new System.Drawing.Point(720, 29);
-            this.foxLabel12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.foxLabel12.Location = new System.Drawing.Point(1085, 34);
             this.foxLabel12.Name = "foxLabel12";
             this.foxLabel12.Size = new System.Drawing.Size(293, 26);
             this.foxLabel12.TabIndex = 3;
@@ -374,8 +372,7 @@
             this.foxLabel11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.foxLabel11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.foxLabel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.foxLabel11.Location = new System.Drawing.Point(6, -1);
-            this.foxLabel11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.foxLabel11.Location = new System.Drawing.Point(9, -10);
             this.foxLabel11.Name = "foxLabel11";
             this.foxLabel11.Size = new System.Drawing.Size(681, 26);
             this.foxLabel11.TabIndex = 4;
@@ -386,8 +383,7 @@
             this.foxLabel10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.foxLabel10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.foxLabel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.foxLabel10.Location = new System.Drawing.Point(6, 29);
-            this.foxLabel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.foxLabel10.Location = new System.Drawing.Point(9, 34);
             this.foxLabel10.Name = "foxLabel10";
             this.foxLabel10.Size = new System.Drawing.Size(681, 26);
             this.foxLabel10.TabIndex = 5;
@@ -1462,7 +1458,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 74);
             this.tabPage5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1027, 573);
+            this.tabPage5.Size = new System.Drawing.Size(1545, 899);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "ClipCreator";
             // 
@@ -1496,7 +1492,7 @@
             this.checkedListBox1.Location = new System.Drawing.Point(264, 73);
             this.checkedListBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(517, 108);
+            this.checkedListBox1.Size = new System.Drawing.Size(776, 168);
             this.checkedListBox1.TabIndex = 9;
             this.checkedListBox1.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.checkedListBox1_ItemCheck);
             this.checkedListBox1.Layout += new System.Windows.Forms.LayoutEventHandler(this.checkedListBox1_Layout);
@@ -2833,7 +2829,7 @@
             this.tabPage17.Location = new System.Drawing.Point(4, 39);
             this.tabPage17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage17.Name = "tabPage17";
-            this.tabPage17.Size = new System.Drawing.Size(1027, 608);
+            this.tabPage17.Size = new System.Drawing.Size(1544, 898);
             this.tabPage17.TabIndex = 11;
             this.tabPage17.Text = "Credits";
             // 
